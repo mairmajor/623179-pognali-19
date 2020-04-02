@@ -13,6 +13,11 @@
         </a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <ul>
+                <li><a>О сервисе</a></li>
+                <li><a href="form.html">Направления</a></li>
+                <li><a href="catalog.html">Попутчики</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -21,29 +26,24 @@
             <h1>В путешествие с крутыми попутчиками!</h1>
             <img src="https://via.placeholder.com/150x150" width="192" height="225" alt="Изображение">
             <ul>
-                <li>Позвонить</li>
-                <li>Написать</li>
-                <li>Авторизация</li>
+                <li><button class="button" type="button">Позвонить</button></li>
+                <li><button class="button" type="button">Написать</button></li>
+                <li><a class="button">Авторизация</a></li>
             </ul>
             <blockquote>
                 <p>«Лучшее приложение, что я видел в жизни!»</p>
                 <cite>Мурат Эльтазин главный редактор
               газеты «гаджетлайф»</cite>
             </blockquote>
-            <ul class="steps">
-                <li>Выберите направление
-                </li>
-                <li>Изучите идеи путешественников
-                </li>
+            <ol class="steps">
+                <li>Выберите направление</li>
+                <li>Изучите идеи путешественников</li>
                 <li>Находите тех, кто похож на вас</li>
-                <li>Путешествуйте вместе!
-                </li>
-            </ul>
+                <li>Путешествуйте вместе!</li>
+            </ol>
             <h2>О сервисе</h2>
             <p>Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
-            <b>А если найдете кого-то
-              близкого по духу — скорее
-              зовите в совместный трип!</b>
+            <p>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
         </section>
         <section class="directions">
             <h2>Направления</h2>
@@ -51,28 +51,34 @@
             </p>
             <ul class="countries">
                 <li>
+                    <img src="https://via.placeholder.com/150x150" width="270" height="110" alt="Фото Тайланда">
+                    <img src="https://via.placeholder.com/150x150" width="35" height="14" alt="Флаг Тайланда">
                     <h3>Таиланд</h3>
                     <p>Джунгли зовут!</p>
                     <p>18321</p>
                 </li>
                 <li>
+                    <img src="https://via.placeholder.com/150x150" width="270" height="110" alt="Фото Франции">
+                    <img src="https://via.placeholder.com/150x150" width="35" height="14" alt="Флаг Франции">
                     <h3>Франция</h3>
                     <p>Трэ бьен, манифик!</p>
                     <p>12518</p>
                 </li>
                 <li>
+                    <img src="https://via.placeholder.com/150x150" width="270" height="110" alt="Фото Чехии">
+                    <img src="https://via.placeholder.com/150x150" width="35" height="14" alt="Флаг Чехии">
                     <h3>Чехия</h3>
                     <p>Закоулки старой Европы</p>
                     <p>5326</p>
                 </li>
             </ul>
-            <button class="button">Показать все</button>
+            <a class="button" href="form.html">Показать все</a>
         </section>
         <section class="companions">
             <h2>Попутчики</h2>
             <p>Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
             </p>
-            <b>Теперь можно легко найти единомышленников!</b>
+            <p>Теперь можно легко найти единомышленников!</p>
             <ul class="travelers">
                 <li class="traveler">
                     <img src="https://via.placeholder.com/150x150" width="270" height="270" alt="Изображение">
@@ -82,7 +88,7 @@
                         <li class="traveler__countries__ flag">Сейшелы</li>
                     </ul>
                     <h3 class="traveler__name">Таня Фирсова</h3>
-                    <p>#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                    <p><a>#ЗОЖ</a> <a>#ПП</a> <a>#Фитнес</a> <a>#пляж</a> <a>#авокадо</a> <a>#смузи</a></p>
                     <ul class="traveler__transport">
                         <li>Самолёт</li>
                         <li>Автобус</li>
@@ -101,7 +107,7 @@
                         <li class="traveler__countries__ flag">Чехия</li>
                     </ul>
                     <h3 class="traveler__name">Петя Демин</h3>
-                    <p>#бургер #бар #футбол #концерт #крафт</p>
+                    <p><a>#бургер</a> <a>#бар</a> <a>#футбол</a> <a>#концерт</a> <a>#крафт</a></p>
                     <ul class="traveler__transport">
                         <li>Самолёт</li>
                         <li>Автобус</li>
@@ -114,22 +120,30 @@
                     </ul>
                 </li>
             </ul>
-            <button class="button">Показать всех</button>
+            <a class="button" href="catalog.html">Показать всех</a>
         </section>
         <section class="rates">
             <h2>Добавьте свой профиль</h2>
-            <ul>
-                <li>Базовое размещение Бесплатно
+            <ol>
+                <li>
+                    <p>Базовое размещение</p>
+                    <p>Бесплатно</p>
                 </li>
-                <li>Вывод на первых позициях 99 руб./мес</li>
-                <li>Кастомный цвет карточки 59 руб./мес</li>
-            </ul>
-            <button class="button">Показать тарифы для бизнеса</button>
+                <li>
+                    <p>Вывод на первых позициях</p>
+                    <p>99 руб./мес</p>
+                </li>
+                <li>
+                    <p>Кастомный цвет карточки</p>
+                    <p>59 руб./мес</p>
+                </li>
+            </ol>
+            <button class="button rates-link" type="button">Показать тарифы для бизнеса</button>
         </section>
         <section class="contacts">
             <h2>Контакты</h2>
             <strong>Заинтересовались?</strong>
-            <p>Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a>авторизуйтесь.</a></p>
+            <p>Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="authorization.html">авторизуйтесь.</a></p>
             <form class="email" action="http://echo.htmlacademy.ru" method="POST">
                 <input type="email" name="email" placeholder="E-mail">
                 <input type="submit" name="submit" value="Отправить">
@@ -142,7 +156,7 @@
         </section>
         <section class="map">
             <h2><address>ул. Большая Конюшенная, 19/8</address></h2>
-            <button class="button">Проложить маршрут</button>
+            <a class="button" href="https://yandex.ru/maps/2/saint-petersburg/?from=tabbar&ll=30.323118%2C59.938635&mode=routes&rtext=59.939358%2C30.317587~59.938635%2C30.323118&rtt=pd&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323%252C59.939%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2520%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252019%252F8&source=serp_navig&z=17.14">Проложить маршрут</a>
             <img class="map-link" src="img/map.jpg" width="320" height="546" alt="ул. Большая Конюшенная, 19/8">
         </section>
     </main>
@@ -166,7 +180,7 @@
         </div>
         <div class="page-footer__copyright copyright">
             <p class="copyright__text">Разработано</p>
-            <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
 
     </footer>
