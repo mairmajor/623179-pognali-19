@@ -11,136 +11,178 @@
         <a class="page-heager__logo">
             <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип Погнали">
         </a>
-        <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <ul>
-                <li><a>О сервисе</a></li>
-                <li><a href="form.html">Направления</a></li>
-                <li><a href="catalog.html">Попутчики</a></li>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="visually-hidden navigation-modal">
+            <a class="page-heager__logo">
+                <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип Погнали">
+            </a>
+            <button class="modal-close" type="button">Закрыть</button>
+            <nav class="main-nav">
+                <ul class="site-nav">
+                    <li class="nav__item"><a class="nav-link">О сервисе</a></li>
+                    <li class="nav__item"><a class="nav-link" href="form.html">Направления</a></li>
+                    <li class="nav__item"><a class="nav-link" href="catalog.html">Попутчики</a></li>
+                </ul>
+            </nav>
+            <a class="button" href="#">Авторизация</a>
+            <ul class="contact-list">
+                <li class="contact__item"><a class="contact__link contact__link--tel" href="tel:88005558628">8 800 555-86-28</a></li>
+                <li class="contact__item"><a class="contact__link contact__link--email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
             </ul>
-        </nav>
+            <ul class="social__list">
+                <li class="social__item">
+                    <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main class="page-main">
-        <section class="">
-            <h1>В путешествие с крутыми попутчиками!</h1>
-            <img src="https://via.placeholder.com/150x150" width="192" height="225" alt="Изображение">
-            <ul>
-                <li><button class="button" type="button">Позвонить</button></li>
-                <li><button class="button" type="button">Написать</button></li>
-                <li><a class="button">Авторизация</a></li>
+
+        <h1>В путешествие с крутыми попутчиками!</h1>
+        <section class="user-menu">
+            <ul class="user-menu-list">
+                <li class="user-menu__item"><a class="user-menu__link user-menu__link--tel" href="tel:88005558628">8 800 555-86-28</a></li>
+                <li class="user-menu__item"><a class="user-menu__link user-menu__link--email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+                <li class="user-menu__item"><a class="button" href="#">Авторизация</a></li>
             </ul>
-            <blockquote>
-                <p>«Лучшее приложение, что я видел в жизни!»</p>
-                <cite>Мурат Эльтазин главный редактор
-              газеты «гаджетлайф»</cite>
+        </section>
+        <section class="blockquote">
+            <blockquote class="blockquote-content">
+                <q class="blockquote__quote">«Лучшее приложение, что я видел в жизни!»</q>
+                <cite class="blockquote__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
             </blockquote>
-            <ol class="steps">
-                <li>Выберите направление</li>
-                <li>Изучите идеи путешественников</li>
-                <li>Находите тех, кто похож на вас</li>
-                <li>Путешествуйте вместе!</li>
+        </section>
+        <section class="steps">
+            <ol class="steps-list">
+                <li class="step__one">Выберите направление</li>
+                <li class="step__two">Изучите идеи путешественников</li>
+                <li class="step__three">Находите тех, кто похож на вас</li>
+                <li class="step__four">Путешествуйте вместе!</li>
             </ol>
-            <h2>О сервисе</h2>
-            <p>Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
-            <p>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+        </section>
+        <section class="service">
+            <h2 class="service__header">О сервисе</h2>
+            <p class="service__description">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
+            <p class="service__bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
         </section>
         <section class="directions">
-            <h2>Направления</h2>
-            <p>Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
-            </p>
-            <ul class="countries">
-                <li>
-                    <img src="https://via.placeholder.com/150x150" width="270" height="110" alt="Фото Тайланда">
-                    <img src="https://via.placeholder.com/150x150" width="35" height="14" alt="Флаг Тайланда">
-                    <h3>Таиланд</h3>
-                    <p>Джунгли зовут!</p>
-                    <p>18321</p>
+            <h2 class="directions__header">Направления</h2>
+            <p class="directions__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+            <ul class="countries-list">
+                <li class="countries__item">
+                    <article class="country-card">
+                        <img class="country-card__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="Фото Тайланда">
+                        <div class="country-card__description">
+                            <img class="country-card__flag" src="https://via.placeholder.com/150x150" width="35" height="14" alt="Флаг Тайланда">
+                            <h3 class="country-card__header">Таиланд</h3>
+                            <p class="country-card__slogan">Джунгли зовут!</p>
+                            <p class="country-card__tourists">18321</p>
+                        </div>
+                    </article>
                 </li>
-                <li>
-                    <img src="https://via.placeholder.com/150x150" width="270" height="110" alt="Фото Франции">
-                    <img src="https://via.placeholder.com/150x150" width="35" height="14" alt="Флаг Франции">
-                    <h3>Франция</h3>
-                    <p>Трэ бьен, манифик!</p>
-                    <p>12518</p>
+                <li class="countries__item">
+                    <article class="country-card">
+                        <img class="country-card__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="Фото Франции">
+                        <div class="country-card__description">
+                            <img class="country-card__flag" src="https://via.placeholder.com/150x150" width="35" height="14" alt="Флаг Франции">
+                            <h3 class="country-card__header">Франция</h3>
+                            <p class="country-card__slogan">Трэ бьен, манифик!</p>
+                            <p class="country-card__tourists">12518</p>
+                        </div>
+                    </article>
                 </li>
-                <li>
-                    <img src="https://via.placeholder.com/150x150" width="270" height="110" alt="Фото Чехии">
-                    <img src="https://via.placeholder.com/150x150" width="35" height="14" alt="Флаг Чехии">
-                    <h3>Чехия</h3>
-                    <p>Закоулки старой Европы</p>
-                    <p>5326</p>
+                <li class="countries__item">
+                    <article class="country-card">
+                        <img class="country-card__image" src="https://via.placeholder.com/150x150" width="270" height="110" alt="Фото Чехии">
+                        <div class="country-card__description">
+                            <img class="country-card__flag" src="https://via.placeholder.com/150x150" width="35" height="14" alt="Флаг Чехии">
+                            <h3 class="country-card__header">Чехия</h3>
+                            <p class="country-card__slogan">Закоулки старой Европы</p>
+                            <p class="country-card__tourists">5326</p>
+                        </div>
+                    </article>
                 </li>
             </ul>
-            <a class="button" href="form.html">Показать все</a>
+            <a class="button directions-button" href="form.html">Показать все</a>
         </section>
         <section class="companions">
-            <h2>Попутчики</h2>
-            <p>Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
-            </p>
-            <p>Теперь можно легко найти единомышленников!</p>
-            <ul class="travelers">
-                <li class="traveler">
-                    <img src="https://via.placeholder.com/150x150" width="270" height="270" alt="Изображение">
-                    <ul class="traveler__countries">
-                        <li class="traveler__countries__ flag">Шри Ланка</li>
-                        <li class="traveler__countries__ flag">Тайланд</li>
-                        <li class="traveler__countries__ flag">Сейшелы</li>
-                    </ul>
-                    <h3 class="traveler__name">Таня Фирсова</h3>
-                    <p><a>#ЗОЖ</a> <a>#ПП</a> <a>#Фитнес</a> <a>#пляж</a> <a>#авокадо</a> <a>#смузи</a></p>
-                    <ul class="traveler__transport">
-                        <li>Самолёт</li>
-                        <li>Автобус</li>
-                        <li>Велосипед</li>
-                        <li>Бег</li>
-                    </ul>
-                    <ul class="traveler__level">
-                        <li>99</li>
-                        <li>level</li>
-                    </ul>
+            <h2 class="companions__header">Попутчики</h2>
+            <p class="companions__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+            <p class="companions__bold">Теперь можно легко найти единомышленников!</p>
+            <ul class="travelers-list">
+                <li class="travelers__item">
+                    <article class="user-card">
+                        <img class="user__image" src="https://via.placeholder.com/150x150" width="270" height="270" alt="Изображение">
+                        <ul class="user__country-list">
+                            <li class="user__country-flag">Шри Ланка</li>
+                            <li class="user__country-flag">Тайланд</li>
+                            <li class="user__country-flag">Сейшелы</li>
+                        </ul>
+                        <h3 class="user__name">Таня Фирсова</h3>
+                        <p class="user__tags"><a class="user__tag-link">#ЗОЖ</a> <a class="user__tag-link">#ПП</a> <a class="user__tag-link">#Фитнес</a> <a class="user__tag-link">#пляж</a> <a class="user__tag-link">#авокадо</a> <a class="user__tag-link">#смузи</a></p>
+                        <ul class="user__transport-list">
+                            <li class="user__transport">Самолёт</li>
+                            <li class="user__transport">Автобус</li>
+                            <li class="user__transport">Велосипед</li>
+                            <li class="user__transport">Бег</li>
+                        </ul>
+                        <div class="user__level">
+                            <p class="user__level-count">99</p>
+                            <p class="user__level-text">level</p>
+                        </div>
+                    </article>
                 </li>
-                <li class="traveler">
-                    <img src="https://via.placeholder.com/150x150" width="270" height="270" alt="Изображение">
-                    <ul class="traveler__countries">
-                        <li class="traveler__countries__ flag">Бельгия</li>
-                        <li class="traveler__countries__ flag">Чехия</li>
-                    </ul>
-                    <h3 class="traveler__name">Петя Демин</h3>
-                    <p><a>#бургер</a> <a>#бар</a> <a>#футбол</a> <a>#концерт</a> <a>#крафт</a></p>
-                    <ul class="traveler__transport">
-                        <li>Самолёт</li>
-                        <li>Автобус</li>
-                        <li>Велосипед</li>
-                        <li>Бег</li>
-                    </ul>
-                    <ul class="traveler__level">
-                        <li>80</li>
-                        <li>level</li>
-                    </ul>
+                <li class="travelers__item">
+                    <article class="user-card">
+                        <img class="user__image" src="https://via.placeholder.com/150x150" width="270" height="270" alt="Изображение">
+                        <ul class="user__country-list">
+                            <li class="user__country-flag">Бельгия</li>
+                            <li class="user__country-flag">Чехия</li>
+                        </ul>
+                        <h3 class="user__name">Петя Демин</h3>
+                        <p class="user__tags"><a class="user__tag-link">#бургер</a> <a class="user__tag-link">#бар</a> <a class="user__tag-link">#футбол</a> <a class="user__tag-link">#концерт</a> <a class="user__tag-link">#крафт</a></p>
+                        <ul class="user__transport-list">
+                            <li class="user__transport">Самолёт</li>
+                            <li class="user__transport">Автобус</li>
+                            <li class="user__transport">Велосипед</li>
+                            <li class="user__transport">Бег</li>
+                        </ul>
+                        <div class="user__level">
+                            <p class="user__level-count">80</p>
+                            <p class="user__level-text">level</p>
+                        </div>
+                    </article>
                 </li>
             </ul>
-            <a class="button" href="catalog.html">Показать всех</a>
+            <a class="button companions__button" href="catalog.html">Показать всех</a>
         </section>
         <section class="rates">
-            <h2>Добавьте свой профиль</h2>
-            <ol>
-                <li>
-                    <p>Базовое размещение</p>
-                    <p>Бесплатно</p>
+            <h2 class="rates__header">Добавьте свой профиль</h2>
+            <ol class="rates__list">
+                <li class="rates__item">
+                    <p class="rates__offer">Базовое размещение</p>
+                    <p class="rates__price">Бесплатно</p>
                 </li>
-                <li>
-                    <p>Вывод на первых позициях</p>
-                    <p>99 руб./мес</p>
+                <li class="rates__item">
+                    <p class="rates__offer">Вывод на первых позициях</p>
+                    <p class="rates__price">99 руб./мес</p>
                 </li>
-                <li>
-                    <p>Кастомный цвет карточки</p>
-                    <p>59 руб./мес</p>
+                <li class="rates__item">
+                    <p class="rates__offer">Кастомный цвет карточки</p>
+                    <p class="rates__price">59 руб./мес</p>
                 </li>
             </ol>
-            <button class="button rates-link" type="button">Показать тарифы для бизнеса</button>
+            <a class="button rates-button" href="#">Показать тарифы для бизнеса</a>
         </section>
-        <section class="contacts">
+        <!--
+            <section class="contacts">
             <h2>Контакты</h2>
             <strong>Заинтересовались?</strong>
             <p>Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="authorization.html">авторизуйтесь.</a></p>
@@ -153,15 +195,16 @@
                 <li><a href="tel:88005558628">8 800 555-86-28</a></li>
                 <li><a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
             </ul>
-        </section>
-        <section class="map">
+            </section>
+            <section class="map">
             <h2><address>ул. Большая Конюшенная, 19/8</address></h2>
             <a class="button" href="https://yandex.ru/maps/2/saint-petersburg/?from=tabbar&ll=30.323118%2C59.938635&mode=routes&rtext=59.939358%2C30.317587~59.938635%2C30.323118&rtt=pd&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323%252C59.939%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2520%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252019%252F8&source=serp_navig&z=17.14">Проложить маршрут</a>
             <img class="map-link" src="img/map.jpg" width="320" height="546" alt="ул. Большая Конюшенная, 19/8">
-        </section>
+            </section>
+        -->
     </main>
 
-    <footer>
+    <footer class="page-footer">
         <a class="page-footer__logo">
             <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип Погнали">
         </a>
