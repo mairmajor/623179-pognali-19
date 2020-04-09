@@ -44,7 +44,7 @@
 
     <main class="page-main">
 
-        <h1>В путешествие с крутыми попутчиками!</h1>
+        <h1 class="page-main__header">В путешествие с крутыми попутчиками!</h1>
         <section class="user-menu">
             <h3 class="visually-hidden">Меню авторизации и контакты</h3>
             <ul class="user-menu__list">
@@ -182,28 +182,48 @@
                 </li>
             </ol>
             <a class="button rates__button" href="#">Показать тарифы для бизнеса</a>
+            <div class="visually-hidden business-modal">
+                <h3 class="business-modal__header">Бизнес-тарифы</h3>
+                <ul class="business-modal__list">
+                    <li class="business-modal__item">
+                        <p class="business-modal__offer">Реклама у блоггера</p>
+                        <p class="business-modal__price">300 000 руб./пост</p>
+                    </li>
+                    <li class="business-modal__item">
+                        <p class="business-modal__offer">Накрутка подписчиков</p>
+                        <p class="business-modal__price">от 1 руб./шт.</p>
+                    </li>
+                    <li class="business-modal__item">
+                        <p class="business-modal__offer">Лайки от ботов</p>
+                        <p class="business-modal__price">от 20 коп./лайк</p>
+                    </li>
+                    <li class="business-modal__item">
+                        <p class="business-modal__offer">Ваш продакт-плейсмент</p>
+                        <p class="business-modal__price">Индивидуально</p>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <!--
-            <section class="contacts">
-            <h2>Контакты</h2>
-            <strong>Заинтересовались?</strong>
-            <p>Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="authorization.html">авторизуйтесь.</a></p>
-            <form class="email" action="http://echo.htmlacademy.ru" method="POST">
-                <input type="email" name="email" placeholder="E-mail">
-                <input type="submit" name="submit" value="Отправить">
+
+        <section class="contacts-us">
+            <h2 class="contacts-us__header">Заинтересовались?</h2>
+            <p class="contacts-us__description">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="contacts-us__authorization-link" href="#">авторизуйтесь</a>.</p>
+            <form class="contacts-us__email-form" action="http://echo.htmlacademy.ru" method="POST">
+                <input class="contacts-us__email" type="email" name="email" placeholder="E-mail">
+                <input class="contacts-us__button" type="submit" name="submit" value="Отправить">
             </form>
-            <p>Остались вопросы? Мы с радостью на них ответим!</p>
-            <ul class="contact-us">
-                <li><a href="tel:88005558628">8 800 555-86-28</a></li>
-                <li><a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+            <p class="contacts-us__description">Остались вопросы? Мы с радостью на них ответим!</p>
+            <ul class="contact">
+                <li class="contact__item"><a class="contact__link contact__link--tel" href="tel:88005558628">8 800 555-86-28</a></li>
+                <li class="contact__item"><a class="contact__link contact__link--email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
             </ul>
-            </section>
-            <section class="map">
-            <h2><address>ул. Большая Конюшенная, 19/8</address></h2>
-            <a class="button" href="https://yandex.ru/maps/2/saint-petersburg/?from=tabbar&ll=30.323118%2C59.938635&mode=routes&rtext=59.939358%2C30.317587~59.938635%2C30.323118&rtt=pd&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323%252C59.939%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2520%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252019%252F8&source=serp_navig&z=17.14">Проложить маршрут</a>
-            <img class="map-link" src="img/map.jpg" width="320" height="546" alt="ул. Большая Конюшенная, 19/8">
-            </section>
-        -->
+        </section>
+        <section class="map">
+            <h2 class="map__header"><address class="map__address">ул. Большая Конюшенная, 19/8</address></h2>
+            <a class="button map__button" href="https://yandex.ru/maps/2/saint-petersburg/?from=tabbar&ll=30.323118%2C59.938635&mode=routes&rtext=59.939358%2C30.317587~59.938635%2C30.323118&rtt=pd&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323%252C59.939%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2520%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2520%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252019%252F8&source=serp_navig&z=17.14">Проложить маршрут</a>
+            <img class="map__link" src="img/map.jpg" width="320" height="546" alt="ул. Большая Конюшенная, 19/8">
+        </section>
+
     </main>
 
     <footer class="page-footer">

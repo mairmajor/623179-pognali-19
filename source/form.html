@@ -41,7 +41,164 @@
             </ul>
         </div>
     </header>
-    <main class="page-main"></main>
+    <main class="page-main">
+        <h1 class="page-main__header">Направления</h1>
+        <section class="profile">
+            <div class="profile__level">
+                <p class="profile__level-count">80</p>
+                <p class="profile__level-text">level</p>
+            </div>
+            <img class="profile__image" src="https://via.placeholder.com/150x150" width="99" height="100" alt="Фото профиля">
+            <a class="button profile__image-button" href="#">Сменить фото</a>
+            <fieldset class="profile__tags">
+                <legend class="profile__tags-header">Теги</legend>
+                <ul class="profile__tags-list">
+                    <li class="profile__tags-item"><input class="profile__tags-input" type="text" name="tags-input" id="tags-input"><label class="profile__tags-label" for="tags-input">#бургер #бар #футбол #концерт #крафт</label></li>
+                </ul>
+            </fieldset>
+            <fieldset class="profile__transport">
+                <legend class="profile__transport-header">Транспорт</legend>
+                <ul class="profile__transport-list">
+                    <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="airplane" id="airplane" checked><label class="profile__transport-label" for="airplane">Самолет</label></li>
+                    <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="bus" id="bus" checked><label class="profile__transport-label" for="bus">Автобус</label></li>
+                    <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="bicycle" id="bicycle"><label class="profile__transport-label" for="bicycle">Велосипед</label></li>
+                    <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="run" id="run" checked><label class="profile__transport-label" for="run">Бег</label></li>
+                </ul>
+            </fieldset>
+        </section>
+        <section class="myplans">
+            <h2 class="myplans__header">Мои планы:</h2>
+            <ol class="myplans__list">
+                <li class="myplans__item">
+                    <table class="myplans__table">
+                        <tr class="myplans__table-row">
+                            <th class="myplans__countries">1. Франция, Италия</th>
+                        </tr>
+                        <tr class="myplans__table-row">
+                            <td class="myplans__companions-count">3 попутчика</td>
+                        </tr>
+                        <tr class="myplans__table-row">
+                            <td class="myplans__period"><time class="myplans__time">26 мар - 29 мар</time></td>
+                        </tr>
+                    </table>
+                    <a class="myplans__change" href="#">Изменить</a>
+                </li>
+                <li class="myplans__item">
+                    <table class="myplans__table">
+                        <tr class="myplans__table-row">
+                            <th class="myplans__countries">2. Таиланд, Индонезия</th>
+                        </tr>
+                        <tr class="myplans__table-row">
+                            <td class="myplans__companions-count">1 попутчик</td>
+                        </tr>
+                        <tr class="myplans__table-row">
+                            <td class="myplans__period"><time class="myplans__time">1 июл — 15 июл</time></td>
+                        </tr>
+                    </table>
+                    <a class="myplans__change" href="#">Изменить</a>
+                </li>
+            </ol>
+        </section>
+        <section class="add-plan">
+            <h2 class="add-plan__header">Добавить план:</h2>
+            <ol class="add-plan__list">
+                <li class="add-plan__trip-dates">
+                    <h3 class="add-plan__item-header">Шаг 1.<br class="add-plan__brake">Даты пребывания</h3>
+                    <p class="add-plan__item-description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                    <form class="add-plan__form">
+                        <label class="add-plan__counter-label" for="companions-counter"><h4 class="add-plan__counter-header">Ищу попутчиков:</h4><p class="add-plan__counter-unit">Чел.</p></label><input class="add-plan__counter-input" type="number" min="1"
+                            max="100" value="count" name="companions" id="companions-counter">
+                        <label class="add-plan__counter-label" for="duration-counter"><h4 class="add-plan__counter-header">Длительность:</h4><p class="add-plan__counter-unit">Дн.</p></label><input class="add-plan__counter-input" type="number" min="1"
+                            max="90" value="count" name="duration" id="duration-counter">
+                        <input class="add-plan__counter-checkbox" type="checkbox" name="kids" id="kids" checked><label class="add-plan__checkbox-label" for="kids">Можно с детьми</label>
+                        <div class="add-plan__choose-month">
+                            <button class="add-plan__arrow-prev">Предыдущий месяц</button>
+                            <h4 class="add-plan__month">Март 2019</h4>
+                            <button class="add-plan__arrow-next">Следующий месяц</button>
+                        </div>
+                        <!-- думаю либо таблица, либо список на флексах формируемый циклом, но пока так -->
+                        <ol>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                            <li><input class="add-plan__date" type="checkbox" name="date"></li>
+                        </ol>
+                    </form>
+                    <a class="button add-plan__button" href="#">Следующий шаг</a>
+                </li>
+                <li class="add-plan__itinerary">
+                    <h3 class="add-plan__item-header">Шаг 2.<br class="add-plan__brake">Маршрут</h3>
+                    <p class="add-plan__item-description">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+                    <form class="add-plan__form" action="http://echo.htmlacademy.ru" method="post">
+                        <ul class="add-plan__country-list">
+                            <li class="add-plan__country-item">
+                                <select class="add-plan__select-country" name="itinerary">
+                                  <option class="add-plan__country add-plan__country--selected" selected value="Босния и герцеговина">Босния и герцеговина</option>
+                                </select>
+                            </li>
+                            <li class="add-plan__country-item">
+                                <select class="add-plan__select-country" name="itinerary">
+                                <option class="add-plan__country add-plan__country--selected" selected value="Чехия">Чехия</option>
+                              </select>
+                            </li>
+                            <li class="add-plan__country-item">
+                                <select class="add-plan__select-country" name="itinerary">
+                              <option class="add-plan__select-description" selected disabled>Выберите страну</option>
+                            </select>
+                            </li>
+                            <li class="add-plan__country-item">
+                                <select class="add-plan__select-country" name="itinerary">
+                            <option class="add-plan__add-country" selected disabled>Добавить страну</option>
+                          </select>
+                            </li>
+                        </ul>
+                    </form>
+                    <a class="add-plan__button" href="#">Следующий шаг</a>
+                    <a class="add-plan__button--prev" href="#">На шаг назад</a>
+                </li>
+                <li class="add-plan__funs">
+                    <h3 class="add-plan__item-header">Шаг 3.<br class="add-plan__brake">Развлечения</h3>
+                    <p class="add-plan__item-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+                    </p>
+                    <form class="add-plan__form">
+                        <label class="add-plan__funs-country add-plan__bosnia-and-herzegovina">Босния и Герцеговина
+                      <textarea class="add-plan__funs-text" placeholder="План действий"></textarea></label>
+                        <label class="add-plan__funs-country add-plan__czech">Чехия
+                      <textarea class="add-plan__funs-text" placeholder="План действий"></textarea></label>
+                    </form>
+                    <input type="submit" value="Отправить">
+                    <a class="add-plan__button--prev" href="#">На шаг назад</a>
+                </li>
+            </ol>
+        </section>
+    </main>
     <footer class="page-footer">
         <a class="page-footer__logo">
             <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип Погнали">
