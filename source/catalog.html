@@ -45,155 +45,154 @@
         <h1 class="page-main__header">Попутчики</h1>
         <section class="country-filter">
             <h2 class="country-filter__header">Фильтрация по странам</h2>
-            <form class="visually-hidden country-filter__form">
-                <ul class="country-filter__continent-list">
-                    <li class="country-filter__continent-item">Европа</li>
-                    <li class="country-filter__continent-item">Азия</li>
-                    <li class="country-filter__continent-item">Америка</li>
-                    <li class="country-filter__continent-item">Острова</li>
-                </ul>
-                <table class="country-filter__letter-list">
-                    <tr class="country-filter__letter-line">
-                        <td class="country-filter__letter-item country-filter__letter-item--active">
-                            А
-                        </td>
-                        <td class="country-filter__letter-item">
-                            Б
-                        </td>
-                        <td class="country-filter__letter-item">
-                            В
-                        </td>
-                        <td class="country-filter__letter-item">
-                            Г
-                        </td>
-                        <td class="country-filter__letter-item">
-                            Д
-                        </td>
-                    </tr>
-                    <tr class="country-filter__letter-line">
-                        <td class="country-filter__letter-item">
-                            Е
-                        </td>
-                        <td class="country-filter__letter-item">
-                            З
-                        </td>
-                        <td class="country-filter__letter-item">
-                            И
-                        </td>
-                        <td class="country-filter__letter-item">
-                            К
-                        </td>
-                        <td class="country-filter__letter-item">
-                            Л
-                        </td>
-                    </tr>
-                    <tr class="country-filter__letter-line">
-                        <td class="country-filter__letter-item">
-                            М
-                        </td>
-                        <td class="country-filter__letter-item">
-                            Н
-                        </td>
-                        <td class="country-filter__letter-item">
-                            О
-                        </td>
-                        <td class="country-filter__letter-item">
-                            П
-                        </td>
-                        <td class="country-filter__letter-item">
-                            Р
-                        </td>
-                    </tr>
-                    <tr class="country-filter__letter-line">
-                        <td class="country-filter__letter-item">
-                            С
-                        </td>
-                        <td class="country-filter__letter-item">
-                            Т
-                        </td>
-                        <td class="country-filter__letter-item">
-                            У
-                        </td>
-                        <td class="country-filter__letter-item">
-                            Ф
-                        </td>
-                        <td class="country-filter__letter-item">
-                            Х
-                        </td>
-                    </tr>
-                    <tr class="country-filter__letter-line">
-                        <td class="country-filter__letter-item">
-                            Ч
-                        </td>
-                        <td class="country-filter__letter-item">
-                            Ш
-                        </td>
-                        <td class="country-filter__letter-item">
-                            Э
-                        </td>
-                        <td class="country-filter__letter-item">
-                            Ю
-                        </td>
-                        <td class="country-filter__letter-item">
-                            Я
-                        </td>
-                    </tr>
-                </table>
-                <!-- Или список на флексах вместо таблицы? Плохо понимаю реализацию этой формы в принципе -->
-                <ul class="country-filter__country-list">
-                    <li class="country-filter__country-item">Австралия</li>
-                    <li class="country-filter__country-item">Австрия</li>
-                    <li class="country-filter__country-item">Азербайджан</li>
-                    <li class="country-filter__country-item">Албания</li>
-                    <li class="country-filter__country-item">Алжир</li>
-                    <li class="country-filter__country-item">Ангола</li>
-                    <li class="country-filter__country-item">Андорра</li>
-                    <li class="country-filter__country-item">Антигуа и Барбуда</li>
-                    <li class="country-filter__country-item">Аргентина</li>
-                    <li class="country-filter__country-item">Армения</li>
-                </ul>
-                <button class="button country-filter__button" type="button">Свернуть</button>
-            </form>
+
+            <ul class="country-filter__continent-list">
+                <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Европа</button></li>
+                <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Азия</button></li>
+                <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Америка</button></li>
+                <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Острова</button></li>
+            </ul>
+            <ul class="country-filter__letter-list">
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button country-filter__letter-button--active" type="button">А</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">Б</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">В</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">Г</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">Д</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">Е</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">З</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">И</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">К</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">Л</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">М</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">Н</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">О</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">П</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">Р</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">С</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">Т</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">У</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">Ф</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">Х</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">Ч</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">Ш</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">Э</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">Ю</button>
+                </li>
+                <li class="country-filter__letter-item">
+                    <button class="country-filter__letter-button" type="button">Я</button>
+                </li>
+            </ul>
+            <ul class="country-filter__country-list">
+                <li class="country-filter__country-item"><a href="/europe/australia">Австралия</a></li>
+                <li class="country-filter__country-item"><a href="/europe/austria">Австрия</a></li>
+                <li class="country-filter__country-item"><a href="/europe/azerbajan">Азербайджан</a></li>
+                <li class="country-filter__country-item"><a href="/europe/albania">Албания</a></li>
+                <li class="country-filter__country-item"><a href="/europe/aljir">Алжир</a></li>
+                <li class="country-filter__country-item"><a href="/europe/angola">Ангола</a></li>
+                <li class="country-filter__country-item"><a href="/europe/andorra">Андорра</a></li>
+                <li class="country-filter__country-item"><a href="/europe/antigua">Антигуа и Барбуда</a></li>
+                <li class="country-filter__country-item"><a href="/europe/argentine">Аргентина</a></li>
+                <li class="country-filter__country-item"><a href="/europe/armenia">Армения</a></li>
+            </ul>
+            <button class="button country-filter__button" type="button">Свернуть</button>
+
         </section>
         <section class="companion-filter">
-            <h2 class="companion-filter__header">Подберите идеального попутчика</h2>
-            <fieldset class="companion-filter__hobby">
-                <legend class="companion-filter__hobby-header">Хобби</legend>
-                <ul class="companion-filter__hobby-list">
-                    <li class="companion-filter__hobby-item"><input class="companion-filter__hobby-checkbox" type="checkbox" name="" id=""><label class="companion-filter__hobby-label" for=""></label></li>
-                </ul>
-            </fieldset>
-            <fieldset class="companion-filter__music">
-                <legend class="companion-filter__music-header">Музыка</legend>
-                <ul class="companion-filter__music-list">
-                    <li class="companion-filter__music-item"><input class="companion-filter__music-checkbox" type="checkbox" name="hardrock" id="hardrock" checked><label class="companion-filter__music-label" for="hardrock">Тяжелый рок</label></li>
-                    <li class="companion-filter__music-item"><input class="companion-filter__music-checkbox" type="checkbox" name="rusrap" id="rusrap"><label class="companion-filter__music-label" for="rusrap">Русский рэп</label></li>
-                    <li class="companion-filter__music-item"><input class="companion-filter__music-checkbox" type="checkbox" name="eurodance" id="eurodance"><label class="companion-filter__music-label" for="eurodance">Евроденс</label></li>
-                </ul>
-            </fieldset>
-            <fieldset class="companion-filter__food">
-                <legend class="companion-filter__food-header">Еда</legend>
-                <ul class="companion-filter__food-list">
-                    <li class="companion-filter__food-item"><input class="companion-filter__food-checkbox" type="checkbox" name="" id=""><label class="companion-filter__food-label" for=""></label></li>
-                </ul>
-            </fieldset>
-            <fieldset class="companion-filter__transport">
-                <legend class="companion-filter__transport-header">Транспорт</legend>
-                <ul class="companion-filter__transport-list">
-                    <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="airplane" id="airplane" checked><label class="companion-filter__transport-label" for="airplane">Самолет</label></li>
-                    <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="bus" id="bus" checked><label class="companion-filter__transport-label" for="bus">Автобус</label></li>
-                    <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="bicycle" id="bicycle"><label class="companion-filter__transport-label" for="bicycle">Велосипед</label></li>
-                    <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="run" id="run" checked><label class="companion-filter__transport-label" for="run">Бег</label></li>
-                </ul>
-            </fieldset>
-            <fieldset class="companion-filter__level">
-                <legend class="companion-filter__level-header">Левел</legend>
-                <div class="companion-filter__level-range">
-                    <output class="companion-filter__level-min" name="level-min"></output>
-                    <output class="companion-filter__level-max" name="level-max"></output>
-                </div>
-                <input class="companion-filter__level-count" type="range" name="level-count" min="0" max="100" step="1">
-            </fieldset>
+            <form class="companion-filter__form" action="http://echo.htmlacademy.ru" method="post">
+                <h2 class="companion-filter__header">Подберите идеального попутчика</h2>
+                <fieldset class="companion-filter__fieldset">
+                    <legend class="companion-filter__legend">Хобби</legend>
+                    <ul class="companion-filter__list">
+                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="sports" id="sports" checked><label class="companion-filter__label" for="sports">Спортзал</label></li>
+                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="hookah" id="hookah"><label class="companion-filter__label" for="hookah">Кальян</label></li>
+                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="sofa" id="sofa"><label class="companion-filter__label" for="sofa">Диван</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset class="companion-filter__fieldset">
+                    <legend class="companion-filter__legend">Музыка</legend>
+                    <ul class="companion-filter__list">
+                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="hardrock" id="hardrock" checked><label class="companion-filter__label" for="hardrock">Тяжелый рок</label></li>
+                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="rusrap" id="rusrap"><label class="companion-filter__label" for="rusrap">Русский рэп</label></li>
+                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="eurodance" id="eurodance"><label class="companion-filter__label" for="eurodance">Евроденс</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset class="companion-filter__fieldset">
+                    <legend class="companion-filter__legend">Еда</legend>
+                    <ul class="companion-filter__list">
+                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="meat-eater" id="meat-eater" checked><label class="companion-filter__label" for="meat-eater">Мясоед</label></li>
+                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="eutrophy" id="eutrophy"><label class="companion-filter__label" for="eutrophy">Сидит на ПП</label></li>
+                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="vegan" id="vegan"><label class="companion-filter__label" for="vegan">Веган-сыроед</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset class="companion-filter__fieldset">
+                    <legend class="companion-filter__legend">Транспорт</legend>
+                    <ul class="companion-filter__transport-list">
+                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="airplane" id="airplane" checked><label class="companion-filter__transport-label" for="airplane">Самолет</label></li>
+                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="bus" id="bus" checked><label class="companion-filter__transport-label" for="bus">Автобус</label></li>
+                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="bicycle" id="bicycle"><label class="companion-filter__transport-label" for="bicycle">Велосипед</label></li>
+                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="run" id="run" checked><label class="companion-filter__transport-label" for="run">Бег</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset class="companion-filter__fieldset">
+                    <legend class="companion-filter__legend">Левел</legend>
+                    <div class="companion-filter__level-inputs">
+                        <input class="companion-filter__level" name="level-min-input">
+                        <input class="companion-filter__level" name="level-max-input">
+                    </div>
+                    <div class="companion-filter__level-range">
+                        <input class="companion-filter__min-level" type="range" name="level-min-range" min="0" max="99" step="1">
+                        <input class="companion-filter__max-level" type="range" name="level-max-range" min="1" max="100" step="1">
+                    </div>
+                </fieldset>
+                <button class="companion-filter__show-button" type="submit"></button>
+            </form>
         </section>
         <section class="catalog-companions">
             <h2 class="catalog-companions__header">Попутчики</h2>
