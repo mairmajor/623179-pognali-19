@@ -183,13 +183,18 @@
                 <fieldset class="companion-filter__fieldset">
                     <legend class="companion-filter__legend">Левел</legend>
                     <div class="companion-filter__level-inputs">
-                        <input class="companion-filter__level" name="level-min-input">
-                        <input class="companion-filter__level" name="level-max-input">
+                        <input class="companion-filter__level" type="number" name="level-min-input">
+                        <input class="companion-filter__level" type="number" name="level-max-input">
                     </div>
-                    <div class="companion-filter__level-range">
-                        <input class="companion-filter__min-level" type="range" name="level-min-range" min="0" max="99" step="1">
-                        <input class="companion-filter__max-level" type="range" name="level-max-range" min="1" max="100" step="1">
+
+                    <div class="companion-filter__range-controls">
+                        <div class="companion-filter__scale">
+                            <div class="companion-filter__bar"></div>
+                        </div>
+                        <div class="companion-filter__toggle companion-filter__toggle-min"></div>
+                        <div class="companion-filter__toggle companion-filter__toggle-max"></div>
                     </div>
+
                 </fieldset>
                 <button class="companion-filter__show-button" type="submit"></button>
             </form>

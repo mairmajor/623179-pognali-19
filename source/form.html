@@ -63,6 +63,7 @@
                         <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="bicycle" id="bicycle"><label class="profile__transport-label" for="bicycle">Велосипед</label></li>
                         <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="run" id="run" checked><label class="profile__transport-label" for="run">Бег</label></li>
                     </ul>
+                    <!-- <button class="companion-filter__profile-submit" type="submit"></button> -->
                 </fieldset>
             </form>
         </section>
@@ -72,13 +73,13 @@
                 <li class="myplans__item">
                     <h3 class="myplans__countries">1. Франция, Италия</h3>
                     <p class="myplans__trip-data">3 попутчика</p>
-                    <p class="myplans__trip-data"><time class="myplans__time">26 мар - 29 мар</time></p>
+                    <time class="myplans__time">26 мар - 29 мар</time>
                     <a class="myplans__change" href="#">Изменить</a>
                 </li>
                 <li class="myplans__item">
                     <h3 class="myplans__countries">2. Таиланд, Индонезия</h3>
                     <p class="myplans__trip-data">1 попутчик</p>
-                    <p class="myplans__trip-data"><time class="myplans__time">1 июл — 15 июл</time></p>
+                    <time class="myplans__time">1 июл — 15 июл</time>
                     <a class="myplans__change" href="#">Изменить</a>
                 </li>
             </ol>
@@ -86,14 +87,14 @@
         <section class="add-plan">
             <h2 class="add-plan__header">Добавить план:</h2>
             <div class="add-plan__step-markers">
-                <label class="add-plan__marker-label add-plan__marker-label--active" for="step-1"></label>
-                <label class="add-plan__marker-label" for="step-2"></label>
-                <label class="add-plan__marker-label" for="step-3"></label>
+                <div class="add-plan__marker-label add-plan__marker-label--active"></div>
+                <div class="add-plan__marker-label"></div>
+                <div class="add-plan__marker-label"></div>
             </div>
             <form class="add-plan__form" action="http://echo.htmlacademy.ru" method="post">
                 <ol class="add-plan__list">
-                    <li class="add-plan__trip-dates" id="step-1">
-                        <a name="step-1" class="add-plan__step-number">Шаг 1.</a>
+                    <li class="add-plan__trip-dates">
+                        <p id="step-1" class="add-plan__step-number">Шаг 1.</p>
                         <h3 class="add-plan__item-header">Даты пребывания</h3>
                         <p class="add-plan__item-description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                         <label class="add-plan__counter-label" for="companions-counter">
@@ -116,6 +117,15 @@
                             <time class="add-plan__month">Март 2019</time>
                             <button class="add-plan__arrow-next" type="button">Следующий месяц</button>
                         </div>
+                        <ul>
+                            <li class="add-plan__weekday">П</li>
+                            <li class="add-plan__weekday">В</li>
+                            <li class="add-plan__weekday">С</li>
+                            <li class="add-plan__weekday">Ч</li>
+                            <li class="add-plan__weekday">П</li>
+                            <li class="add-plan__weekday add-plan__weekday--weekend">С</li>
+                            <li class="add-plan__weekday add-plan__weekday--weekend">В</li>
+                        </ul>
                         <ul class="add-plan__date-list">
                             <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-02-23">23</time></label></li>
                             <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-02-24">24</time></label></li>
@@ -162,8 +172,8 @@
                         </ul>
                         <a class="button add-plan__button" href="#step-2">Следующий шаг</a>
                     </li>
-                    <li class="add-plan__itinerary" id="step-2">
-                        <a name="step-2" class="add-plan__step-number">Шаг 2.</a>
+                    <li class="add-plan__itinerary">
+                        <p id="step-2" class="add-plan__step-number">Шаг 2.</p>
                         <h3 class="add-plan__item-header">Маршрут</h3>
                         <p class="add-plan__item-description">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
                         <ul class="add-plan__itinerary-list">
@@ -284,8 +294,8 @@
                         <a class="add-plan__button" href="#step-3">Следующий шаг</a>
                         <a class="add-plan__button add-plan__button--prev" href="#step-1">На шаг назад</a>
                     </li>
-                    <li class="add-plan__funs" id="step-3">
-                        <a name="step-3" class="add-plan__step-number">Шаг 3.</a>
+                    <li class="add-plan__funs">
+                        <p id="step-3" class="add-plan__step-number">Шаг 3.</p>
                         <h3 class="add-plan__item-header">Развлечения</h3>
                         <p class="add-plan__item-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
                         </p>
