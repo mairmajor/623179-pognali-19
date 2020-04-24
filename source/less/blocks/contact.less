@@ -1,0 +1,49 @@
+.contact {
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    font-family: "BloggerSans", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    text-align: left;
+    color: #192144;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    background-color: #ffd74b;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 16px;
+
+
+    &--tel::before {
+      content: "";
+      position: relative;
+      display: block;
+      width: 18px;
+      height: 18px;
+      top: 13px;
+      left: 13px;
+      background-image: url("../img/contacts-phone.svg");
+      background-repeat: no-repeat;
+    }
+
+    &--email::before {
+      content: "";
+      position: relative;
+      display: block;
+      width: 18px;
+      height: 18px;
+      top: 16px;
+      left: 13.5px;
+      background-image: url("../img/contacts-mail.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}

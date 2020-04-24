@@ -1,0 +1,25 @@
+.blockquote__content {
+  display: flex;
+  flex-direction: column;
+}
+.blockquote__quote {
+  width: 170px;
+  min-height: 37px;
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.38;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.blockquote__author {
+  width: 190px;
+  min-height: 60px;
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.38;
+  text-align: left;
+  color: #ffffff;
+}

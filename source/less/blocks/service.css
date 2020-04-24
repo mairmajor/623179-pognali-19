@@ -1,0 +1,28 @@
+.service {
+  font-family: "BloggerSans", "Arial", sans-serif;
+  color: #ffffff;
+  background-image: url("../img/about-mobile@1x.png");
+  border-radius: 20% 0;
+}
+.service__header {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: #ff8d30;
+}
+.service__description {
+  width: 236px;
+  min-height: 104px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.38;
+  text-align: left;
+}
+.service__description--accent {
+  width: 220px;
+  min-height: 60px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.38;
+  text-align: left;
+}

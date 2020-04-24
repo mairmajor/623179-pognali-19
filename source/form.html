@@ -4,36 +4,41 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали - форма</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="page-header">
         <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип Погнали">
+            <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип Погнали">
         </a>
-        <button class="page-header__nav-toggle" type="button">Открыть меню</button>
+        <a class="page-header__nav-toggle">Открыть меню</a>
         <div class="visually-hidden navigation-modal">
             <a class="navigation-modal__logo" href="index.html">
-                <img class="navigation-modal__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип Погнали">
+                <img class="navigation-modal__logo-image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип Погнали">
             </a>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link">О сервисе</a></li>
-                    <li class="nav__item"><a class="nav__link" href="form.html">Направления</a></li>
+                    <li class="nav__item"><a class="nav__link" href="index.html">О сервисе</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Направления</a></li>
                     <li class="nav__item"><a class="nav__link" href="catalog.html">Попутчики</a></li>
                 </ul>
             </nav>
             <a class="button" href="#">Авторизация</a>
             <ul class="contact">
-                <li class="contact__item"><a class="contact__link contact__link--tel" href="tel:88005558628">8 800 555-86-28</a></li>
-                <li class="contact__item"><a class="contact__link contact__link--email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+                <li class="contact__item">
+                    <div class="contact__icon contact__icon--tel"></div><a class="contact__link" href="tel:88005558628">8 800 555-86-28</a>
+                </li>
+                <li class="contact__item">
+                    <div class="contact__icon contact__icon--email"></div><a class="contact__link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </li>
             </ul>
             <ul class="social">
                 <li class="social__item">
-                    <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                    <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                    <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
                 </li>
                 <li class="social__item">
                     <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
@@ -42,7 +47,7 @@
         </div>
     </header>
     <main class="page-main">
-        <h1 class="page-main__header">Направления</h1>
+        <h1 class="page-main__header page-main__header--pages">Направления</h1>
         <section class="profile">
             <div class="profile__level">
                 <p class="profile__level-count">80</p>
@@ -63,7 +68,7 @@
                         <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="bicycle" id="bicycle"><label class="profile__transport-label" for="bicycle">Велосипед</label></li>
                         <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="run" id="run" checked><label class="profile__transport-label" for="run">Бег</label></li>
                     </ul>
-                    <!-- <button class="companion-filter__profile-submit" type="submit"></button> -->
+                    <button class="visually-hidden companion-filter__profile-submit" type="submit"></button>
                 </fieldset>
             </form>
         </section>
@@ -158,9 +163,9 @@
                             <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-23">23</time></label></li>
                             <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-24">24</time></label></li>
                             <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-25">25</time></label></li>
-                            <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--active"><input class="add-plan__date" type="checkbox" checked><time class="add-plan__datetime" datetime="2019-03-26">26</time></label></li>
-                            <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox" checked><time class="add-plan__datetime" datetime="2019-03-27">27</time></label></li>
-                            <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox" checked><time class="add-plan__datetime" datetime="2019-03-28">28</time></label></li>
+                            <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--checked add-plan__date-label--active"><input class="add-plan__date" type="checkbox" checked><time class="add-plan__datetime" datetime="2019-03-26">26</time></label></li>
+                            <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--checked"><input class="add-plan__date" type="checkbox" checked><time class="add-plan__datetime" datetime="2019-03-27">27</time></label></li>
+                            <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--checked"><input class="add-plan__date" type="checkbox" checked><time class="add-plan__datetime" datetime="2019-03-28">28</time></label></li>
                             <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-29">29</time></label></li>
                             <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-30">30</time></label></li>
                             <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-31">31</time></label></li>
