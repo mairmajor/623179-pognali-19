@@ -1,5 +1,4 @@
 .rates {
-  min-width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,74 +8,73 @@
   border-radius: 30px;
   margin-top: -50px;
   z-index: -1;
+}
 
-  &__header {
-    width: 250px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: left;
-    color: #ff8d30;
-  }
+.rates__header {
+  width: 250px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: #ff8d30;
+}
 
-  &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    counter-reset: myCounter;
-    width: 250px;
-    min-height: 170px;
+.rates__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: myCounter;
+  width: 250px;
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.38;
+  text-align: left;
+  color: #444444;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.rates__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  counter-increment: myCounter;
+
+  &::before {
+    position: relative;
+    top: 10px;
+    right: -210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: counter(myCounter);
     font-family: "BloggerSans", "Arial", sans-serif;
     font-size: 16px;
-    font-weight: 300;
-    line-height: 1.38;
-    text-align: left;
-    color: #444444;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    line-height: 0.88;
+    text-align: center;
+    color: #ffffff;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #ffa530;
   }
+}
 
-  &__item {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    counter-increment: myCounter;
+.rates__offer {
+  margin: 0;
+  padding: 0;
+}
 
-    &::before {
-      position: relative;
-      top: 10px;
-      right: -210px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      content: counter(myCounter);
-      font-family: "BloggerSans", "Arial", sans-serif;
-      font-size: 16px;
-      line-height: 0.88;
-      text-align: center;
-      color: #ffffff;
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      background-color: #ffa530;
-    }
-  }
+.rates__price {
+  margin: 0;
+  padding: 0;
+}
 
-  &__offer {
-    margin: 0;
-    padding: 0;
-  }
-
-  &__price {
-    margin: 0;
-    padding: 0;
-  }
-
-  &__button {
-    margin: 0;
-    padding: 0;
-    font-family: "BloggerSans", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: left;
-    color: #192144;
-    text-transform: none;
-    background-color: inherit;
-  }
+.rates__button {
+  margin: 0;
+  padding: 0;
+  font-family: "BloggerSans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #192144;
+  text-transform: none;
+  background-color: inherit;
 }
