@@ -1,0 +1,80 @@
+.rates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: @default-font;
+  background-color: @bgcolor--rates;
+  padding: 25px;
+  border-radius: 30px;
+  margin-top: -50px;
+  z-index: -1;
+}
+
+.rates__header {
+  width: 250px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: @txtcolor--header;
+}
+
+.rates__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: myCounter;
+  width: 250px;
+  font-family: @default-font;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.38;
+  text-align: left;
+  color: @txtcolor--invert-description;
+  border-top: 1px solid @color-line;
+}
+
+.rates__item {
+  border-bottom: 1px solid @color-line;
+  counter-increment: myCounter;
+
+  &::before {
+    position: relative;
+    top: 10px;
+    right: -210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: counter(myCounter);
+    font-family: @default-font;
+    font-size: 16px;
+    line-height: 0.88;
+    text-align: center;
+    color: #ffffff;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: @bgcolor--rates-order;
+  }
+}
+
+.rates__offer {
+  margin: 0;
+  padding: 0;
+}
+
+.rates__price {
+  margin: 0;
+  padding: 0;
+}
+
+.rates__button {
+  margin: 0;
+  padding: 0;
+  font-family: @default-font;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: @txtcolor--show-rates;
+  text-transform: none;
+  background-color: @bgcolor--show-rates;
+}

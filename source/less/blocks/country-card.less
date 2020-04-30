@@ -1,0 +1,59 @@
+.country-card {
+  display: flex;
+  flex-direction: column;
+  font-family: @default-font;
+  background-color: @bgcolor--card;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.country-card__image {
+  border-radius: 10px 10px 0 0;
+}
+
+.country-card__description {
+  display: flex;
+  flex-wrap: wrap;
+  width: 270px;
+  min-height: 90px;
+  margin-top: -10px;
+  border-radius: 10px;
+  padding: 0 24px;
+}
+
+.country-card__flag {
+  border-radius: 3px;
+  width: 35px;
+  height: 24px;
+  margin-right: 200px;
+}
+
+.country-card__header {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: left;
+  color: @txtcolor--invert-header;
+  padding: 0;
+  margin: 0;
+}
+
+.country-card__slogan {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  text-align: left;
+  color: @txtcolor--slogan;
+  padding: 0;
+  margin: 0;
+}
+
+.country-card__tourists {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.88;
+  text-align: right;
+  color: @txtcolor--slogan;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+}

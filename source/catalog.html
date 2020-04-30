@@ -4,36 +4,41 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали - каталог</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="page-header">
         <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип Погнали">
+            <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип Погнали">
         </a>
-        <button class="page-header__nav-toggle" type="button">Открыть меню</button>
+        <a class="page-header__nav-toggle">Открыть меню</a>
         <div class="visually-hidden navigation-modal">
             <a class="navigation-modal__logo" href="index.html">
-                <img class="navigation-modal__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип Погнали">
+                <img class="navigation-modal__logo-image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип Погнали">
             </a>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link">О сервисе</a></li>
+                    <li class="nav__item"><a class="nav__link" href="index.html">О сервисе</a></li>
                     <li class="nav__item"><a class="nav__link" href="form.html">Направления</a></li>
-                    <li class="nav__item"><a class="nav__link" href="catalog.html">Попутчики</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Попутчики</a></li>
                 </ul>
             </nav>
             <a class="button" href="#">Авторизация</a>
             <ul class="contact">
-                <li class="contact__item"><a class="contact__link contact__link--tel" href="tel:88005558628">8 800 555-86-28</a></li>
-                <li class="contact__item"><a class="contact__link contact__link--email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+                <li class="contact__item">
+                    <div class="contact__icon contact__icon--tel"></div><a class="contact__link" href="tel:88005558628">8 800 555-86-28</a>
+                </li>
+                <li class="contact__item">
+                    <div class="contact__icon contact__icon--email"></div><a class="contact__link" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </li>
             </ul>
             <ul class="social">
                 <li class="social__item">
-                    <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                    <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                    <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
                 </li>
                 <li class="social__item">
                     <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
@@ -41,8 +46,8 @@
             </ul>
         </div>
     </header>
-    <main class="page-main">
-        <h1 class="page-main__header">Попутчики</h1>
+    <main class="page-main page-main--pages">
+        <h1 class="page-main__header page-main__header--pages">Попутчики</h1>
         <section class="country-filter">
             <h2 class="country-filter__header">Фильтрация по странам</h2>
 
@@ -200,16 +205,14 @@
             </form>
         </section>
         <section class="catalog-companions">
-            <h2 class="catalog-companions__header">Попутчики</h2>
-            <p class="catalog-companions__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-            <p class="catalog-companions__accent">Теперь можно легко найти единомышленников!</p>
+            <h2 class="visually-hidden catalog-companions__header">Попутчики</h2>
             <ul class="catalog-companions__list">
                 <li class="catalog-companions__item">
                     <article class="user-card">
                         <a class="user-card__image-link" href="#">
-                            <img class="user-card__image" src="https://via.placeholder.com/150x150" width="270" height="270" alt="Фото пользователя">
+                            <img class="user-card__image" src="img/firsova-mobile@1x.jpg" width="270" height="270" alt="Фото пользователя">
                         </a>
-                        <p class="catalog-companions__sign">Хочет посетить</p>
+                        <p class="user-card__sign">Хочет посетить</p>
                         <ul class="user-card__country-list">
                             <li class="user-card__country-flag">Шри Ланка</li>
                             <li class="user-card__country-flag">Тайланд</li>
@@ -220,7 +223,7 @@
                         </a>
                         <p class="user-card__distance">1,5 M</p>
                         <p class="user-card__tags"><a class="user-card__tag-link">#ЗОЖ</a> <a class="user-card__tag-link">#ПП</a> <a class="user-card__tag-link">#Фитнес</a> <a class="user-card__tag-link">#пляж</a> <a class="user-card__tag-link">#авокадо</a> <a class="user-card__tag-link">#смузи</a></p>
-                        <p class="catalog-companions__sign">Транспорт</p>
+                        <p class="user-card__sign">Транспорт</p>
                         <ul class="user-card__transport-list">
                             <li class="user-card__transport">Самолёт</li>
                             <li class="user-card__transport">Автобус</li>
@@ -228,7 +231,7 @@
                             <li class="user-card__transport">Бег</li>
                         </ul>
                         <div class="user-card__level">
-                            <p class="catalog-companions__sign">Левел</p>
+                            <p class="user-card__sign">Левел</p>
                             <p class="user-card__level-count">99</p>
                             <p class="user-card__level-text">level</p>
                         </div>
@@ -238,9 +241,9 @@
                 <li class="catalog-companions__item">
                     <article class="user-card">
                         <a class="user-card__image-link" href="#">
-                            <img class="user-card__image" src="https://via.placeholder.com/150x150" width="270" height="270" alt="Фото пользователя">
+                            <img class="user-card__image" src="img/demin-mobile@1x.jpg" width="270" height="270" alt="Фото пользователя">
                         </a>
-                        <p class="catalog-companions__sign">Хочет посетить</p>
+                        <p class="user-card__sign">Хочет посетить</p>
                         <ul class="user-card__country-list">
                             <li class="user-card__country-flag">Бельгия</li>
                             <li class="user-card__country-flag">Чехия</li>
@@ -250,7 +253,7 @@
                         </a>
                         <p class="user-card__distance">1500</p>
                         <p class="user-card__tags"><a class="user-card__tag-link">#бургер</a> <a class="user-card__tag-link">#бар</a> <a class="user-card__tag-link">#футбол</a> <a class="user-card__tag-link">#концерт</a> <a class="user-card__tag-link">#крафт</a></p>
-                        <p class="catalog-companions__sign">Транспорт</p>
+                        <p class="user-card__sign">Транспорт</p>
                         <ul class="user-card__transport-list">
                             <li class="user-card__transport">Самолёт</li>
                             <li class="user-card__transport">Автобус</li>
@@ -258,7 +261,7 @@
                             <li class="user-card__transport">Бег</li>
                         </ul>
                         <div class="user-card__level">
-                            <p class="catalog-companions__sign">Левел</p>
+                            <p class="user-card__sign">Левел</p>
                             <p class="user-card__level-count">80</p>
                             <p class="user-card__level-text">level</p>
                         </div>
@@ -268,9 +271,9 @@
                 <li class="catalog-companions__item">
                     <article class="user-card">
                         <a class="user-card__image-link" href="#">
-                            <img class="user-card__image" src="https://via.placeholder.com/150x150" width="270" height="270" alt="Фото пользователя">
+                            <img class="user-card__image" src="img/smolov-mobile@1x.jpg" width="270" height="270" alt="Фото пользователя">
                         </a>
-                        <p class="catalog-companions__sign">Хочет посетить</p>
+                        <p class="user-card__sign">Хочет посетить</p>
                         <ul class="user-card__country-list">
                             <li class="user-card__country-flag">США</li>
                             <li class="user-card__country-flag">Австралия</li>
@@ -281,7 +284,7 @@
                         </a>
                         <p class="user-card__distance">170</p>
                         <p class="user-card__tags"><a class="user-card__tag-link">#рэп</a> <a class="user-card__tag-link">#тату</a> <a class="user-card__tag-link">#хайпбист</a> <a class="user-card__tag-link">#кроссовки</a> <a class="user-card__tag-link">#суприм</a></p>
-                        <p class="catalog-companions__sign">Транспорт</p>
+                        <p class="user-card__sign">Транспорт</p>
                         <ul class="user-card__transport-list">
                             <li class="user-card__transport">Самолёт</li>
                             <li class="user-card__transport">Автобус</li>
@@ -289,7 +292,7 @@
                             <li class="user-card__transport">Бег</li>
                         </ul>
                         <div class="user-card__level">
-                            <p class="catalog-companions__sign">Левел</p>
+                            <p class="user-card__sign">Левел</p>
                             <p class="user-card__level-count">25</p>
                             <p class="user-card__level-text">level</p>
                         </div>
@@ -299,9 +302,9 @@
                 <li class="catalog-companions__item">
                     <article class="user-card">
                         <a class="user-card__image-link" href="#">
-                            <img class="user-card__image" src="https://via.placeholder.com/150x150" width="270" height="270" alt="Фото пользователя">
+                            <img class="user-card__image" src="img/rogovaya-mobile@1x.jpg" width="270" height="270" alt="Фото пользователя">
                         </a>
-                        <p class="catalog-companions__sign">Хочет посетить</p>
+                        <p class="user-card__sign">Хочет посетить</p>
                         <ul class="user-card__country-list">
                             <li class="user-card__country-flag">Шри Ланка</li>
                             <li class="user-card__country-flag">Тайланд</li>
@@ -312,7 +315,7 @@
                         </a>
                         <p class="user-card__distance">23</p>
                         <p class="user-card__tags"><a class="user-card__tag-link">#образование</a> <a class="user-card__tag-link">#карьера</a> <a class="user-card__tag-link">#учеба</a> <a class="user-card__tag-link">#линкедин</a></p>
-                        <p class="catalog-companions__sign">Транспорт</p>
+                        <p class="user-card__sign">Транспорт</p>
                         <ul class="user-card__transport-list">
                             <li class="user-card__transport">Самолёт</li>
                             <li class="user-card__transport">Автобус</li>
@@ -320,7 +323,7 @@
                             <li class="user-card__transport">Бег</li>
                         </ul>
                         <div class="user-card__level">
-                            <p class="catalog-companions__sign">Левел</p>
+                            <p class="user-card__sign">Левел</p>
                             <p class="user-card__level-count">50</p>
                             <p class="user-card__level-text">level</p>
                         </div>
@@ -338,24 +341,24 @@
 
     <footer class="page-footer">
         <a class="page-footer__logo">
-            <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип Погнали">
+            <img class="page-footer__logo-image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип Погнали">
         </a>
         <div class="page-footer__social social">
             <ul class="social">
                 <li class="social__item">
-                    <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                    <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                    <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
                 </li>
                 <li class="social__item">
                     <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
                 </li>
             </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-            <p class="copyright__text">Разработано</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="page-footer__copyright">
+            <p class="page-footer__copyright-text">Разработано</p>
+            <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
 
     </footer>

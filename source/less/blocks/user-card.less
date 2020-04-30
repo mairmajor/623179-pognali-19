@@ -1,0 +1,163 @@
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  background-color: @bgcolor--card;
+  border-radius: 10px;
+}
+
+.user-card__image {
+  border-radius: 10px 10px 0 0;
+}
+
+.user-card__country-list {
+  .list-reset;
+  display: flex;
+  justify-content: center;
+  margin-right: -19px;
+  margin-top: -10px;
+}
+
+.user-card__country-flag {
+  min-width: 35px;
+  height: 24px;
+  font-size: 0;
+  margin-right: 19px;
+  border-radius: 3px;
+}
+
+.user-card__name {
+  margin: 0;
+  padding: 0;
+  font-family: @default-font;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  color: @txtcolor--name;
+
+  &::before,
+  &--active::before {
+    content: "";
+    position: relative;
+    display: block;
+    top: 17px;
+    left: -10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: @bgcolor--online;
+  }
+
+  &--active::before {
+    background-color: @bgcolor--offline;
+  }
+}
+
+.user-card__tags {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  font-family: @default-font;
+  font-size: 16px;
+  line-height: 1.13;
+  text-align: center;
+  color: @txtcolor--invert-description;
+}
+
+.user-card__transport-list {
+  .list-reset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+  width: 120px;
+}
+
+.user-card__transport {
+  display: block;
+  min-width: 17px;
+  height: 21px;
+  background-repeat: no-repeat;
+  opacity: 15%;
+
+  &--active {
+    opacity: 100%;
+  }
+
+  &--air {
+    width: 19px;
+    background-image: url("../img/plane.svg");
+  }
+
+  &--bus {
+    background-image: url("../img/bus.svg");
+  }
+
+  &--bike {
+    width: 24px;
+    background-image: url("../img/bike.svg");
+  }
+
+  &--run {
+    width: 20px;
+    background-image: url("../img/run.svg");
+  }
+}
+
+.user-card__level {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  height: 60px;
+  border: solid 3px @color-circle--level;
+  background-color: @bgcolor--level;
+  border-radius: 50%;
+  position: relative;
+  top: -360px;
+  left: -90px;
+
+  &::before {
+    content: "";
+    position: relative;
+    top: 32px;
+    left: 11px;
+    display: block;
+    width: 31px;
+    height: 1px;
+    opacity: 0.3;
+    background-color: @color-line--level;
+  }
+}
+
+.user-card__level-count {
+  margin: 0;
+  padding: 0;
+  font-family: @default-font;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: @txtcolor--base;
+  margin-top: 2px;
+}
+
+.user-card__level-text {
+  margin: 0;
+  padding: 0;
+  font-family: @default-font;
+  font-size: 14px;
+  text-align: center;
+  color: @txtcolor--base;
+  margin-top: -5px;
+}
+
+.user-card__sign {
+  margin: 0;
+  padding: 0;
+}
+
+.user-card__distance {
+  margin: 0;
+  padding: 0;
+}
