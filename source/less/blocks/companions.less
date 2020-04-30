@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "BloggerSans", "Arial", sans-serif;
+  font-family: @default-font;
   padding: 25px;
   border-radius: 30px;
-  background-color: #192144;
+  background-color: @bgcolor--companions;
 }
 
 .companions__header {
@@ -13,7 +13,7 @@
   font-size: 24px;
   font-weight: bold;
   text-align: left;
-  color: #ff8d30;
+  color: @txtcolor--header;
 }
 
 .companions__description {
@@ -23,7 +23,7 @@
   font-weight: 300;
   line-height: 1.38;
   text-align: left;
-  color: #ffffff;
+  color: @txtcolor--description;
 }
 
 .companions__accent {
@@ -33,13 +33,15 @@
   font-weight: bold;
   line-height: 1.38;
   text-align: left;
-  color: #ffffff;
+  color: @txtcolor--accent;
 }
 
 .companions__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  .list-reset;
+  margin-bottom: 10px;
+}
+
+.companions__item {
   margin-bottom: 10px;
 }
 
@@ -49,6 +51,6 @@
   border-radius: 10px;
   font-size: 18px;
   text-align: left;
-  color: #1d2e5b;
+  color: @txtcolor--show-button;
   text-transform: none;
 }

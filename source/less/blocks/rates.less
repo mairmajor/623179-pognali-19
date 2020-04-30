@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "BloggerSans", "Arial", sans-serif;
-  background-color: #edeff6;
+  font-family: @default-font;
+  background-color: @bgcolor--rates;
   padding: 25px;
   border-radius: 30px;
   margin-top: -50px;
@@ -15,7 +15,7 @@
   font-size: 24px;
   font-weight: bold;
   text-align: left;
-  color: #ff8d30;
+  color: @txtcolor--header;
 }
 
 .rates__list {
@@ -24,17 +24,17 @@
   list-style: none;
   counter-reset: myCounter;
   width: 250px;
-  font-family: "BloggerSans", "Arial", sans-serif;
+  font-family: @default-font;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.38;
   text-align: left;
-  color: #444444;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  color: @txtcolor--invert-description;
+  border-top: 1px solid @color-line;
 }
 
 .rates__item {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid @color-line;
   counter-increment: myCounter;
 
   &::before {
@@ -45,7 +45,7 @@
     align-items: center;
     justify-content: center;
     content: counter(myCounter);
-    font-family: "BloggerSans", "Arial", sans-serif;
+    font-family: @default-font;
     font-size: 16px;
     line-height: 0.88;
     text-align: center;
@@ -53,7 +53,7 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    background-color: #ffa530;
+    background-color: @bgcolor--rates-order;
   }
 }
 
@@ -70,11 +70,11 @@
 .rates__button {
   margin: 0;
   padding: 0;
-  font-family: "BloggerSans", "Arial", sans-serif;
+  font-family: @default-font;
   font-size: 16px;
   font-weight: bold;
   text-align: left;
-  color: #192144;
+  color: @txtcolor--show-rates;
   text-transform: none;
-  background-color: inherit;
+  background-color: @bgcolor--show-rates;
 }

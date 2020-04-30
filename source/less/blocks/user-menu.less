@@ -9,9 +9,7 @@
 }
 
 .user-menu__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  .list-reset;
   display: flex;
   margin-bottom: -25px;
 }
@@ -33,11 +31,11 @@
   cursor: pointer;
 
   &--tel {
-    background-color: #ff8d30;
+    background-color: @bgcolor--icon-tel;
   }
 
   &--email {
-    background-color: #ffbd30;
+    background-color: @bgcolor--icon-email;
   }
 
   &--tel::before {

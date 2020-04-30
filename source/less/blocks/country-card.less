@@ -1,8 +1,8 @@
 .country-card {
   display: flex;
   flex-direction: column;
-  font-family: "BloggerSans", "Arial", sans-serif;
-  background-color: #ffffff;
+  font-family: @default-font;
+  background-color: @bgcolor--card;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -32,7 +32,7 @@
   font-size: 21px;
   font-weight: bold;
   text-align: left;
-  color: #161c35;
+  color: @txtcolor--invert-header;
   padding: 0;
   margin: 0;
 }
@@ -42,7 +42,7 @@
   font-weight: 500;
   line-height: 1.13;
   text-align: left;
-  color: rgba(68, 68, 68, 0.3);
+  color: @txtcolor--slogan;
   padding: 0;
   margin: 0;
 }
@@ -52,7 +52,7 @@
   font-weight: 500;
   line-height: 1.88;
   text-align: right;
-  color: rgba(68, 68, 68, 0.3);
+  color: @txtcolor--slogan;
   padding: 0;
   margin: 0;
   margin-left: auto;

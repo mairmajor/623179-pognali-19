@@ -5,20 +5,19 @@
   flex-wrap: wrap;
 
   &--pages {
-    background-color: #edeff6;
+    background-color: @bgcolor--main-pages;
   }
 }
 
 .page-main__header {
-  font-family: "BloggerSans", "Arial", sans-serif;
+  font-family: @default-font;
   font-size: 36px;
   font-weight: bold;
   line-height: 1.11;
   text-align: center;
-  color: #ffffff;
+  color: @txtcolor--main-header;
 
   &--pages {
-    background-color: inherit;
     align-self: flex-start;
 
     &::after {
@@ -27,7 +26,7 @@
       width: auto;
       height: 5px;
       border-radius: 2.4px;
-      background-color: #ff8d30;
+      background-color: @color-line--header-pages;
     }
   }
 }

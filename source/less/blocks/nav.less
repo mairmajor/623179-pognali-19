@@ -1,7 +1,5 @@
 .nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  .list-reset;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,11 +7,11 @@
 }
 
 .nav__link {
-  font-family: "BloggerSans", "Arial", sans-serif;
+  font-family: @default-font;
   font-size: 30px;
   font-weight: 500;
   line-height: 1.2;
   text-align: center;
-  color: #192144;
+  color: @txtcolor--nav-list;
   text-transform: uppercase;
 }
