@@ -19,9 +19,7 @@
 }
 
 .rates__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  .list-reset;
   counter-reset: myCounter;
   width: 250px;
   font-family: @default-font;
@@ -49,7 +47,7 @@
     font-size: 16px;
     line-height: 0.88;
     text-align: center;
-    color: #ffffff;
+    color: @txtcolor--rates-order;
     width: 34px;
     height: 34px;
     border-radius: 50%;

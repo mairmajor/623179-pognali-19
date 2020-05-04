@@ -46,112 +46,112 @@
             </ul>
         </div>
     </header>
-    <main class="page-main page-main--pages">
+    <main class="page-main">
         <h1 class="page-main__header page-main__header--pages">Попутчики</h1>
         <section class="country-filter">
             <h2 class="country-filter__header">Фильтрация по странам</h2>
-
-            <ul class="country-filter__continent-list">
-                <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Европа</button></li>
-                <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Азия</button></li>
-                <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Америка</button></li>
-                <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Острова</button></li>
-            </ul>
-            <ul class="country-filter__letter-list">
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button country-filter__letter-button--active" type="button">А</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">Б</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">В</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">Г</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">Д</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">Е</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">З</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">И</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">К</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">Л</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">М</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">Н</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">О</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">П</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">Р</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">С</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">Т</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">У</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">Ф</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">Х</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">Ч</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">Ш</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">Э</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">Ю</button>
-                </li>
-                <li class="country-filter__letter-item">
-                    <button class="country-filter__letter-button" type="button">Я</button>
-                </li>
-            </ul>
-            <ul class="country-filter__country-list">
-                <li class="country-filter__country-item"><a href="/europe/australia">Австралия</a></li>
-                <li class="country-filter__country-item"><a href="/europe/austria">Австрия</a></li>
-                <li class="country-filter__country-item"><a href="/europe/azerbajan">Азербайджан</a></li>
-                <li class="country-filter__country-item"><a href="/europe/albania">Албания</a></li>
-                <li class="country-filter__country-item"><a href="/europe/aljir">Алжир</a></li>
-                <li class="country-filter__country-item"><a href="/europe/angola">Ангола</a></li>
-                <li class="country-filter__country-item"><a href="/europe/andorra">Андорра</a></li>
-                <li class="country-filter__country-item"><a href="/europe/antigua">Антигуа и Барбуда</a></li>
-                <li class="country-filter__country-item"><a href="/europe/argentine">Аргентина</a></li>
-                <li class="country-filter__country-item"><a href="/europe/armenia">Армения</a></li>
-            </ul>
-            <button class="button country-filter__button" type="button">Свернуть</button>
-
+            <div class="visually-hidden country-filter__dropdown-country">
+                <ul class="country-filter__continent-list">
+                    <li class="country-filter__continent-item"><button class="country-filter__continent-button country-filter__continent-button--active" type="button">Европа</button></li>
+                    <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Азия</button></li>
+                    <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Америка</button></li>
+                    <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Острова</button></li>
+                </ul>
+                <ul class="country-filter__letter-list">
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button country-filter__letter-button--active" type="button">А</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">Б</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">В</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">Г</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">Д</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">Е</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">З</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">И</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">К</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">Л</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">М</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">Н</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">О</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">П</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">Р</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">С</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">Т</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">У</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">Ф</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">Х</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">Ч</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">Ш</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">Э</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">Ю</button>
+                    </li>
+                    <li class="country-filter__letter-item">
+                        <button class="country-filter__letter-button" type="button">Я</button>
+                    </li>
+                </ul>
+                <ul class="country-filter__country-list">
+                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/australia">Австралия</a></li>
+                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/austria">Австрия</a></li>
+                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/azerbajan">Азербайджан</a></li>
+                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/albania">Албания</a></li>
+                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/aljir">Алжир</a></li>
+                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/angola">Ангола</a></li>
+                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/andorra">Андорра</a></li>
+                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/antigua">Антигуа и Барбуда</a></li>
+                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/argentine">Аргентина</a></li>
+                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/armenia">Армения</a></li>
+                </ul>
+                <button class="button country-filter__button" type="button">Свернуть</button>
+            </div>
         </section>
         <section class="companion-filter">
+            <h2 class="companion-filter__header">Подберите идеального попутчика</h2>
             <form class="companion-filter__form" action="http://echo.htmlacademy.ru" method="post">
-                <h2 class="companion-filter__header">Подберите идеального попутчика</h2>
                 <fieldset class="companion-filter__fieldset">
                     <legend class="companion-filter__legend">Хобби</legend>
                     <ul class="companion-filter__list">
@@ -179,17 +179,17 @@
                 <fieldset class="companion-filter__fieldset">
                     <legend class="companion-filter__legend">Транспорт</legend>
                     <ul class="companion-filter__transport-list">
-                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="airplane" id="airplane" checked><label class="companion-filter__transport-label" for="airplane">Самолет</label></li>
-                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="bus" id="bus" checked><label class="companion-filter__transport-label" for="bus">Автобус</label></li>
-                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="bicycle" id="bicycle"><label class="companion-filter__transport-label" for="bicycle">Велосипед</label></li>
-                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="run" id="run" checked><label class="companion-filter__transport-label" for="run">Бег</label></li>
+                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="airplane" id="airplane" checked><label class="companion-filter__transport-label companion-filter__transport-label--air" for="airplane">Самолет</label></li>
+                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="bus" id="bus" checked><label class="companion-filter__transport-label companion-filter__transport-label--bus" for="bus">Автобус</label></li>
+                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="bicycle" id="bicycle"><label class="companion-filter__transport-label companion-filter__transport-label--bike" for="bicycle">Велосипед</label></li>
+                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="run" id="run" checked><label class="companion-filter__transport-label companion-filter__transport-label--run" for="run">Бег</label></li>
                     </ul>
                 </fieldset>
                 <fieldset class="companion-filter__fieldset">
                     <legend class="companion-filter__legend">Левел</legend>
                     <div class="companion-filter__level-inputs">
-                        <input class="companion-filter__level" type="number" name="level-min-input">
-                        <input class="companion-filter__level" type="number" name="level-max-input">
+                        <input class="companion-filter__level companion-filter__level--min" type="number" name="level-min-input">
+                        <input class="companion-filter__level companion-filter__level--max" type="number" name="level-max-input">
                     </div>
 
                     <div class="companion-filter__range-controls">
@@ -199,9 +199,8 @@
                         <div class="companion-filter__toggle companion-filter__toggle-min"></div>
                         <div class="companion-filter__toggle companion-filter__toggle-max"></div>
                     </div>
-
                 </fieldset>
-                <button class="companion-filter__show-button" type="submit"></button>
+                <button class="button companion-filter__show-button" type="submit">Показать</button>
             </form>
         </section>
         <section class="catalog-companions">
@@ -331,10 +330,10 @@
                     </article>
                 </li>
             </ul>
-            <a class="catalog-companions__more" href="#">Показать еще</a>
-            <div class="pagination">
-                <a class="button pagination__button pagination__button--prev" href="#">Показать предыдущую страницу</a>
-                <a class=" button pagination__button pagination__button--next" href="#">Показать следующую страницу</a>
+            <a class="button catalog-companions__more" href="#">Показать еще</a>
+            <div class="catalog-companions__pagination">
+                <a class="button catalog-companions__button catalog-companions__button--prev" href="#">Показать предыдущую страницу</a>
+                <a class=" button catalog-companions__button catalog-companions__button--next" href="#">Показать следующую страницу</a>
             </div>
         </section>
     </main>

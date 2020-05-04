@@ -1,0 +1,161 @@
+.companion-filter {
+  width: 270px;
+  border-radius: 20px;
+  background-color: @bgcolor--companion-filter;
+  padding: 25px;
+}
+
+.companion-filter__header {
+  padding: 0;
+  margin: 0;
+  width: 120px;
+  font-family: @default-font;
+  font-size: 22.5px;
+  font-weight: bold;
+  text-align: left;
+  color: @txtcolor--companion;
+}
+
+.companion-filter__form {
+  border-top: 1px solid @color-border--companion-filter;
+}
+
+.companion-filter__fieldset {
+  padding: 0;
+  margin: 0;
+  width: 220px;
+  border: none;
+  border-bottom: 1px solid @color-border--companion-filter;
+}
+
+.companion-filter__legend {
+  font-family: @default-font;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.13;
+  text-align: left;
+  color: @txtcolor--companion;
+  text-transform: uppercase;
+}
+
+.companion-filter__list {
+  .list-reset;
+}
+
+.companion-filter__item {
+  font-family: @default-font;
+  font-size: 15px;
+  text-align: left;
+  color: @txtcolor--invert;
+}
+
+.companion-filter__label {
+  display: flex;
+  align-items: center;
+  font-family: @default-font;
+  font-size: 15px;
+  text-align: left;
+  color: @txtcolor--invert-description;
+
+  &::before {
+    content: "";
+    margin-right: 13px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: @bgcolor-input--companion-filter;
+  }
+}
+
+.companion-filter__checkbox {
+  display: none;
+
+  &:checked ~ label::before {
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    border: 4px solid @color-border--companion-checkbox;
+  }
+}
+
+.companion-filter__transport-list {
+  .list-reset;
+  display: flex;
+  font-size: 0;
+  justify-content: center;
+}
+
+.companion-filter__transport-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  background-color: @bgcolor--transport;
+  border-radius: 50%;
+}
+
+.companion-filter__transport-checkbox {
+  display: none;
+
+  &:checked~label {
+    opacity: 1;
+  }
+}
+
+.companion-filter__transport-label {
+  display: block;
+  min-width: 13px;
+  height: 16px;
+  background-repeat: no-repeat;
+  opacity: 15%;
+
+  &--active {
+    opacity: 100%;
+  }
+
+  &--air {
+    width: 14px;
+    background-image: url("../img/plane.svg");
+  }
+
+  &--bus {
+    background-image: url("../img/bus.svg");
+  }
+
+  &--bike {
+    width: 19px;
+    background-image: url("../img/bike.svg");
+  }
+
+  &--run {
+    width: 15px;
+    background-image: url("../img/run.svg");
+  }
+}
+
+.companion-filter__level-inputs {
+  display: flex;
+}
+
+.companion-filter__level {
+  width: 111px;
+  height: 35px;
+  border: solid 1px @color-border--input;
+  background-color: @color-border--companion-input;
+
+  &--min {
+    border-radius: 5px 0 0 5px;
+  }
+
+  &--max {
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+.companion-filter__show-button {
+  width: 230px;
+  min-height: 40px;
+  background-color: @bgcolor--special-button;
+  border: none;
+}

@@ -1,0 +1,431 @@
+.add-plan {
+  width: 320px;
+  background-color: @bgcolor--add-plan;
+  border-radius: 30px 30px 0 0;
+  padding: 0 25px;
+}
+
+.add-plan__header {
+  font-family: @default-font;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: @txtcolor--directions;
+}
+
+.add-plan__step-markers {
+  display: flex;
+}
+
+.add-plan__marker-label {
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  opacity: 0.3;
+  background-color: @color-toggle--addplan;
+  margin-right: 15px;
+
+  &--active {
+    opacity: 1;
+    background-color: @color-toggle--addplan-active;
+  }
+}
+
+.add-plan__list {
+  .list-reset;
+  counter-reset: myCounter;
+}
+
+.add-plan__item {
+  padding: 20px;
+  counter-increment: myCounter;
+  display: flex;
+  flex-direction: column;
+  background-color: @bgcolor--myplans-item;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+  &::before {
+    content: "Шаг " counter(myCounter) ".";
+    font-family: @default-font;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: @txtcolor--directions;
+  }
+}
+
+.add-plan__item-header {
+  margin: 0;
+  padding: 0;
+  font-family: @default-font;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: @txtcolor--directions;
+}
+
+.add-plan__item-description {
+  margin: 0;
+  padding: 0;
+  font-family: @default-font;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+  color: @txtcolor--invert-description;
+}
+
+.add-plan__counter-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-plan__counter-header {
+  margin: 0;
+  padding: 0;
+  font-family: @default-font;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  text-align: left;
+  color: @txtcolor--directions;
+  text-transform: uppercase;
+}
+
+.add-plan__counter-unit {
+  font-family: @default-font;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  text-align: right;
+  color: @txtcolor--unit;
+  text-transform: uppercase;
+}
+
+.add-plan__counter-input {
+  width: 220px;
+  height: 43px;
+  border-radius: 4px;
+  border: solid 1px @color-border--input;
+  font-family: @default-font;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: @txtcolor--directions;
+}
+
+.add-plan__counter-minus {
+  position: relative;
+  top: -20px;
+  left: 15px;
+  font-size: 0;
+  border: none;
+  width: 14px;
+  height: 2px;
+  opacity: 0.3;
+  background-image: url("../img/qty-minus-mobile.svg");
+}
+
+.add-plan__counter-plus {
+  position: relative;
+  top: -29px;
+  left: 190px;
+  font-size: 0;
+  border: none;
+  width: 14px;
+  height: 14px;
+  opacity: 0.3;
+  background-color: inherit;
+  background-image: url("../img/qty-plus-mobile.svg");
+}
+
+.add-plan__counter-checkbox {
+  display: none;
+
+  &:checked ~ label::after {
+    position: relative;
+    top: 0;
+    right: 131px;
+    content: "";
+    display: block;
+    width: 9px;
+    height: 9px;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.add-plan__checkbox-label {
+  display: flex;
+  align-items: center;
+  font-family: @default-font;
+  font-size: 15px;
+  text-align: left;
+  color: @txtcolor--invert-description;
+
+  &::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 13px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    border: solid 1px @color-border--input;
+  }
+}
+
+.add-plan__choose-month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid @color-border--input;
+  border-bottom: 1px solid @color-border--input;
+  height: 40px;
+}
+
+.add-plan__arrow-prev {
+  font-size: 0;
+  border: none;
+  width: 9px;
+  height: 17px;
+  opacity: 0.3;
+  background-color: inherit;
+  background-image: url("../img/month-arrow-left.svg");
+  background-repeat: no-repeat;
+}
+
+.add-plan__month {
+  font-family: @default-font;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: @txtcolor--directions;
+}
+
+.add-plan__arrow-next {
+  font-size: 0;
+  border: none;
+  width: 9px;
+  height: 17px;
+  opacity: 0.3;
+  background-color: inherit;
+  background-image: url("../img/month-arrow-right.svg");
+  background-repeat: no-repeat;
+}
+
+.add-plan__week {
+  .list-reset;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.add-plan__weekday {
+  font-family: @default-font;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: @txtcolor--invert-description;
+
+  &--weekend {
+    color: @txtcolor--weekend;
+  }
+}
+
+.add-plan__date-list {
+  .list-reset;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.add-plan__date {
+  display: none;
+}
+
+.add-plan__date-label {
+  color: @txtcolor--invert-description;
+  background-color: @bgcolor--date;
+
+  &--active {
+    border-color: @color-border--active-date;
+  }
+
+  &--checked {
+    color: @txtcolor--base;
+    background-color: @bgcolor--date-active;
+  }
+
+  &--disable {
+    color: @txtcolor--disabled-date;
+    background-color: @bgcolor--date-disabled;
+  }
+}
+
+.add-plan__datetime {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: solid 1px @color-border--input;
+  background-color: inherit;
+  font-family: @default-font;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+}
+
+.add-plan__button {
+  width: 230px;
+  min-height: 40px;
+}
+
+.add-plan__letter-list {
+  .list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-plan__itinerary-list {
+  .list-reset;
+}
+
+.add-plan__itinerary-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-plan__select-country {
+  width: 168px;
+  height: 42px;
+  border-radius: 4px;
+  border: solid 1px @color-border--input;
+  font-family: @default-font;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: 1.4px;
+  text-align: left;
+  color: @txtcolor--directions;
+  text-transform: uppercase;
+
+  &--select {
+    width: 220px;
+  }
+}
+
+.add-plan__flag {
+  padding: 9px;
+  width: 53px;
+  height: 42px;
+  border-radius: 4px;
+  border: solid 1px @color-border--input;
+}
+
+.add-plan__delete-country {
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: @bgcolor--close;
+}
+
+.add-plan__add-itinerary {
+  width: 220px;
+  height: 42px;
+  border-radius: 4px;
+  border: none;
+  font-family: @default-font;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: 1.4px;
+  text-align: left;
+  color: @txtcolor--directions;
+  text-transform: uppercase;
+}
+
+.add-plan__button {
+  width: 230px;
+  min-height: 40px;
+
+  &--prev {
+    background-color: transparent;
+  }
+
+  &--submit {
+    border: none;
+  }
+}
+
+.add-plan__letter-button {
+  width: 45px;
+  height: 42px;
+  border: solid 1px @color-border--input;
+  background-color: @bgcolor--myplans-item;
+  font-family: @default-font;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: @txtcolor--directions;
+
+  &--active {
+    background-color: @bgcolor--input-active;
+  }
+}
+
+.add-plan__country-list {
+  .list-reset;
+  width: 220px;
+  box-shadow: 0 20px 50px 0 @color-shadow--input;
+  border: solid 1px @color-border--input;
+}
+
+.add-plan__country-link {
+  font-family: @default-font;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: left;
+  color: @txtcolor--invert-description;
+}
+
+.add-plan__funs-country {
+  font-family: @default-font;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: @txtcolor--directions;
+}
+
+.add-plan__funs-text {
+  width: 220px;
+  min-height: 220px;
+  border-radius: 4px;
+  border: solid 1px @color-border--input;
+  font-family: @default-font;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: left;
+  color: @txtcolor--invert-description;
+  outline: none;
+  resize: none;
+  overflow: auto;
+}

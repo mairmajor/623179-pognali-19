@@ -1,0 +1,141 @@
+.profile__level {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  height: 60px;
+  border: solid 3px @color-circle--level;
+  border-radius: 50%;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  &::before {
+    content: "";
+    position: relative;
+    top: 32px;
+    left: 11px;
+    display: block;
+    width: 31px;
+    height: 1px;
+    opacity: 0.3;
+    background-color: @color-line--invert-level;
+  }
+}
+
+.profile__level-count {
+  margin: 0;
+  padding: 0;
+  font-family: @default-font;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: @txtcolor--invert;
+  margin-top: 2px;
+}
+
+.profile__level-text {
+  margin: 0;
+  padding: 0;
+  font-family: @default-font;
+  font-size: 14px;
+  text-align: center;
+  color: @txtcolor--invert;
+  margin-top: -5px;
+}
+
+.profile__image {
+  width: 99px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile__image-button {
+  min-height: 40px;
+  background-color: @bgcolor--image-button;
+}
+
+.profile__fieldset {
+  width: 270px;
+  border-radius: 10px;
+  border: solid 1px @color-border--input;
+}
+
+.profile__fieldset-header {
+  text-transform: uppercase;
+  font-family: @default-font;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.13;
+  text-align: center;
+  color: @txtcolor--name;
+}
+
+.profile__tags-area {
+  border: none;
+  background-color: inherit;
+  width: 220px;
+  outline: none;
+  resize: none;
+  overflow: auto;
+  font-family: @default-font;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: left;
+  color: @txtcolor--invert-description;
+}
+
+.profile__transport-list {
+  .list-reset;
+  display: flex;
+  font-size: 0;
+  justify-content: center;
+}
+
+.profile__transport-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  background-color: @bgcolor--transport;
+  border-radius: 50%;
+}
+
+.profile__transport-checkbox {
+  display: none;
+
+  &:checked~label {
+    opacity: 1;
+  }
+}
+
+.profile__transport-label {
+  display: block;
+  min-width: 13px;
+  height: 16px;
+  background-repeat: no-repeat;
+  opacity: 15%;
+
+  &--active {
+    opacity: 100%;
+  }
+
+  &--air {
+    width: 14px;
+    background-image: url("../img/plane.svg");
+  }
+
+  &--bus {
+    background-image: url("../img/bus.svg");
+  }
+
+  &--bike {
+    width: 19px;
+    background-image: url("../img/bike.svg");
+  }
+
+  &--run {
+    width: 15px;
+    background-image: url("../img/run.svg");
+  }
+}

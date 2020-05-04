@@ -53,22 +53,22 @@
                 <p class="profile__level-count">80</p>
                 <p class="profile__level-text">level</p>
             </div>
-            <img class="profile__image" src="https://via.placeholder.com/150x150" width="99" height="100" alt="Фото профиля">
+            <img class="profile__image" src="img/photo-account-mobile@1x.jpg" width="99" height="100" alt="Фото профиля">
             <a class="button profile__image-button" href="#">Сменить фото</a>
-            <form class="companion-filter__form" action="http://echo.htmlacademy.ru" method="post">
+            <form class="profile__form" action="http://echo.htmlacademy.ru" method="post">
                 <fieldset class="profile__fieldset">
-                    <legend class="profile__tags-header">Теги</legend>
-                    <textarea class="profile__tags-area" type="text" name="tags-area" id="tags-area"></textarea><label class="profile__tags-label" for="tags-area">#бургер #бар #футбол #концерт #крафт</label>
+                    <legend class="profile__fieldset-header">Теги</legend>
+                    <textarea class="profile__tags-area" type="text" name="tags-area" id="tags-area" placeholder="">#бургер #бар #футбол #концерт #крафт</textarea>
                 </fieldset>
                 <fieldset class="profile__fieldset">
-                    <legend class="profile__transport-header">Транспорт</legend>
+                    <legend class="profile__fieldset-header">Транспорт</legend>
                     <ul class="profile__transport-list">
-                        <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="airplane" id="airplane" checked><label class="profile__transport-label" for="airplane">Самолет</label></li>
-                        <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="bus" id="bus" checked><label class="profile__transport-label" for="bus">Автобус</label></li>
-                        <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="bicycle" id="bicycle"><label class="profile__transport-label" for="bicycle">Велосипед</label></li>
-                        <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="run" id="run" checked><label class="profile__transport-label" for="run">Бег</label></li>
+                        <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="airplane" id="airplane" checked><label class="profile__transport-label profile__transport-label--air profile__transport-label--active" for="airplane">Самолет</label></li>
+                        <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="bus" id="bus" checked><label class="profile__transport-label profile__transport-label--bus profile__transport-label--active" for="bus">Автобус</label></li>
+                        <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="bicycle" id="bicycle"><label class="profile__transport-label profile__transport-label--bike" for="bicycle">Велосипед</label></li>
+                        <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="run" id="run" checked><label class="profile__transport-label profile__transport-label--run profile__transport-label--active" for="run">Бег</label></li>
                     </ul>
-                    <button class="visually-hidden companion-filter__profile-submit" type="submit"></button>
+                    <button class="visually-hidden profile__submit" type="submit"></button>
                 </fieldset>
             </form>
         </section>
@@ -76,14 +76,14 @@
             <h2 class="myplans__header">Мои планы:</h2>
             <ol class="myplans__list">
                 <li class="myplans__item">
-                    <h3 class="myplans__countries">1. Франция, Италия</h3>
-                    <p class="myplans__trip-data">3 попутчика</p>
+                    <h3 class="myplans__countries">Франция, Италия</h3>
+                    <p class="myplans__tripper-count">3 попутчика</p>
                     <time class="myplans__time">26 мар - 29 мар</time>
                     <a class="myplans__change" href="#">Изменить</a>
                 </li>
                 <li class="myplans__item">
-                    <h3 class="myplans__countries">2. Таиланд, Индонезия</h3>
-                    <p class="myplans__trip-data">1 попутчик</p>
+                    <h3 class="myplans__countries">Таиланд, Индонезия</h3>
+                    <p class="myplans__tripper-count">1 попутчик</p>
                     <time class="myplans__time">1 июл — 15 июл</time>
                     <a class="myplans__change" href="#">Изменить</a>
                 </li>
@@ -98,22 +98,21 @@
             </div>
             <form class="add-plan__form" action="http://echo.htmlacademy.ru" method="post">
                 <ol class="add-plan__list">
-                    <li class="add-plan__trip-dates">
-                        <p id="step-1" class="add-plan__step-number">Шаг 1.</p>
+                    <li id="step-1" class="add-plan__item">
                         <h3 class="add-plan__item-header">Даты пребывания</h3>
                         <p class="add-plan__item-description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                         <label class="add-plan__counter-label" for="companions-counter">
                           <h4 class="add-plan__counter-header">Ищу попутчиков:</h4>
                           <p class="add-plan__counter-unit">Чел.</p>
                         </label>
-                        <input class="add-plan__counter-input" type="number" min="1" max="100" value="count" name="companions" id="companions-counter">
+                        <input class="add-plan__counter-input" type="number" min="1" max="100" value="2" name="companions" id="companions-counter">
                         <button class="add-plan__counter-minus" type="button">минус</button>
                         <button class="add-plan__counter-plus" type="button">плюс</button>
                         <label class="add-plan__counter-label" for="duration-counter">
                           <h4 class="add-plan__counter-header">Длительность:</h4>
                           <p class="add-plan__counter-unit">Дн.</p>
                         </label>
-                        <input class="add-plan__counter-input" type="number" min="1" max="90" value="count" name="duration" id="duration-counter">
+                        <input class="add-plan__counter-input" type="number" min="1" max="90" value="2" name="duration" id="duration-counter">
                         <button class="add-plan__counter-minus" type="button">минус</button>
                         <button class="add-plan__counter-plus" type="button">плюс</button>
                         <input class="add-plan__counter-checkbox" type="checkbox" name="kids" id="kids" checked><label class="add-plan__checkbox-label" for="kids">Можно с детьми</label>
@@ -122,7 +121,7 @@
                             <time class="add-plan__month">Март 2019</time>
                             <button class="add-plan__arrow-next" type="button">Следующий месяц</button>
                         </div>
-                        <ul>
+                        <ul class="add-plan__week">
                             <li class="add-plan__weekday">П</li>
                             <li class="add-plan__weekday">В</li>
                             <li class="add-plan__weekday">С</li>
@@ -177,8 +176,7 @@
                         </ul>
                         <a class="button add-plan__button" href="#step-2">Следующий шаг</a>
                     </li>
-                    <li class="add-plan__itinerary">
-                        <p id="step-2" class="add-plan__step-number">Шаг 2.</p>
+                    <li id="step-2" class="add-plan__item">
                         <h3 class="add-plan__item-header">Маршрут</h3>
                         <p class="add-plan__item-description">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
                         <ul class="add-plan__itinerary-list">
@@ -191,16 +189,17 @@
                             </li>
                             <li class="add-plan__itinerary-item">
                                 <select class="add-plan__select-country" name="itinerary">
-                                <option class="add-plan__country" selected value="Чехия">Чехия</option>
+                                  <option class="add-plan__country" selected value="Чехия">Чехия</option>
+                                </select>
                                 <img class="add-plan__flag" src="https://via.placeholder.com/150x150" width="35" height="24" alt="Флаг Чехия">
                                 <button class="add-plan__delete-country" type="button">Удалить страну</button>
-                              </select>
                             </li>
                             <li class="add-plan__itinerary-item">
-                                <select class="add-plan__select-country" name="itinerary">
-                              <option class="add-plan__select-description" selected disabled>Выберите страну</option>
-                            </select>
-                                <div class="add-plan__dropdown-country">
+                                <select class="add-plan__select-country add-plan__select-country--select" name="itinerary">
+                                <option class="add-plan__select-description" selected disabled>Выберите страну</option>
+                                </select>
+                                <button class="add-plan__delete-country" type="button">Удалить страну</button>
+                                <div class="visually-hidden add-plan__dropdown-country">
                                     <ul class="add-plan__letter-list">
                                         <li class="add-plan__letter-item">
                                             <button class="add-plan__letter-button country-filter__letter-button--active" type="button">А</button>
@@ -278,17 +277,17 @@
                                         </li>
                                     </ul>
                                     <ul class="add-plan__country-list">
-                                        <li class="add-plan__country-item"><a href="/europe/australia">Австралия</a></li>
-                                        <li class="add-plan__country-item"><a href="/europe/austria">Австрия</a></li>
-                                        <li class="add-plan__country-item"><a href="/europe/azerbajan">Азербайджан</a></li>
-                                        <li class="add-plan__country-item"><a href="/europe/albania">Албания</a></li>
-                                        <li class="add-plan__country-item"><a href="/europe/aljir">Алжир</a></li>
-                                        <li class="add-plan__country-item"><a href="/europe/angola">Ангола</a></li>
-                                        <li class="add-plan__country-item"><a href="/europe/andorra">Андорра</a></li>
-                                        <li class="add-plan__country-item"><a href="/europe/antigua">Антигуа и Барбуда</a></li>
-                                        <li class="add-plan__country-item"><a href="/europe/argentine">Аргентина</a></li>
-                                        <li class="add-plan__country-item"><a href="/europe/armenia">Армения</a></li>
-                                        <li class="add-plan__country-item"><a href="/europe/afganistan">Афганистан</a></li>
+                                        <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/australia">Австралия</a></li>
+                                        <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/austria">Австрия</a></li>
+                                        <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/azerbajan">Азербайджан</a></li>
+                                        <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/albania">Албания</a></li>
+                                        <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/aljir">Алжир</a></li>
+                                        <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/angola">Ангола</a></li>
+                                        <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/andorra">Андорра</a></li>
+                                        <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/antigua">Антигуа и Барбуда</a></li>
+                                        <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/argentine">Аргентина</a></li>
+                                        <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/armenia">Армения</a></li>
+                                        <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/afganistan">Афганистан</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -296,45 +295,44 @@
                                 <button class="add-plan__add-itinerary" type="button">Добавить страну</button>
                             </li>
                         </ul>
-                        <a class="add-plan__button" href="#step-3">Следующий шаг</a>
-                        <a class="add-plan__button add-plan__button--prev" href="#step-1">На шаг назад</a>
+                        <a class="button add-plan__button" href="#step-3">Следующий шаг</a>
+                        <a class="button add-plan__button--prev" href="#step-1">На шаг назад</a>
                     </li>
-                    <li class="add-plan__funs">
-                        <p id="step-3" class="add-plan__step-number">Шаг 3.</p>
+                    <li id="step-3" class="add-plan__item">
                         <h3 class="add-plan__item-header">Развлечения</h3>
                         <p class="add-plan__item-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
                         </p>
                         <label class="add-plan__funs-country">Босния и Герцеговина
                       <textarea class="add-plan__funs-text" placeholder="План действий"></textarea></label>
                         <label class="add-plan__funs-country">Чехия
-                      <textarea class="add-plan__funs-text" placeholder="План действий"></textarea></label>
-                        <input class="add-plan__submit" type="submit" value="Отправить">
-                        <a class="add-plan__button add-plan__button--prev" href="#step-2">На шаг назад</a>
+                      <textarea class="add-plan__funs-text" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea></label>
+                        <input class="button  add-plan__button add-plan__button--submit" type="submit" value="Отправить">
+                        <a class="button add-plan__button add-plan__button--prev" href="#step-2">На шаг назад</a>
                     </li>
                 </ol>
             </form>
         </section>
     </main>
     <footer class="page-footer">
-        <a class="page-footer__logo">
-            <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="100" height="19" alt="Логотип Погнали">
+        <a class="page-footer__logo" href="index.html">
+            <img class="page-footer__logo-image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип Погнали">
         </a>
         <div class="page-footer__social social">
             <ul class="social">
                 <li class="social__item">
-                    <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                    <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
                 </li>
                 <li class="social__item">
-                    <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                    <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
                 </li>
                 <li class="social__item">
                     <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
                 </li>
             </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-            <p class="copyright__text">Разработано</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="page-footer__copyright">
+            <p class="page-footer__copyright-text">Разработано</p>
+            <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
 
     </footer>
