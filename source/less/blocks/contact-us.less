@@ -4,14 +4,6 @@
   align-items: center;
   background-color: @bgcolor--contact-us;
   border-radius: 25px;
-
-  .contact__link {
-    color: @txtcolor--special;
-  }
-
-  .contact__icon {
-    background-color: @bgcolor--invert-icon;
-  }
 }
 
 .contact-us__header {
@@ -51,4 +43,51 @@
 .contacts-us__authorization-link {
   color: @txtcolor--special;
   text-decoration: underline;
+}
+
+.contact-us__item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-us__link {
+  font-family: @default-font;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.38;
+  text-align: left;
+  color: @txtcolor--special;
+  text-transform: uppercase;
+}
+
+.contact-us__icon {
+  background-color: @bgcolor--invert-icon;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 16px;
+
+  &--tel::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 18px;
+    top: 13px;
+    left: 13px;
+    background-image: url("../img/contacts-phone.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--email::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 18px;
+    top: 16px;
+    left: 13.5px;
+    background-image: url("../img/contacts-mail.svg");
+    background-repeat: no-repeat;
+  }
 }
