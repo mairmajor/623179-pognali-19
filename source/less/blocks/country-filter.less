@@ -1,0 +1,79 @@
+.country-filter {
+  width: 320px;
+  background-color: @bgcolor--country-filter;
+  padding: 0 45px;
+}
+
+.country-filter__header {
+  font-family: @default-font;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.38;
+  text-align: left;
+  color: @txtcolor--companion;
+  text-transform: uppercase;
+}
+
+.country-filter__continent-list {
+  .list-reset;
+}
+
+.country-filter__continent-button {
+  border: none;
+  background-color: inherit;
+  font-family: @default-font;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.38;
+  text-align: left;
+  text-transform: uppercase;
+  color: @txtcolor--continent;
+
+  &--active {
+    color: @txtcolor--companion;
+  }
+}
+
+.country-filter__letter-list {
+  .list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.country-filter__letter-button {
+  width: 45px;
+  height: 42px;
+  border: solid 1px @color-border--input;
+  background-color: @bgcolor--myplans-item;
+  font-family: @default-font;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: @txtcolor--directions;
+
+  &--active {
+    background-color: @bgcolor--country-active;
+    color: @txtcolor--country-active;
+    border: none;
+  }
+}
+
+.country-filter__country-list {
+  .list-reset;
+}
+
+.country-filter__country-link {
+  font-family: @default-font;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: left;
+  color: @txtcolor--invert-description;
+}
+
+.country-filter__button {
+  min-height: 40px;
+  background-color: @bgcolor--country-button;
+  border: none;
+}
