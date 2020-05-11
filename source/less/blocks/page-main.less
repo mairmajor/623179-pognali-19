@@ -7,6 +7,12 @@
 }
 
 .page-main__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   font-family: @default-font;
   font-size: 36px;
   font-weight: bold;
@@ -14,6 +20,10 @@
   text-align: center;
   color: @txtcolor--main-header;
   background-color: @bgcolor--page-header;
+  background-image: url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  min-height: 569px;
+  margin-top: -50px;
 
   &--pages {
     align-self: flex-start;
@@ -27,4 +37,20 @@
       background-color: @color-line--header-pages;
     }
   }
+}
+
+.page-main__illustration {
+  background-image: url("../img/traveller-illustration-mobile@1x.png");
+  background-repeat: no-repeat;
+  min-height: 255px;
+  width: 192px;
+  margin-top: 10px;
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
 }
