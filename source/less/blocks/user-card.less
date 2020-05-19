@@ -37,8 +37,7 @@
   text-align: center;
   color: @txtcolor--name;
 
-  &::before,
-  &--active::before {
+  &::before {
     content: "";
     position: relative;
     display: block;
@@ -72,10 +71,22 @@
   justify-content: space-between;
   align-items: center;
   font-size: 0;
-  width: 120px;
+}
+
+.user-card__transport-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  background-color: @bgcolor--transport;
+  border-radius: 50%;
 }
 
 .user-card__transport {
+  margin: 0;
+  padding: 0;
+  position: relative;
   display: block;
   min-width: 17px;
   height: 21px;
@@ -160,4 +171,46 @@
 .user-card__distance {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .user-card {
+    width: 285px;
+    border-radius: 20px;
+  }
+
+  .user-card__image {
+    width: 285px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .user-card__name {
+    font-size: 24px;
+    margin-bottom: 20px;
+
+    &::before {
+      width: 7px;
+      height: 7px;
+    }
+  }
+
+  .user-card__tags {
+    width: 230px;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+  }
+
+  .user-card__transport-list {
+    margin-bottom: -40px;
+  }
+
+  .user-card__level {
+    top: -395px;
+    left: -90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }

@@ -59,3 +59,64 @@
   color: @txtcolor--slogan;
   margin-left: auto;
 }
+
+@media (min-width: @tablet-width) {
+  .country-card {
+    width: 616px;
+    flex-direction: row-reverse;
+  }
+
+  .country-card__image {
+    width: 186px;
+    min-height: 140px;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .country-card__description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    min-height: 140px;
+    border-radius: 20px 0 0 20px;
+    padding: 30px;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+
+  .country-card__flag {
+    position: absolute;
+    top: 15px;
+    left: 385px;
+    border-radius: 8px;
+    width: 70px;
+    height: 47px;
+    margin: 0;
+  }
+
+  .country-card__header {
+    font-size: 24px;
+  }
+
+  .country-card__slogan {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.88;
+    margin-top: 6px;
+  }
+
+  .country-card__tourists {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+    color: @txtcolor--slogan;
+    margin-top: 21px;
+    margin-left: 0;
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+}

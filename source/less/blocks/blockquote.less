@@ -1,10 +1,13 @@
+.blockquote {
+  .container;
+  background-color: @bgcolor--main-page;
+}
+
 .blockquote__content {
   margin: 0;
-  padding: 30px 50px;
+  padding: 30px 25px;
   display: flex;
   flex-direction: column;
-  background-color: @bgcolor--main-page;
-  width: 320px;
   min-height: 285px;
 }
 
@@ -28,4 +31,44 @@
   line-height: 1.38;
   text-align: left;
   color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .blockquote {
+    min-height: 610px;
+    margin-top: -250px;
+    background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
+    background-position: 300px 30px, -360px 0;
+    background-repeat: no-repeat;
+  }
+
+  .blockquote__content {
+    margin-top: 55px;
+  }
+
+  .blockquote__quote {
+    width: 280px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.18;
+    margin-bottom: 52px;
+  }
+
+  .blockquote__author {
+    width: 280px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.19;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .blockquote {
+    height: 0;
+    background-image: none;
+    background-color: inherit;
+    position: absolute;
+    top: 300px;
+    left: 1000px;
+  }
 }

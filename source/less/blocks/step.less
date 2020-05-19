@@ -1,7 +1,6 @@
 .step {
+  .container;
   background-color: @bgcolor--steps;
-  width: 320px;
-  padding: 0 25px;
 }
 
 .step__list {
@@ -12,6 +11,7 @@
 }
 
 .step__item {
+  position: relative;
   width: 270px;
   min-height: 100px;
   border-radius: 10px;
@@ -26,9 +26,9 @@
   counter-increment: myCounter;
 
   &::before {
-    position: relative;
-    top: 0;
-    right: -210px;
+    position: absolute;
+    top: 23px;
+    right: 23px;
     content: counter(myCounter);
     font-family: @default-font;
     font-size: 18px;
@@ -56,5 +56,110 @@
     min-height: 80px;
     margin-top: -20px;
     background-color: @bgcolor--step-trip;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .step {
+    height: 0;
+  }
+
+  .step__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .step__item {
+    width: 344px;
+    min-height: 140px;
+    font-size: 24px;
+    line-height: 1;
+    padding: 31px 31px;
+    padding-right: 130px;
+
+    &::before {
+      position: absolute;
+      top: 40px;
+      right: 295px;
+      font-size: 30px;
+      line-height: 4;
+    }
+
+    &--direction {
+      border-radius: 20px 0 0 0;
+      margin-top: -50px;
+      margin-right: -20px;
+    }
+
+    &--ideas {
+      width: 364px;
+      border-radius: 20px 20px 0 0;
+      margin-top: -50px;
+    }
+
+    &--companions {
+      border-radius: 0 0 0 20px;
+      margin-top: -10px;
+      margin-right: -20px;
+    }
+
+    &--trip {
+      width: 364px;
+      border-radius: 0 0 20px 20px;
+      margin-top: -10px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .step {
+    display: flex;
+    align-items: flex-end;
+    height: 750px;
+    margin-top: -450px;
+    padding-bottom: 80px;
+    background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
+    background-position: 600px 110px, -180px 0;
+    background-repeat: no-repeat;
+  }
+
+  .step__item {
+    width: 315px;
+    min-height: 107px;
+    padding-right: 100px;
+
+    &::before {
+      top: -20px;
+      right: 40px;
+      font-size: 24px;
+      line-height: 5;
+    }
+
+    &--direction {
+      width: 340px;
+      margin-top: 0;
+      margin-right: -25px;
+      border-radius: 20px 0 0 20px;
+    }
+
+    &--ideas {
+      width: 340px;
+      margin-top: 0;
+      margin-right: -25px;
+      border-radius: 20px 0 0 20px;
+    }
+
+    &--companions {
+      width: 340px;
+      margin-top: 0;
+      margin-right: -25px;
+      border-radius: 20px 0 0 20px;
+    }
+
+    &--trip {
+      width: 315px;
+      border-radius: 20px;
+      margin-top: 0;
+    }
   }
 }

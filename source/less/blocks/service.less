@@ -1,5 +1,5 @@
 .service {
-  width: 320px;
+  .container;
   min-height: 352px;
   padding: 10px 50px;
   font-family: @default-font;
@@ -29,5 +29,76 @@
     font-weight: bold;
     line-height: 1.38;
     text-align: left;
+  }
+
+  .service__button {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .service {
+    min-height: 920px;
+    padding: 250px 75px 0;
+    background-image: url("../img/about-tablet@1x.png");
+    background-position: 420px 280px;
+    background-repeat: no-repeat;
+    border-radius: 0 0 50px 50px;
+    background-color: @bgcolor--service-tab;
+  }
+
+  .service__header {
+    font-size: 45px;
+  }
+
+  .service__description {
+    width: 300px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.18;
+
+    &--accent {
+      width: 260px;
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 1.19;
+    }
+  }
+
+  .service__button {
+    display: flex;
+    align-items: center;
+    width: 274px;
+    height: 81px;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    color: @txtcolor--show-button;
+    text-transform: none;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .service {
+    min-height: 750px;
+    padding: 90px 60px 0;
+    background-image: url("../img/about-desktop@1x.png");
+    background-position: 750px 90px;
+  }
+
+  .service__header {
+    margin-bottom: 60px;
+  }
+
+  .service__description {
+    width: 620px;
+    margin-bottom: 44px;
+
+    &--accent {
+      width: 420px;
+      margin-bottom: 86px;
+    }
   }
 }
