@@ -6,18 +6,39 @@
   width: 270px;
   background-color: @bgcolor--card;
   border-radius: 10px;
+
+  &--catalog {
+    position: relative;
+    align-items: flex-start;
+    border-radius: 20px;
+    padding: 20px;
+  }
+}
+
+.user-card__image-link {
+  margin-bottom: 15px;
 }
 
 .user-card__image {
   border-radius: 10px 10px 0 0;
+
+  &--catalog {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
 }
 
 .user-card__country-list {
   .list-reset;
   display: flex;
   justify-content: center;
-  margin-right: -19px;
-  margin-top: -10px;
+
+  &--catalog {
+    flex-direction: column;
+    justify-content: center;
+    order: 1;
+  }
 }
 
 .user-card__country-flag {
@@ -26,6 +47,20 @@
   font-size: 0;
   margin-right: 19px;
   border-radius: 3px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--catalog {
+    font-family: @default-font;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+    color: @txtcolor--country;
+    text-transform: uppercase;
+  }
 }
 
 .user-card__name {
@@ -52,6 +87,18 @@
   &--active::before {
     background-color: @bgcolor--offline;
   }
+
+  &--catalog {
+    width: 100px;
+    text-align: start;
+
+    &::before {
+      top: 15px;
+      left: 130px;
+      width: 6px;
+      height: 6px;
+    }
+  }
 }
 
 .user-card__tags {
@@ -63,6 +110,27 @@
   line-height: 1.13;
   text-align: center;
   color: @txtcolor--invert-description;
+
+  &--catalog {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+.user-card__transport-level {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  order: 1;
+  margin-bottom: 20px;
+}
+
+.user-card__sign-block {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  order: 1;
 }
 
 .user-card__transport-list {
@@ -81,6 +149,10 @@
   height: 33px;
   background-color: @bgcolor--transport;
   border-radius: 50%;
+
+  &--catalog {
+    background-color: @bgcolor--transport-icon;
+  }
 }
 
 .user-card__transport {
@@ -115,6 +187,26 @@
     width: 20px;
     background-image: url("../img/run.svg");
   }
+
+  &--bus-catalog {
+    min-width: 13px;
+    height: 16px;
+  }
+
+  &--air-catalog {
+    width: 14px;
+    height: 16px;
+  }
+
+  &--bike-catalog {
+    width: 19px;
+    height: 16px;
+  }
+
+  &--run-catalog {
+    width: 15px;
+    height: 16px;
+  }
 }
 
 .user-card__level {
@@ -140,6 +232,19 @@
     opacity: 0.3;
     background-color: @color-line--level;
   }
+
+  &--catalog {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background-color: @bgcolor--level-icon;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .user-card__level-count {
@@ -151,6 +256,13 @@
   text-align: center;
   color: @txtcolor--base;
   margin-top: 2px;
+
+  &--catalog {
+    position: relative;
+    top: 8px;
+    line-height: 0.75;
+    color: @txtcolor--level;
+  }
 }
 
 .user-card__level-text {
@@ -161,27 +273,120 @@
   text-align: center;
   color: @txtcolor--base;
   margin-top: -5px;
+
+  &--catalog {
+    display: none;
+  }
 }
 
 .user-card__sign {
   margin: 0;
   padding: 0;
+
+  &--catalog {
+    font-family: @default-font;
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: left;
+    color: @txtcolor--invert;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+    order: 1;
+  }
 }
 
 .user-card__distance {
   margin: 0;
   padding: 0;
+
+  &--catalog {
+    position: absolute;
+    top: 65px;
+    left: 110px;
+    font-family: @default-font;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: left;
+    color: @txtcolor--name;
+  }
+}
+
+.user-card__button {
+  width: 230px;
+  min-height: 40px;
+  order: 1;
 }
 
 @media (min-width: @tablet-width) {
   .user-card {
     width: 285px;
     border-radius: 20px;
+
+    &--catalog {
+      width: 688px;
+      height: 332px;
+      flex-wrap: wrap;
+      padding: 35px;
+    }
   }
 
   .user-card__image {
     width: 285px;
     border-radius: 20px 20px 0 0;
+
+    &--catalog {
+      width: 190px;
+      height: 190px;
+      border-radius: 20px;
+    }
+  }
+
+  .user-card__country-list--catalog {
+    flex-direction: row;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 20px;
+    left: 36px;
+  }
+
+  .user-card__country-flag--catalog {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-right: 30px;
+  }
+
+  .user-card__transport-level {
+    flex-direction: column;
+    position: relative;
+    right: -30px;
+  }
+
+  .user-card__sign-block {
+    display: none;
+  }
+
+  .user-card__sign--catalog {
+    margin-left: -140px;
+  }
+
+  .user-card__level--catalog {
+    width: 60px;
+    height: 60px;
+
+    &::before {
+      display: block;
+      background-color: @txtcolor-tab--level;
+      top: 34px;
+    }
+  }
+
+  .user-card__level-text--catalog {
+    display: block;
+    position: relative;
+    top: 20px;
+    color: @txtcolor-tab--level;
   }
 
   .user-card__name {
@@ -192,6 +397,16 @@
       width: 7px;
       height: 7px;
     }
+
+    &--catalog {
+      width: 300px;
+      font-size: 30px;
+
+      &::before {
+        top: 20px;
+        left: 210px;
+      }
+    }
   }
 
   .user-card__tags {
@@ -199,18 +414,124 @@
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 25px;
+
+    &--catalog {
+      margin-top: 50px;
+      margin-left: 40px;
+      margin-bottom: 20px;
+    }
   }
 
   .user-card__transport-list {
-    margin-bottom: -40px;
+    flex-direction: column;
+    margin-bottom: 13px;
   }
 
-  .user-card__level {
-    top: -395px;
-    left: -90px;
+  .user-card__transport-item--catalog {
+    background-color: inherit;
+  }
+
+  .user-card__transport {
+    &--bus-catalog {
+      min-width: 17px;
+      height: 21px;
+    }
+
+    &--air-catalog {
+      width: 19px;
+      height: 21px;
+    }
+
+    &--bike-catalog {
+      width: 24px;
+      height: 21px;
+    }
+
+    &--run-catalog {
+      width: 20px;
+      height: 21px;
+    }
+  }
+
+  .user-card__distance--catalog {
+    top: 190px;
+    left: 465px;
+    font-size: 20px;
+  }
+
+  .user-card__button {
+    width: 148px;
+    height: 50px;
+    position: absolute;
+    top: 180px;
+    left: 260px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .user-card--catalog {
+    width: 950px;
+    height: 285px;
+    padding: 0;
+  }
 
+  .user-card__image--catalog {
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .user-card__button {
+    width: 148px;
+    height: 50px;
+    left: 350px;
+  }
+
+  .user-card__country-list--catalog {
+    flex-direction: column;
+    bottom: 120px;
+    left: 730px;
+  }
+
+  .user-card__country-flag--catalog {
+    margin-bottom: 15px;
+  }
+
+  .user-card__transport-level {
+    flex-direction: row;
+    right: -180px;
+    top: -20px;
+  }
+
+  .user-card__sign-block {
+    display: none;
+  }
+
+  .user-card__sign--catalog {
+    display: none;
+  }
+
+  .user-card__name--catalog {
+    &::before {
+      width: 7px;
+      height: 7px;
+      left: -25px;
+    }
+  }
+
+  .user-card__tags--catalog {
+    margin-top: 0;
+    margin-left: -155px;
+    margin-bottom: -50px;
+  }
+
+  .user-card__transport-list {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+
+  .user-card__distance--catalog {
+    left: 550px;
+  }
 }

@@ -4,7 +4,6 @@
   align-items: flex-end;
   justify-content: center;
   background-color: @bgcolor--main-page;
-  margin-top: -100px;
 
   &--pages {
     display: none;
@@ -14,7 +13,8 @@
 .user-menu__list {
   .list-reset;
   display: flex;
-  margin-top: -20px;
+  height: 0;
+  z-index: 1;
 }
 
 .user-menu__item {
@@ -73,7 +73,7 @@
 @media (min-width: @tablet-width) {
   .user-menu {
     position: absolute;
-    top: 70px;
+    top: -30px;
     right: 0;
     z-index: 1;
     justify-content: flex-end;
@@ -98,15 +98,6 @@
 @media (min-width: @desktop-width) {
   .user-menu {
     width: 200px;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    justify-content: flex-end;
-    background-color: inherit;
-
-    &--pages {
-      display: flex;
-    }
   }
 
   .user-menu__icon {

@@ -5,16 +5,16 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: -30px;
 }
 
 .page-main__header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
   padding: 0;
+  padding-top: 50px;
   font-family: @default-font;
   font-size: 36px;
   font-weight: bold;
@@ -24,8 +24,7 @@
   background-color: @bgcolor--page-header;
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  min-height: 569px;
-  margin-top: -50px;
+  min-height: 400px;
 
   &::after {
     content: "";
@@ -35,33 +34,33 @@
     min-height: 255px;
     width: 192px;
   }
+}
 
-  &--pages {
-    margin: 0;
-    margin-top: 20px;
-    .container;
-    padding-top: 30px;
-    padding-bottom: 8px;
-    align-self: flex-start;
-    background-color: @bgcolor--page-header;
-    border-radius: 0 0 20px 20px;
-    font-size: 36px;
-    font-family: @default-font;
-    font-weight: bold;
-    line-height: 1.11;
-    text-align: left;
-    color: @txtcolor--main-header;
+.page-main__header-pages {
+  margin: 0;
+  margin-top: 20px;
+  .container;
+  padding-top: 30px;
+  padding-bottom: 8px;
+  align-self: flex-start;
+  background-color: @bgcolor--page-header;
+  border-radius: 0 0 20px 20px;
+  font-size: 36px;
+  font-family: @default-font;
+  font-weight: bold;
+  line-height: 1.11;
+  text-align: left;
+  color: @txtcolor--main-header;
 
-    &::after {
-      content: "";
-      display: block;
-      position: relative;
-      top: 10px;
-      width: 173px;
-      height: 5px;
-      border-radius: 2.4px;
-      background-color: @color-line--header-pages;
-    }
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 10px;
+    width: 173px;
+    height: 5px;
+    border-radius: 2.4px;
+    background-color: @color-line--header-pages;
   }
 }
 
@@ -83,32 +82,33 @@
     background-color: @bgcolor-tab--page-header;
     background-image: none;
     min-height: 400px;
-    padding-top: 120px;
+    padding-top: 80px;
     padding-left: 180px;
     padding-right: 180px;
 
     &::after {
       background-image: none;
     }
+  }
 
-    &--pages {
-      margin-top: 0;
-      padding-left: 77px;
-      height: 260px;
-      font-size: 60px;
-      line-height: 1.17;
-      padding-top: 125px;
-      padding-bottom: 0;
-      border-radius: 0 0 60px 60px;
+  .page-main__header-pages {
+    margin-top: 0;
+    padding-left: 77px;
+    height: 260px;
+    font-size: 60px;
+    line-height: 1.17;
+    padding-top: 125px;
+    padding-bottom: 0;
+    border-radius: 0 0 60px 60px;
 
-      &::after {
-        top: 60px;
-        width: 287px;
-        height: 8px;
-        border-radius: 4px;
-      }
+    &::after {
+      top: 60px;
+      width: 287px;
+      height: 8px;
+      border-radius: 4px;
     }
   }
+
 
   .page-main__home {
     display: block;
