@@ -108,8 +108,7 @@
 
 @media (min-width: @tablet-width) {
   .rates {
-    padding-top: 90px;
-    padding-bottom: 60px;
+    padding: 90px 20px 60px;
     border-radius: 50px;
   }
 
@@ -142,7 +141,8 @@
 
     &::before {
       top: 0;
-      right: 580px;
+      right: auto;
+      left: -85px;
       font-size: 28px;
       line-height: 1;
       width: 67px;
@@ -151,10 +151,10 @@
   }
 
   .rates__button {
+    align-self: start;
     position: relative;
     width: 400px;
     font-size: 20px;
-    margin-left: -330px;
 
     &::before {
       content: "";

@@ -17,7 +17,6 @@
 .catalog-companions__pagination {
   display: flex;
   width: 270px;
-  height: 50px;
   margin-bottom: 45px;
 }
 
@@ -25,16 +24,24 @@
   display: none;
 }
 
+.catalog-companions__arrow-list {
+  .list-reset;
+  display: flex;
+  width: 270px;
+}
+
 .catalog-companions__button {
   font-size: 0;
   background-color: @bgcolor--special-button;
 
   &--prev {
+    width: 135px;
     border-radius: 20px 0 0 20px;
     margin-right: 1px;
   }
 
   &--next {
+    width: 135px;
     border-radius: 0 20px 20px 0;
   }
 }
@@ -99,11 +106,6 @@
   }
 
   .catalog-companions__page-list {
-    .list-reset;
-    display: flex;
-  }
-
-  .catalog-companions__arrow-list {
     .list-reset;
     display: flex;
   }

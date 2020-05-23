@@ -1,4 +1,5 @@
 .user-card {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -15,7 +16,9 @@
   }
 }
 
-.user-card__image-link {
+.user-card__link {
+  display: flex;
+  align-items: flex-start;
   margin-bottom: 15px;
 }
 
@@ -25,7 +28,47 @@
   &--catalog {
     width: 70px;
     height: 70px;
+    margin-right: 20px;
     border-radius: 50%;
+  }
+}
+
+.user-card__name {
+  margin: 0;
+  padding: 0;
+  font-family: @default-font;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  color: @txtcolor--name;
+
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    top: 14px;
+    left: -10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: @bgcolor--online;
+  }
+
+  &--active::before {
+    background-color: @bgcolor--offline;
+  }
+
+  &--catalog {
+    width: 100px;
+    text-align: start;
+    margin-top: -10px;
+
+    &::before {
+      top: 15px;
+      left: 130px;
+      width: 6px;
+      height: 6px;
+    }
   }
 }
 
@@ -63,44 +106,6 @@
   }
 }
 
-.user-card__name {
-  margin: 0;
-  padding: 0;
-  font-family: @default-font;
-  font-size: 21px;
-  font-weight: bold;
-  text-align: center;
-  color: @txtcolor--name;
-
-  &::before {
-    content: "";
-    position: relative;
-    display: block;
-    top: 17px;
-    left: -10px;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: @bgcolor--online;
-  }
-
-  &--active::before {
-    background-color: @bgcolor--offline;
-  }
-
-  &--catalog {
-    width: 100px;
-    text-align: start;
-
-    &::before {
-      top: 15px;
-      left: 130px;
-      width: 6px;
-      height: 6px;
-    }
-  }
-}
-
 .user-card__tags {
   margin: 0;
   padding: 0;
@@ -124,13 +129,6 @@
   width: 220px;
   order: 1;
   margin-bottom: 20px;
-}
-
-.user-card__sign-block {
-  display: flex;
-  justify-content: space-between;
-  width: 220px;
-  order: 1;
 }
 
 .user-card__transport-list {
@@ -210,6 +208,9 @@
 }
 
 .user-card__level {
+  position: absolute;
+  top: 16px;
+  left: 17px;
   display: flex;
   flex-direction: column;
   width: 60px;
@@ -217,9 +218,6 @@
   border: solid 3px @color-circle--level;
   background-color: @bgcolor--level;
   border-radius: 50%;
-  position: relative;
-  top: -360px;
-  left: -90px;
 
   &::before {
     content: "";
@@ -363,10 +361,6 @@
     right: -30px;
   }
 
-  .user-card__sign-block {
-    display: none;
-  }
-
   .user-card__sign--catalog {
     margin-left: -140px;
   }
@@ -399,7 +393,7 @@
     }
 
     &--catalog {
-      width: 300px;
+      min-width: 200px;
       font-size: 30px;
 
       &::before {
@@ -417,14 +411,15 @@
 
     &--catalog {
       margin-top: 50px;
-      margin-left: 40px;
       margin-bottom: 20px;
     }
   }
 
   .user-card__transport-list {
-    flex-direction: column;
-    margin-bottom: 13px;
+    &-catalog {
+      flex-direction: column;
+      margin-bottom: 13px;
+    }
   }
 
   .user-card__transport-item--catalog {
@@ -502,10 +497,6 @@
     flex-direction: row;
     right: -180px;
     top: -20px;
-  }
-
-  .user-card__sign-block {
-    display: none;
   }
 
   .user-card__sign--catalog {
