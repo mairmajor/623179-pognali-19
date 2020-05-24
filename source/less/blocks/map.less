@@ -1,5 +1,11 @@
-.map__back {
+.map {
   width: 100%;
+}
+
+.map__back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   background-color: @bgcolor--map;
   border-radius: 0 0 25px 25px;
@@ -65,5 +71,6 @@
 }
 
 .map__iframe {
+  width: 100%;
   border: none;
 }
