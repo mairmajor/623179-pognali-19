@@ -23,10 +23,6 @@
 }
 
 .page-main__header {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
   margin: 0;
   padding: 0;
   padding-top: 50px;
@@ -39,15 +35,21 @@
   min-height: 410px;
 }
 
+.page-main__head-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: @bgcolor--page-header;
+  border-radius: 0 0 20px 20px;
+}
+
 .page-main__header-pages {
+  .container;
   margin: 0;
   margin-top: 20px;
-  .container;
   padding-top: 30px;
   padding-bottom: 8px;
   align-self: flex-start;
-  background-color: @bgcolor--page-header;
-  border-radius: 0 0 20px 20px;
   font-size: 36px;
   font-family: @default-font;
   font-weight: bold;
@@ -78,16 +80,26 @@
     background-color: @bgcolor--header-tab;
   }
 
+  .page-main__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .page-main__head-wrapper {
+
+    border-radius: 0 0 60px 60px;
+}
 
   .page-main__header {
+    width: 400px;
     justify-content: flex-start;
     font-size: 60px;
     font-weight: bold;
     line-height: 1.17;
     padding-top: 60px;
-    padding-left: 180px;
-    padding-right: 180px;
     min-height: 0;
+    margin-right: 0;
   }
 
   .page-main__header-pages {
@@ -98,7 +110,6 @@
     line-height: 1.17;
     padding-top: 125px;
     padding-bottom: 0;
-    border-radius: 0 0 60px 60px;
 
     &::after {
       top: 60px;
@@ -136,12 +147,15 @@
 
 @media (min-width: @desktop-width) {
   .page-main__block {
-    flex-direction: row;
-    justify-content: space-between;
     background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
     background-position: 600px 10px, -180px -100px;
     min-height: 750px;
     padding-top: 50px;
+  }
+
+  .page-main__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .page-main__header {

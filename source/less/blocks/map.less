@@ -74,3 +74,61 @@
   width: 100%;
   border: none;
 }
+
+@media (min-width: @tablet-width) {
+  .map__back {
+    border-radius: 0 0 50px 50px;
+    padding-top: 110px;
+  }
+
+  .map__button {
+    width: 618px;
+    min-height: 81px;
+    border-radius: 20px;
+    font-size: 24px;
+    justify-content: flex-start;
+    padding-left: 35px;
+    margin-bottom: 45px;
+  }
+
+
+
+  .map__address {
+    justify-content: flex-start;
+    width: 600px;
+    font-size: 28px;
+    line-height: 1;
+    margin-left: 25px;
+  }
+
+  .map__iframe {
+    height: 460px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .map__button {
+    width: 324px;
+  }
+
+  .map__header {
+    align-items: center;
+
+    &::after {
+      width: 28px;
+      height: 43px;
+      top: 25px;
+      left: 30px;
+    }
+
+    &::before {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}

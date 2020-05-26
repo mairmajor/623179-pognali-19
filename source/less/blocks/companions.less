@@ -121,11 +121,14 @@
 }
 
 @media (min-width: @desktop-width) {
-  .companions {
-    flex-wrap: wrap;
-    height: 800px;
+  .companions__wrapper {
+    height: 600px;
     padding-right: 0;
     padding-left: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .companions__accent {

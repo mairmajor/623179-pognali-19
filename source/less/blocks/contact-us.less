@@ -11,6 +11,9 @@
 
 .contact-us__wrapper {
   .container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-us__header {
@@ -46,8 +49,8 @@
 .contact-us__email {
   border: none;
   outline: none;
-  height: 62px;
-  width: 210px;
+  height: 100%;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -113,5 +116,110 @@
     left: 13.5px;
     background-image: url("../img/contacts-mail.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contact-us {
+    border-radius: 0 0 50px 50px;
+  }
+
+  .contact-us__header {
+    font-size: 45px;
+    margin-bottom: 60px;
+  }
+
+  .contact-us__description {
+    width: 610px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.18;
+    margin-bottom: 60px;
+  }
+
+  .contact-us__email-form {
+    width: 618px;
+    min-height: 81px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+  }
+
+  .contact-us__email {
+    border-radius: 20px;
+    min-height: 81px;
+  }
+
+  .contact-us__button {
+    width: 82px;
+    height: 81px;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .contact-us__link {
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .contact-us__list {
+    align-self: start;
+    margin-left: 35px;
+    margin-bottom: 60px;
+  }
+
+  .contact-us__icon {
+    width: 67px;
+    height: 67px;
+
+    &--tel::before {
+      width: 27px;
+      height: 27px;
+      top: 20px;
+      left: 20px;
+    }
+
+    &--email::before {
+      width: 27px;
+      height: 19px;
+      top: 25px;
+      left: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-us__email-form {
+    width: 1150px;
+  }
+
+  .contact-us__button {
+    width: 400px;
+  }
+
+  .contact-us__list {
+    display: flex;
+    align-self: center;
+  }
+
+  .contact-us__item {
+    margin-right: 110px;
+  }
+
+  .contact-us__icon {
+    width: 90px;
+    height: 90px;
+
+    &--tel::before {
+      width: 36px;
+      height: 36px;
+      top: 27px;
+      left: 27px;
+    }
+
+    &--email::before {
+      width: 36px;
+      height: 26px;
+      top: 32px;
+      left: 27px;
+    }
   }
 }

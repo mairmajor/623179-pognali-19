@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <header class="page-header">
+    <header class="page-header page-header--pages">
         <div class="page-header__wrapper">
             <a class="page-header__logo" href="#">
                 <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип Погнали">
@@ -49,7 +49,9 @@
         </div>
     </header>
     <main class="page-main">
-        <h1 class="page-main__header-pages">Попутчики</h1>
+        <div class="page-main__head-wrapper">
+            <h1 class="page-main__header-pages">Попутчики</h1>
+        </div>
         <a class="page-main__home" href="index.html">На главную</a>
         <section class="user-menu user-menu--pages">
             <h3 class="visually-hidden">Меню авторизации и контакты</h3>
@@ -66,7 +68,9 @@
             </ul>
         </section>
         <section class="country-filter">
-            <h2 class="country-filter__header">Фильтрация по странам</h2>
+            <div class="country-filter__head-wrapper">
+                <h2 class="country-filter__header">Фильтрация по странам</h2>
+            </div>
             <div class="visually-hidden country-filter__dropdown-country">
                 <ul class="country-filter__continent-list">
                     <li class="country-filter__continent-item"><button class="country-filter__continent-button country-filter__continent-button--active" type="button">Европа</button></li>
