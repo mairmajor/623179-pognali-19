@@ -162,5 +162,39 @@
 }
 
 @media (min-width: @desktop-width) {
+  .myplans__item {
+    padding: 20px 40px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
+  .myplans__countries {
+    width: auto;
+    padding: 0;
+    border-bottom: none;
+    margin-right: auto;
+
+    &::before {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-right: 35px;
+    }
+  }
+
+  .myplans__tripper-count {
+    padding: 0;
+    margin-right: 40px;
+  }
+
+  .myplans__time {
+    padding: 0;
+    margin-right: 130px;
+  }
+
+  .myplans__change {
+    padding: 0;
+  }
 }

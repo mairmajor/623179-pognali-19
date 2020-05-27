@@ -747,5 +747,272 @@
 }
 
 @media (min-width: @desktop-width) {
+  .add-plan {
+    position: relative;
+  }
 
+  .add-plan__header {
+    padding-left: 50px;
+    padding-bottom: 30px;
+  }
+
+  .add-plan__step-markers {
+    position: absolute;
+    flex-direction: column;
+    top: 290px;
+    left: 1050px;
+  }
+
+  .add-plan__marker-label {
+    margin-bottom: 25px;
+    font-family: @default-font;
+    font-size: 20px;
+    line-height: 0.69;
+    letter-spacing: 2px;
+    text-align: left;
+    color: @txtcolor-desktop--marker;
+    text-transform: uppercase;
+
+    &::before {
+      position: relative;
+      top: 10px;
+      right: 40px;
+    }
+  }
+
+  .add-plan__item {
+    width: 1320px;
+    padding: 60px 160px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+
+    &::before {
+      position: relative;
+      top: 36px;
+      left: 0;
+    }
+  }
+
+  .add-plan__item-header {
+    padding-left: 115px;
+  }
+
+  .add-plan__item-description {
+    width: 610px;
+
+    &--itinerary {
+      padding-right: 120px;
+    }
+  }
+
+  .add-plan__block {
+    position: relative;
+    display: flex;
+    width: 520px;
+  }
+
+  .add-plan__counter-unit {
+    color: @txtcolor--directions;
+  }
+
+  .add-plan__counter-input {
+    position: absolute;
+    top: 0;
+    left: 220px;
+    width: 181px;
+  }
+
+  .add-plan__counter-minus {
+    top: -50px;
+    left: 23px;
+  }
+
+  .add-plan__counter-plus {
+    top: -50px;
+    left: 470px;
+  }
+
+  .add-plan__counter-checkbox {
+    &:checked ~ label::after {
+      position: relative;
+      top: 0;
+      right: 222px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .add-plan__checkbox-label {
+    order: 2;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &::before {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .add-plan__choose-date {
+    order: 2;
+  }
+
+  .add-plan__choose-month {
+    height: 85px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .add-plan__arrow-prev {
+    width: 15px;
+    height: 28px;
+  }
+
+  .add-plan__month {
+    font-size: 36px;
+  }
+
+  .add-plan__arrow-next {
+    width: 15px;
+    height: 28px;
+  }
+
+  .add-plan__week {
+    width: 539px;
+  }
+
+  .add-plan__weekday {
+    align-items: flex-end;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 1.8px;
+    width: 77px;
+    height: 30px;
+  }
+
+  .add-plan__weekday-letter {
+    display: inline;
+  }
+
+  .add-plan__date-list {
+    width: 539px;
+  }
+
+  .add-plan__date-label {
+    &--active .add-plan__datetime {
+      border-width: 4px;
+      border-radius: 2px;
+    }
+  }
+
+  .add-plan__datetime {
+    width: 77px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .add-plan__itinerary-list {
+    position: relative;
+    padding-top: 40px;
+    border-top: solid 1px @color-border--input;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 135px;
+      content: "";
+      display: block;
+      width: 1px;
+      height: 450px;
+      background-color: @color-border--input;
+    }
+  }
+
+  .add-plan__itinerary-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+
+  .add-plan__select-country {
+    width: 369px;
+    height: 70px;
+    padding: 0 25px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    margin-right: 50px;
+  }
+
+  .add-plan__flag {
+    padding: 0;
+    width: 70px;
+    height: 47px;
+    border: none;
+  }
+
+  .add-plan__delete-country {
+    width: 17px;
+    height: 17px;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .add-plan__add-itinerary {
+    width: 369px;
+    height: 70px;
+    padding: 0 25px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .add-plan__buttons-block {
+    order: 2;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 45px;
+  }
+
+  .add-plan__button {
+    order: 2;
+    width: 285px;
+    min-height: 81px;
+    border-radius: 20px;
+    font-size: 24px;
+    text-transform: none;
+    margin-top: 0;
+
+    &--prev {
+      order: 2;
+      font-size: 24px;
+      text-transform: none;
+    }
+  }
+
+  .add-plan__funs-country {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0.6;
+    margin-bottom: 50px;
+  }
+
+  .add-plan__funs-text {
+    padding: 20px;
+    width: 499px;
+    min-height: 142px;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 35px;
+  }
 }
