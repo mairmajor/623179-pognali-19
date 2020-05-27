@@ -146,16 +146,6 @@
 .companion-filter__level {
   width: 111px;
   height: 35px;
-  border: solid 1px @color-border--input;
-  background-color: @color-border--companion-input;
-
-  &--min {
-    border-radius: 5px 0 0 5px;
-  }
-
-  &--max {
-    border-radius: 0 5px 5px 0;
-  }
 }
 
 .companion-filter__show-button {
@@ -163,4 +153,164 @@
   min-height: 40px;
   background-color: @bgcolor--special-button;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .companion-filter {
+    width: 688px;
+    padding: 35px;
+    margin-bottom: 40px;
+  }
+
+  .companion-filter__header {
+    font-size: 30px;
+    margin-bottom: 35px;
+    width: 600px;
+  }
+
+  .companion-filter__form {
+    padding: 35px 0;
+  }
+
+  .companion-filter__fieldset {
+    border-bottom: none;
+  }
+
+  .companion-filter__legend {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    &::after {
+      content: ":";
+    }
+  }
+
+  .companion-filter__list {
+    display: flex;
+    width: 550px;
+    margin-left: 130px;
+    margin-top: -40px;
+  }
+
+  .companion-filter__item {
+    padding: 0;
+    width: 170px;
+  }
+
+  .companion-filter__label {
+    font-size: 20px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .companion-filter__checkbox {
+    display: none;
+
+    &:checked ~ label::before {
+      background-size: 12px;
+      background-position: 2px;
+    }
+  }
+
+  .companion-filter__transport-list {
+    width: 550px;
+    margin-left: 130px;
+    margin-top: -50px;
+  }
+
+  .companion-filter__transport-item {
+    width: 43px;
+    height: 43px;
+  }
+
+  .companion-filter__transport-label {
+    height: 21px;
+
+    &--air {
+      width: 19px;
+    }
+
+    &--bus {
+      width: 17px;
+    }
+
+    &--bike {
+      width: 24px;
+    }
+
+    &--run {
+      width: 20px;
+    }
+  }
+
+  .companion-filter__level-inputs {
+    width: 550px;
+    margin-left: 130px;
+    margin-top: -40px;
+  }
+
+  .companion-filter__show-button {
+    width: 618px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .companion-filter__level {
+    width: 75px;
+    height: 46px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .companion-filter {
+    width: 285px;
+    padding: 45px;
+  }
+
+  .companion-filter__form {
+    border-top: none;
+  }
+
+  .companion-filter__header {
+    width: 200px;
+  }
+
+  .companion-filter__legend {
+    &::after {
+      content: "";
+    }
+  }
+
+  .companion-filter__list {
+    flex-direction: column;
+    width: 200px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .companion-filter__item {
+    margin-bottom: 15px;
+  }
+
+  .companion-filter__transport-list {
+    width: 200px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .companion-filter__level-inputs {
+    width: 200px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .companion-filter__show-button {
+    width: 196px;
+    height: 50px;
+  }
 }

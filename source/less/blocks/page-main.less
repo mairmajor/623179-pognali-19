@@ -17,6 +17,12 @@
   width: 100%;
 }
 
+.page-main__companion-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .page-main__wrapper {
   .container;
   padding: 0;
@@ -62,7 +68,6 @@
     display: block;
     position: relative;
     top: 10px;
-    width: 173px;
     height: 5px;
     border-radius: 2.4px;
     background-color: @color-line--header-pages;
@@ -165,5 +170,12 @@
     background-color: transparent;
     margin-left: 130px;
     z-index: 1;
+  }
+
+  .page-main__companion-block {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-top: 60px;
   }
 }

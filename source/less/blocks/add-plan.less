@@ -1,7 +1,16 @@
 .add-plan {
-  .container;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   background-color: @bgcolor--add-plan;
   border-radius: 30px 30px 0 0;
+  margin-top: -30px;
+  margin-bottom: -30px;
+  padding-bottom: 55px
+}
+
+.add-plan__wrapper {
+  .container;
 }
 
 .add-plan__header {
@@ -14,6 +23,9 @@
 
 .add-plan__step-markers {
   display: flex;
+  position: relative;
+  top: -35px;
+  left: 220px;
 }
 
 .add-plan__marker-label {
@@ -62,6 +74,7 @@
   font-weight: bold;
   text-align: left;
   color: @txtcolor--directions;
+  margin-bottom: 15px;
 }
 
 .add-plan__item-description {
@@ -76,12 +89,19 @@
   letter-spacing: normal;
   text-align: left;
   color: @txtcolor--invert-description;
+  margin-bottom: 15px;
 }
 
 .add-plan__counter-label {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.add-plan__counter-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .add-plan__counter-header {
@@ -94,9 +114,12 @@
   text-align: left;
   color: @txtcolor--directions;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .add-plan__counter-unit {
+  margin: 0;
+  padding: 0;
   font-family: @default-font;
   font-size: 16px;
   font-weight: 500;
@@ -190,6 +213,8 @@
   border-top: 1px solid @color-border--input;
   border-bottom: 1px solid @color-border--input;
   height: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .add-plan__arrow-prev {
@@ -225,8 +250,7 @@
 .add-plan__week {
   .list-reset;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
 }
 
 .add-plan__weekday {
@@ -235,6 +259,11 @@
   line-height: 1.29;
   text-align: center;
   color: @txtcolor--invert-description;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
 
   &--weekend {
     color: @txtcolor--weekend;
@@ -274,7 +303,9 @@
 .add-plan__datetime {
   margin: 0;
   padding: 0;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   border: solid 1px @color-border--input;
@@ -283,11 +314,6 @@
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
-}
-
-.add-plan__button {
-  width: 230px;
-  min-height: 40px;
 }
 
 .add-plan__letter-list {
@@ -359,8 +385,10 @@
 .add-plan__button {
   width: 230px;
   min-height: 40px;
+  margin-top: 20px;
 
   &--prev {
+    align-self: center;
     background-color: transparent;
   }
 

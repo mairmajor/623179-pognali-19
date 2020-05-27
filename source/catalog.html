@@ -68,326 +68,329 @@
             </ul>
         </section>
         <section class="country-filter">
-            <div class="country-filter__head-wrapper">
+            <div class="country-filter__wrapper">
                 <h2 class="country-filter__header">Фильтрация по странам</h2>
-            </div>
-            <div class="visually-hidden country-filter__dropdown-country">
-                <ul class="country-filter__continent-list">
-                    <li class="country-filter__continent-item"><button class="country-filter__continent-button country-filter__continent-button--active" type="button">Европа</button></li>
-                    <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Азия</button></li>
-                    <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Америка</button></li>
-                    <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Острова</button></li>
-                </ul>
-                <ul class="country-filter__letter-list">
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button country-filter__letter-button--active" type="button">А</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">Б</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">В</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">Г</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">Д</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">Е</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">З</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">И</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">К</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">Л</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">М</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">Н</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">О</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">П</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">Р</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">С</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">Т</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">У</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">Ф</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">Х</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">Ч</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">Ш</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">Э</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">Ю</button>
-                    </li>
-                    <li class="country-filter__letter-item">
-                        <button class="country-filter__letter-button" type="button">Я</button>
-                    </li>
-                </ul>
-                <ul class="country-filter__country-list">
-                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/australia">Австралия</a></li>
-                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/austria">Австрия</a></li>
-                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/azerbajan">Азербайджан</a></li>
-                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/albania">Албания</a></li>
-                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/aljir">Алжир</a></li>
-                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/angola">Ангола</a></li>
-                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/andorra">Андорра</a></li>
-                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/antigua">Антигуа и Барбуда</a></li>
-                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/argentine">Аргентина</a></li>
-                    <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/armenia">Армения</a></li>
-                </ul>
-                <button class="button country-filter__button" type="button">Свернуть</button>
+                <div class="country-filter__dropdown-country country-filter__display">
+                    <ul class="country-filter__continent-list">
+                        <li class="country-filter__continent-item"><button class="country-filter__continent-button country-filter__continent-button--active" type="button">Европа</button></li>
+                        <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Азия</button></li>
+                        <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Америка</button></li>
+                        <li class="country-filter__continent-item"><button class="country-filter__continent-button" type="button">Острова</button></li>
+                    </ul>
+                    <button class="button country-filter__show-button" type="button">Показать все</button>
+                    <ul class="country-filter__letter-list country-filter__hidden">
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button country-filter__letter-button--active" type="button">А</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">Б</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">В</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">Г</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">Д</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">Е</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">З</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">И</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">К</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">Л</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">М</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">Н</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">О</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">П</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">Р</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">С</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">Т</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">У</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">Ф</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">Х</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">Ч</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">Ш</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">Э</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">Ю</button>
+                        </li>
+                        <li class="country-filter__letter-item">
+                            <button class="country-filter__letter-button" type="button">Я</button>
+                        </li>
+                    </ul>
+                    <ul class="country-filter__country-list country-filter__hidden">
+                        <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/australia">Австралия</a></li>
+                        <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/austria">Австрия</a></li>
+                        <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/azerbajan">Азербайджан</a></li>
+                        <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/albania">Албания</a></li>
+                        <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/aljir">Алжир</a></li>
+                        <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/angola">Ангола</a></li>
+                        <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/andorra">Андорра</a></li>
+                        <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/antigua">Антигуа и Барбуда</a></li>
+                        <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/argentine">Аргентина</a></li>
+                        <li class="country-filter__country-item"><a class="country-filter__country-link" href="/europe/armenia">Армения</a></li>
+                    </ul>
+                    <button class="button country-filter__button country-filter__hidden" type="button">Свернуть</button>
+                </div>
             </div>
         </section>
-        <section class="companion-filter">
-            <h2 class="companion-filter__header">Подберите идеального попутчика</h2>
-            <form class="companion-filter__form" action="http://echo.htmlacademy.ru" method="post">
-                <fieldset class="companion-filter__fieldset">
-                    <legend class="companion-filter__legend">Хобби</legend>
-                    <ul class="companion-filter__list">
-                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="sports" id="sports" checked><label class="companion-filter__label" for="sports">Спортзал</label></li>
-                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="hookah" id="hookah"><label class="companion-filter__label" for="hookah">Кальян</label></li>
-                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="sofa" id="sofa"><label class="companion-filter__label" for="sofa">Диван</label></li>
-                    </ul>
-                </fieldset>
-                <fieldset class="companion-filter__fieldset">
-                    <legend class="companion-filter__legend">Музыка</legend>
-                    <ul class="companion-filter__list">
-                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="hardrock" id="hardrock" checked><label class="companion-filter__label" for="hardrock">Тяжелый рок</label></li>
-                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="rusrap" id="rusrap"><label class="companion-filter__label" for="rusrap">Русский рэп</label></li>
-                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="eurodance" id="eurodance"><label class="companion-filter__label" for="eurodance">Евроденс</label></li>
-                    </ul>
-                </fieldset>
-                <fieldset class="companion-filter__fieldset">
-                    <legend class="companion-filter__legend">Еда</legend>
-                    <ul class="companion-filter__list">
-                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="meat-eater" id="meat-eater" checked><label class="companion-filter__label" for="meat-eater">Мясоед</label></li>
-                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="eutrophy" id="eutrophy"><label class="companion-filter__label" for="eutrophy">Сидит на ПП</label></li>
-                        <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="vegan" id="vegan"><label class="companion-filter__label" for="vegan">Веган-сыроед</label></li>
-                    </ul>
-                </fieldset>
-                <fieldset class="companion-filter__fieldset">
-                    <legend class="companion-filter__legend">Транспорт</legend>
-                    <ul class="companion-filter__transport-list">
-                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="airplane" id="airplane" checked><label class="companion-filter__transport-label companion-filter__transport-label--air" for="airplane">Самолет</label></li>
-                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="bus" id="bus" checked><label class="companion-filter__transport-label companion-filter__transport-label--bus" for="bus">Автобус</label></li>
-                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="bicycle" id="bicycle"><label class="companion-filter__transport-label companion-filter__transport-label--bike" for="bicycle">Велосипед</label></li>
-                        <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="run" id="run" checked><label class="companion-filter__transport-label companion-filter__transport-label--run" for="run">Бег</label></li>
-                    </ul>
-                </fieldset>
-                <fieldset class="companion-filter__fieldset">
-                    <legend class="companion-filter__legend">Левел</legend>
-                    <div class="companion-filter__level-inputs">
-                        <input class="companion-filter__level companion-filter__level--min" type="number" name="level-min-input">
-                        <input class="companion-filter__level companion-filter__level--max" type="number" name="level-max-input">
-                    </div>
+        <section class="page-main__companion-block">
+            <section class="companion-filter">
+                <h2 class="companion-filter__header">Подберите идеального попутчика</h2>
+                <form class="companion-filter__form" action="http://echo.htmlacademy.ru" method="post">
+                    <fieldset class="companion-filter__fieldset">
+                        <legend class="companion-filter__legend">Хобби</legend>
+                        <ul class="companion-filter__list">
+                            <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="sports" id="sports" checked><label class="companion-filter__label" for="sports">Спортзал</label></li>
+                            <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="hookah" id="hookah"><label class="companion-filter__label" for="hookah">Кальян</label></li>
+                            <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="sofa" id="sofa"><label class="companion-filter__label" for="sofa">Диван</label></li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="companion-filter__fieldset">
+                        <legend class="companion-filter__legend">Музыка</legend>
+                        <ul class="companion-filter__list">
+                            <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="hardrock" id="hardrock" checked><label class="companion-filter__label" for="hardrock">Тяжелый рок</label></li>
+                            <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="rusrap" id="rusrap"><label class="companion-filter__label" for="rusrap">Русский рэп</label></li>
+                            <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="eurodance" id="eurodance"><label class="companion-filter__label" for="eurodance">Евроденс</label></li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="companion-filter__fieldset">
+                        <legend class="companion-filter__legend">Еда</legend>
+                        <ul class="companion-filter__list">
+                            <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="meat-eater" id="meat-eater" checked><label class="companion-filter__label" for="meat-eater">Мясоед</label></li>
+                            <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="eutrophy" id="eutrophy"><label class="companion-filter__label" for="eutrophy">Сидит на ПП</label></li>
+                            <li class="companion-filter__item"><input class="companion-filter__checkbox" type="checkbox" name="vegan" id="vegan"><label class="companion-filter__label" for="vegan">Веган-сыроед</label></li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="companion-filter__fieldset">
+                        <legend class="companion-filter__legend">Транспорт</legend>
+                        <ul class="companion-filter__transport-list">
+                            <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="airplane" id="airplane" checked><label class="companion-filter__transport-label companion-filter__transport-label--air" for="airplane">Самолет</label></li>
+                            <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="bus" id="bus" checked><label class="companion-filter__transport-label companion-filter__transport-label--bus" for="bus">Автобус</label></li>
+                            <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="bicycle" id="bicycle"><label class="companion-filter__transport-label companion-filter__transport-label--bike" for="bicycle">Велосипед</label></li>
+                            <li class="companion-filter__transport-item"><input class="companion-filter__transport-checkbox" type="checkbox" name="run" id="run" checked><label class="companion-filter__transport-label companion-filter__transport-label--run" for="run">Бег</label></li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="companion-filter__fieldset">
+                        <legend class="companion-filter__legend">Левел</legend>
+                        <div class="companion-filter__level-inputs">
+                            <input class="companion-filter__level companion-filter__level--min" type="number" name="level-min-input">
+                            <input class="companion-filter__level companion-filter__level--max" type="number" name="level-max-input">
+                        </div>
 
-                    <div class="companion-filter__range-controls">
-                        <div class="companion-filter__scale">
-                            <div class="companion-filter__bar"></div>
-                        </div>
-                        <div class="companion-filter__toggle companion-filter__toggle-min"></div>
-                        <div class="companion-filter__toggle companion-filter__toggle-max"></div>
-                    </div>
-                </fieldset>
-                <button class="button companion-filter__show-button" type="submit">Показать</button>
-            </form>
-        </section>
-        <section class="catalog-companions">
-            <h2 class="visually-hidden catalog-companions__header">Попутчики</h2>
-            <ul class="catalog-companions__list">
-                <li class="catalog-companions__item">
-                    <article class="user-card user-card--catalog">
-                        <a class="user-card__link" href="#">
-                            <img class="user-card__image user-card__image--catalog" src="img/firsova-mobile@1x.jpg" width="270" height="270" alt="Фото пользователя">
-                            <h3 class="user-card__name user-card__name--catalog">Таня Фирсова</h3>
-                        </a>
-                        <p class="user-card__sign user-card__sign--catalog">Хочет посетить:</p>
-                        <ul class="user-card__country-list user-card__country-list--catalog">
-                            <li class="user-card__country-flag user-card__country-flag--catalog">Шри-Ланка</li>
-                            <li class="user-card__country-flag user-card__country-flag--catalog">Тайланд</li>
-                            <li class="user-card__country-flag user-card__country-flag--catalog">Сейшелы</li>
-                        </ul>
-                        <p class="user-card__distance user-card__distance--catalog">1,5 M</p>
-                        <p class="user-card__tags user-card__tags--catalog"><a class="user-card__tag-link">#ЗОЖ</a> <a class="user-card__tag-link">#ПП</a> <a class="user-card__tag-link">#Фитнес</a> <a class="user-card__tag-link">#пляж</a> <a class="user-card__tag-link">#авокадо</a> <a class="user-card__tag-link">#смузи</a></p>
-                        <div class="user-card__transport-level">
-                            <ul class="user-card__transport-list user-card__transport-list-catalog">
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--air user-card__transport--air-catalog user-card__transport--active">Самолёт</p>
-                                </li>
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--bus user-card__transport--bus-catalog">Автобус</p>
-                                </li>
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--bike user-card__transport--bike-catalog">Велосипед</p>
-                                </li>
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--run user-card__transport--run-catalog">Бег</p>
-                                </li>
-                            </ul>
-                            <div class="user-card__level user-card__level--catalog">
-                                <p class="user-card__level-count user-card__level-count--catalog">99</p>
-                                <p class="user-card__level-text user-card__level-text--catalog">level</p>
+                        <div class="companion-filter__range-controls">
+                            <div class="companion-filter__scale">
+                                <div class="companion-filter__bar"></div>
                             </div>
+                            <div class="companion-filter__toggle companion-filter__toggle-min"></div>
+                            <div class="companion-filter__toggle companion-filter__toggle-max"></div>
                         </div>
-                        <a class="button user-card__button" href="#">Позвать!</a>
-                    </article>
-                </li>
-                <li class="catalog-companions__item">
-                    <article class="user-card user-card--catalog">
-                        <a class="user-card__link" href="#">
-                            <img class="user-card__image user-card__image--catalog" src="img/demin-mobile@1x.jpg" width="270" height="270" alt="Фото пользователя">
-                            <h3 class="user-card__name user-card__name--catalog">Петя Демин</h3>
-                        </a>
-                        <p class="user-card__sign user-card__sign--catalog">Хочет посетить:</p>
-                        <ul class="user-card__country-list user-card__country-list--catalog">
-                            <li class="user-card__country-flag user-card__country-flag--catalog">Бельгия</li>
-                            <li class="user-card__country-flag user-card__country-flag--catalog">Чехия</li>
-                        </ul>
-                        <p class="user-card__distance user-card__distance--catalog">1500</p>
-                        <p class="user-card__tags user-card__tags--catalog"><a class="user-card__tag-link">#бургер</a> <a class="user-card__tag-link">#бар</a> <a class="user-card__tag-link">#футбол</a> <a class="user-card__tag-link">#концерт</a> <a class="user-card__tag-link">#крафт</a></p>
-                        <div class="user-card__transport-level">
-                            <ul class="user-card__transport-list user-card__transport-list-catalog">
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--air user-card__transport--air-catalog user-card__transport--active">Самолёт</p>
-                                </li>
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--bus user-card__transport--bus-catalog user-card__transport--active">Автобус</p>
-                                </li>
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--bike user-card__transport--bike-catalog">Велосипед</p>
-                                </li>
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--run user-card__transport--run-catalog user-card__transport--active">Бег</p>
-                                </li>
+                    </fieldset>
+                    <button class="button companion-filter__show-button" type="submit">Показать</button>
+                </form>
+            </section>
+            <section class="catalog-companions">
+                <h2 class="visually-hidden catalog-companions__header">Попутчики</h2>
+                <ul class="catalog-companions__list">
+                    <li class="catalog-companions__item">
+                        <article class="user-card user-card--catalog">
+                            <a class="user-card__link" href="#">
+                                <img class="user-card__image user-card__image--catalog" src="img/firsova-mobile@1x.jpg" width="270" height="270" alt="Фото пользователя">
+                                <h3 class="user-card__name user-card__name--catalog">Таня Фирсова</h3>
+                            </a>
+                            <p class="user-card__sign user-card__sign--catalog">Хочет посетить:</p>
+                            <ul class="user-card__country-list user-card__country-list--catalog">
+                                <li class="user-card__country-flag user-card__country-flag--catalog">Шри-Ланка</li>
+                                <li class="user-card__country-flag user-card__country-flag--catalog">Тайланд</li>
+                                <li class="user-card__country-flag user-card__country-flag--catalog">Сейшелы</li>
                             </ul>
-                            <div class="user-card__level user-card__level--catalog">
-                                <p class="user-card__level-count user-card__level-count--catalog">80</p>
-                                <p class="user-card__level-text user-card__level-text--catalog">level</p>
+                            <p class="user-card__distance user-card__distance--catalog">1,5 M</p>
+                            <p class="user-card__tags user-card__tags--catalog"><a class="user-card__tag-link">#ЗОЖ</a> <a class="user-card__tag-link">#ПП</a> <a class="user-card__tag-link">#Фитнес</a> <a class="user-card__tag-link">#пляж</a> <a class="user-card__tag-link">#авокадо</a> <a class="user-card__tag-link">#смузи</a></p>
+                            <div class="user-card__transport-level">
+                                <ul class="user-card__transport-list user-card__transport-list-catalog">
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--air user-card__transport--air-catalog user-card__transport--active">Самолёт</p>
+                                    </li>
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--bus user-card__transport--bus-catalog">Автобус</p>
+                                    </li>
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--bike user-card__transport--bike-catalog">Велосипед</p>
+                                    </li>
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--run user-card__transport--run-catalog">Бег</p>
+                                    </li>
+                                </ul>
+                                <div class="user-card__level user-card__level--catalog">
+                                    <p class="user-card__level-count user-card__level-count--catalog">99</p>
+                                    <p class="user-card__level-text user-card__level-text--catalog">level</p>
+                                </div>
                             </div>
-                        </div>
-                        <a class="button user-card__button" href="#">Позвать!</a>
-                    </article>
-                </li>
-                <li class="catalog-companions__item">
-                    <article class="user-card user-card--catalog">
-                        <a class="user-card__link" href="#">
-                            <img class="user-card__image user-card__image--catalog" src="img/smolov-mobile@1x.jpg" width="270" height="270" alt="Фото пользователя">
-                            <h3 class="user-card__name user-card__name--catalog">Марк Смолов</h3>
-                        </a>
-                        <p class="user-card__sign user-card__sign--catalog">Хочет посетить:</p>
-                        <ul class="user-card__country-list user-card__country-list--catalog">
-                            <li class="user-card__country-flag user-card__country-flag--catalog">США</li>
-                            <li class="user-card__country-flag user-card__country-flag--catalog">Австралия</li>
-                            <li class="user-card__country-flag user-card__country-flag--catalog">Доминикана</li>
-                        </ul>
-                        <p class="user-card__distance user-card__distance--catalog">170</p>
-                        <p class="user-card__tags user-card__tags--catalog"><a class="user-card__tag-link">#рэп</a> <a class="user-card__tag-link">#тату</a> <a class="user-card__tag-link">#хайпбист</a> <a class="user-card__tag-link">#кроссовки</a> <a class="user-card__tag-link">#суприм</a></p>
-                        <div class="user-card__transport-level">
-                            <ul class="user-card__transport-list user-card__transport-list-catalog">
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--air user-card__transport--air-catalog user-card__transport--active">Самолёт</p>
-                                </li>
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--bus user-card__transport--bus-catalog">Автобус</p>
-                                </li>
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--bike user-card__transport--bike-catalog user-card__transport--active">Велосипед</p>
-                                </li>
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--run user-card__transport--run-catalog">Бег</p>
-                                </li>
+                            <a class="button user-card__button" href="#">Позвать!</a>
+                        </article>
+                    </li>
+                    <li class="catalog-companions__item">
+                        <article class="user-card user-card--catalog">
+                            <a class="user-card__link" href="#">
+                                <img class="user-card__image user-card__image--catalog" src="img/demin-mobile@1x.jpg" width="270" height="270" alt="Фото пользователя">
+                                <h3 class="user-card__name user-card__name--catalog">Петя Демин</h3>
+                            </a>
+                            <p class="user-card__sign user-card__sign--catalog">Хочет посетить:</p>
+                            <ul class="user-card__country-list user-card__country-list--catalog">
+                                <li class="user-card__country-flag user-card__country-flag--catalog">Бельгия</li>
+                                <li class="user-card__country-flag user-card__country-flag--catalog">Чехия</li>
                             </ul>
-                            <div class="user-card__level user-card__level--catalog">
-                                <p class="user-card__level-count user-card__level-count--catalog">25</p>
-                                <p class="user-card__level-text user-card__level-text--catalog">level</p>
+                            <p class="user-card__distance user-card__distance--catalog">1500</p>
+                            <p class="user-card__tags user-card__tags--catalog"><a class="user-card__tag-link">#бургер</a> <a class="user-card__tag-link">#бар</a> <a class="user-card__tag-link">#футбол</a> <a class="user-card__tag-link">#концерт</a> <a class="user-card__tag-link">#крафт</a></p>
+                            <div class="user-card__transport-level">
+                                <ul class="user-card__transport-list user-card__transport-list-catalog">
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--air user-card__transport--air-catalog user-card__transport--active">Самолёт</p>
+                                    </li>
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--bus user-card__transport--bus-catalog user-card__transport--active">Автобус</p>
+                                    </li>
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--bike user-card__transport--bike-catalog">Велосипед</p>
+                                    </li>
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--run user-card__transport--run-catalog user-card__transport--active">Бег</p>
+                                    </li>
+                                </ul>
+                                <div class="user-card__level user-card__level--catalog">
+                                    <p class="user-card__level-count user-card__level-count--catalog">80</p>
+                                    <p class="user-card__level-text user-card__level-text--catalog">level</p>
+                                </div>
                             </div>
-                        </div>
-                        <a class="button user-card__button" href="#">Позвать!</a>
-                    </article>
-                </li>
-                <li class="catalog-companions__item">
-                    <article class="user-card user-card--catalog">
-                        <a class="user-card__link" href="#">
-                            <img class="user-card__image user-card__image--catalog" src="img/rogovaya-mobile@1x.jpg" width="270" height="270" alt="Фото пользователя">
-                            <h3 class="user-card__name user-card__name--catalog user-card__name--active">Лариса Роговая</h3>
-                        </a>
-                        <p class="user-card__sign user-card__sign--catalog">Хочет посетить:</p>
-                        <ul class="user-card__country-list user-card__country-list--catalog">
-                            <li class="user-card__country-flag user-card__country-flag--catalog">Шри Ланка</li>
-                            <li class="user-card__country-flag user-card__country-flag--catalog">Тайланд</li>
-                            <li class="user-card__country-flag user-card__country-flag--catalog">Сейшелы</li>
-                        </ul>
-                        <p class="user-card__distance user-card__distance--catalog">23</p>
-                        <p class="user-card__tags user-card__tags--catalog"><a class="user-card__tag-link">#образование</a> <a class="user-card__tag-link">#карьера</a> <a class="user-card__tag-link">#учеба</a> <a class="user-card__tag-link">#линкедин</a></p>
-                        <div class="user-card__transport-level">
-                            <ul class="user-card__transport-list user-card__transport-list-catalog">
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--air user-card__transport--air-catalog user-card__transport--active">Самолёт</p>
-                                </li>
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--bus user-card__transport--bus-catalog user-card__transport--active">Автобус</p>
-                                </li>
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--bike user-card__transport--bike-catalog">Велосипед</p>
-                                </li>
-                                <li class="user-card__transport-item user-card__transport-item--catalog">
-                                    <p class="user-card__transport user-card__transport--run user-card__transport--run-catalog">Бег</p>
-                                </li>
+                            <a class="button user-card__button" href="#">Позвать!</a>
+                        </article>
+                    </li>
+                    <li class="catalog-companions__item">
+                        <article class="user-card user-card--catalog">
+                            <a class="user-card__link" href="#">
+                                <img class="user-card__image user-card__image--catalog" src="img/smolov-mobile@1x.jpg" width="270" height="270" alt="Фото пользователя">
+                                <h3 class="user-card__name user-card__name--catalog">Марк Смолов</h3>
+                            </a>
+                            <p class="user-card__sign user-card__sign--catalog">Хочет посетить:</p>
+                            <ul class="user-card__country-list user-card__country-list--catalog">
+                                <li class="user-card__country-flag user-card__country-flag--catalog">США</li>
+                                <li class="user-card__country-flag user-card__country-flag--catalog">Австралия</li>
+                                <li class="user-card__country-flag user-card__country-flag--catalog">Доминикана</li>
                             </ul>
-                            <div class="user-card__level user-card__level--catalog">
-                                <p class="user-card__level-count user-card__level-count--catalog">50</p>
-                                <p class="user-card__level-text user-card__level-text--catalog">level</p>
+                            <p class="user-card__distance user-card__distance--catalog">170</p>
+                            <p class="user-card__tags user-card__tags--catalog"><a class="user-card__tag-link">#рэп</a> <a class="user-card__tag-link">#тату</a> <a class="user-card__tag-link">#хайпбист</a> <a class="user-card__tag-link">#кроссовки</a> <a class="user-card__tag-link">#суприм</a></p>
+                            <div class="user-card__transport-level">
+                                <ul class="user-card__transport-list user-card__transport-list-catalog">
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--air user-card__transport--air-catalog user-card__transport--active">Самолёт</p>
+                                    </li>
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--bus user-card__transport--bus-catalog">Автобус</p>
+                                    </li>
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--bike user-card__transport--bike-catalog user-card__transport--active">Велосипед</p>
+                                    </li>
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--run user-card__transport--run-catalog">Бег</p>
+                                    </li>
+                                </ul>
+                                <div class="user-card__level user-card__level--catalog">
+                                    <p class="user-card__level-count user-card__level-count--catalog">25</p>
+                                    <p class="user-card__level-text user-card__level-text--catalog">level</p>
+                                </div>
                             </div>
-                        </div>
-                        <a class="button user-card__button" href="#">Позвать!</a>
-                    </article>
-                </li>
-            </ul>
-            <a class="button catalog-companions__more" href="#">Показать еще</a>
-            <div class="catalog-companions__pagination">
-                <ul class="catalog-companions__page-list">
-                    <li class="catalog-companions__page-item"><a class="button catalog-companions__page-number catalog-companions__page-number--active" href="#">1 </a></li>
-                    <li class="catalog-companions__page-item"><a class=" button catalog-companions__page-number" href="#">2</a></li>
-                    <li class="catalog-companions__page-item"><a class="button catalog-companions__page-number" href="#">3</a></li>
-                    <li class="catalog-companions__page-item"><a class=" button catalog-companions__page-number" href="#">4</a></li>
+                            <a class="button user-card__button" href="#">Позвать!</a>
+                        </article>
+                    </li>
+                    <li class="catalog-companions__item">
+                        <article class="user-card user-card--catalog">
+                            <a class="user-card__link" href="#">
+                                <img class="user-card__image user-card__image--catalog" src="img/rogovaya-mobile@1x.jpg" width="270" height="270" alt="Фото пользователя">
+                                <h3 class="user-card__name user-card__name--catalog user-card__name--active">Лариса Роговая</h3>
+                            </a>
+                            <p class="user-card__sign user-card__sign--catalog">Хочет посетить:</p>
+                            <ul class="user-card__country-list user-card__country-list--catalog">
+                                <li class="user-card__country-flag user-card__country-flag--catalog">Шри Ланка</li>
+                                <li class="user-card__country-flag user-card__country-flag--catalog">Тайланд</li>
+                                <li class="user-card__country-flag user-card__country-flag--catalog">Сейшелы</li>
+                            </ul>
+                            <p class="user-card__distance user-card__distance--catalog">23</p>
+                            <p class="user-card__tags user-card__tags--catalog"><a class="user-card__tag-link">#образование</a> <a class="user-card__tag-link">#карьера</a> <a class="user-card__tag-link">#учеба</a> <a class="user-card__tag-link">#линкедин</a></p>
+                            <div class="user-card__transport-level">
+                                <ul class="user-card__transport-list user-card__transport-list-catalog">
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--air user-card__transport--air-catalog user-card__transport--active">Самолёт</p>
+                                    </li>
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--bus user-card__transport--bus-catalog user-card__transport--active">Автобус</p>
+                                    </li>
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--bike user-card__transport--bike-catalog">Велосипед</p>
+                                    </li>
+                                    <li class="user-card__transport-item user-card__transport-item--catalog">
+                                        <p class="user-card__transport user-card__transport--run user-card__transport--run-catalog">Бег</p>
+                                    </li>
+                                </ul>
+                                <div class="user-card__level user-card__level--catalog">
+                                    <p class="user-card__level-count user-card__level-count--catalog">50</p>
+                                    <p class="user-card__level-text user-card__level-text--catalog">level</p>
+                                </div>
+                            </div>
+                            <a class="button user-card__button" href="#">Позвать!</a>
+                        </article>
+                    </li>
                 </ul>
-                <ul class="catalog-companions__arrow-list">
-                    <li class="catalog-companions__arrow-item"><a class="button catalog-companions__button catalog-companions__button--prev" href="#">Показать предыдущую страницу</a></li>
-                    <li class="catalog-companions__arrow-item"><a class=" button catalog-companions__button catalog-companions__button--next" href="#">Показать следующую страницу</a></li>
-                </ul>
-            </div>
+                <a class="button catalog-companions__more" href="#">Показать еще</a>
+                <div class="catalog-companions__pagination">
+                    <ul class="catalog-companions__page-list">
+                        <li class="catalog-companions__page-item"><a class="button catalog-companions__page-number catalog-companions__page-number--active" href="#">1 </a></li>
+                        <li class="catalog-companions__page-item"><a class=" button catalog-companions__page-number" href="#">2</a></li>
+                        <li class="catalog-companions__page-item"><a class="button catalog-companions__page-number" href="#">3</a></li>
+                        <li class="catalog-companions__page-item"><a class=" button catalog-companions__page-number" href="#">4</a></li>
+                    </ul>
+                    <ul class="catalog-companions__arrow-list">
+                        <li class="catalog-companions__arrow-item"><a class="button catalog-companions__button catalog-companions__button--prev" href="#">Показать предыдущую страницу</a></li>
+                        <li class="catalog-companions__arrow-item"><a class=" button catalog-companions__button catalog-companions__button--next" href="#">Показать следующую страницу</a></li>
+                    </ul>
+                </div>
+            </section>
         </section>
     </main>
 
