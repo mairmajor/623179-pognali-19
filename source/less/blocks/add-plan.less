@@ -800,22 +800,29 @@
     }
   }
 
+  .add-plan__counter-label {
+    border-top: none;
+    width: 480px;
+  }
+
   .add-plan__item-header {
     padding-left: 115px;
   }
 
   .add-plan__item-description {
     width: 610px;
-
-    &--itinerary {
-      padding-right: 120px;
-    }
   }
 
   .add-plan__block {
+    border-top: 1px solid @bgcolor--add-plan;
+    padding-top: 30px;
     position: relative;
     display: flex;
-    width: 520px;
+    width: 1000px;
+
+    &--duration {
+      border-top: none;
+    }
   }
 
   .add-plan__counter-unit {
@@ -824,19 +831,19 @@
 
   .add-plan__counter-input {
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 220px;
     width: 181px;
   }
 
   .add-plan__counter-minus {
-    top: -50px;
-    left: 23px;
+    top: 35px;
+    left: -240px;
   }
 
   .add-plan__counter-plus {
-    top: -50px;
-    left: 470px;
+    top: 25px;
+    left: -140px;
   }
 
   .add-plan__counter-checkbox {
