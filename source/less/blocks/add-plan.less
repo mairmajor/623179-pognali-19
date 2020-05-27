@@ -1,12 +1,13 @@
 .add-plan {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   background-color: @bgcolor--add-plan;
   border-radius: 30px 30px 0 0;
   margin-top: -30px;
   margin-bottom: -30px;
-  padding-bottom: 55px
+  padding-bottom: 55px;
 }
 
 .add-plan__wrapper {
@@ -95,12 +96,6 @@
 .add-plan__counter-label {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.add-plan__counter-block {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
 }
 
@@ -145,7 +140,7 @@
 
 .add-plan__counter-minus {
   position: relative;
-  top: -20px;
+  top: -35px;
   left: 15px;
   font-size: 0;
   border: none;
@@ -157,8 +152,8 @@
 
 .add-plan__counter-plus {
   position: relative;
-  top: -29px;
-  left: 190px;
+  top: -35px;
+  left: 170px;
   font-size: 0;
   border: none;
   width: 14px;
@@ -268,6 +263,10 @@
   &--weekend {
     color: @txtcolor--weekend;
   }
+}
+
+.add-plan__weekday-letter {
+  display: none;
 }
 
 .add-plan__date-list {
@@ -382,6 +381,12 @@
   text-transform: uppercase;
 }
 
+.add-plan__buttons-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .add-plan__button {
   width: 230px;
   min-height: 40px;
@@ -458,7 +463,287 @@
 }
 
 @media (min-width: @tablet-width) {
+  .add-plan {
+    padding: 30px;
+    padding-bottom: 90px;
+  }
 
+  .add-plan__header {
+    font-size: 36px;
+    line-height: 1.39;
+  }
+
+  .add-plan__step-markers {
+    top: -60px;
+    left: 540px;
+  }
+
+  .add-plan__marker-label {
+    margin-right: 30px;
+  }
+
+  .add-plan__item {
+    width: 618px;
+    padding: 45px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+
+    &::before {
+      font-size: 36px;
+    }
+  }
+
+  .add-plan__item-header {
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+
+  .add-plan__item-description {
+    font-size: 20px;
+    line-height: 1.2;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    width: 532px;
+
+    &--itinerary {
+      padding-right: 120px;
+    }
+  }
+
+  .add-plan__block {
+    &--duration {
+      order: 2;
+      margin-top: 25px;
+    }
+  }
+
+  .add-plan__counter-label {
+    padding-top: 25px;
+    border-top: 1px solid @bgcolor--add-plan;
+  }
+
+  .add-plan__counter-header {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+  }
+
+  .add-plan__counter-unit {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .add-plan__counter-input {
+    width: 531px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .add-plan__counter-minus {
+    top: -50px;
+    left: 23px;
+    border: none;
+    width: 20px;
+    background-image: url("../img/qty-minus.svg");
+  }
+
+  .add-plan__counter-plus {
+    top: -50px;
+    left: 470px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/qty-plus.svg");
+  }
+
+  .add-plan__counter-checkbox {
+    &:checked ~ label::after {
+      position: relative;
+      top: 0;
+      right: 222px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .add-plan__checkbox-label {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &::before {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .add-plan__choose-date {
+    order: 2;
+  }
+
+  .add-plan__choose-month {
+    height: 85px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .add-plan__arrow-prev {
+    width: 15px;
+    height: 28px;
+  }
+
+  .add-plan__month {
+    font-size: 36px;
+  }
+
+  .add-plan__arrow-next {
+    width: 15px;
+    height: 28px;
+  }
+
+  .add-plan__week {
+    width: 539px;
+  }
+
+  .add-plan__weekday {
+    align-items: flex-end;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 1.8px;
+    width: 77px;
+    height: 30px;
+  }
+
+  .add-plan__weekday-letter {
+    display: inline;
+  }
+
+  .add-plan__date-list {
+    width: 539px;
+  }
+
+  .add-plan__date-label {
+    &--active .add-plan__datetime {
+      border-width: 4px;
+      border-radius: 2px;
+    }
+  }
+
+  .add-plan__datetime {
+    width: 77px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .add-plan__itinerary-list {
+    position: relative;
+    padding-top: 40px;
+    border-top: solid 1px @color-border--input;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 135px;
+      content: "";
+      display: block;
+      width: 1px;
+      height: 450px;
+      background-color: @color-border--input;
+    }
+  }
+
+  .add-plan__itinerary-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+
+  .add-plan__select-country {
+    width: 369px;
+    height: 70px;
+    padding: 0 25px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    margin-right: 50px;
+  }
+
+  .add-plan__flag {
+    padding: 0;
+    width: 70px;
+    height: 47px;
+    border: none;
+  }
+
+  .add-plan__delete-country {
+    width: 17px;
+    height: 17px;
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  .add-plan__add-itinerary {
+    width: 369px;
+    height: 70px;
+    padding: 0 25px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .add-plan__buttons-block {
+    order: 2;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 45px;
+  }
+
+  .add-plan__button {
+    width: 285px;
+    min-height: 81px;
+    border-radius: 20px;
+    font-size: 24px;
+    text-transform: none;
+    margin-top: 0;
+
+    &--prev {
+      font-size: 24px;
+      text-transform: none;
+    }
+  }
+
+  .add-plan__funs-country {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0.6;
+    margin-bottom: 50px;
+  }
+
+  .add-plan__funs-text {
+    padding: 20px;
+    width: 499px;
+    min-height: 142px;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 35px;
+  }
 }
 
 @media (min-width: @desktop-width) {
