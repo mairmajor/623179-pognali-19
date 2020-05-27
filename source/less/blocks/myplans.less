@@ -88,3 +88,79 @@
   color: @txtcolor--change-button;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .myplans {
+    border-radius: 30px 30px 0 0;
+    padding: 30px;
+    padding-bottom: 100px;
+  }
+
+  .myplans__header {
+    font-size: 36px;
+    line-height: 1.39;
+  }
+
+  .myplans__item {
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .myplans__countries {
+    position: relative;
+    width: 100%;
+    padding: 20px 35px;
+    font-size: 24px;
+    line-height: 2.08;
+    margin-bottom: 0;
+    border-bottom: 1px solid @bgcolor--myplans;
+
+    &::before {
+      position: absolute;
+      top: 35px;
+      left: 575px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 0.9;
+      letter-spacing: 2px;
+    }
+  }
+
+  .myplans__tripper-count {
+    padding: 20px 35px;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .myplans__time {
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+  }
+
+  .myplans__change {
+    padding: 20px 35px;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+}
