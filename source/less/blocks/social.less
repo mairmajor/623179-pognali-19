@@ -1,13 +1,17 @@
 .social {
+  .list-reset;
   display: flex;
-  justify-content: space-between;
   min-width: 145px;
-  height: 21px;
 }
 
 .social__item {
   display: flex;
   align-items: center;
+  background-color: @bgcolor--button;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
 }
 
 .social__link {
@@ -37,3 +41,28 @@
     min-height: 18px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .social__item {
+    width: 60px;
+    height: 60px;
+  }
+
+  .social__link {
+    &--vkontakte {
+      min-width: 31px;
+      min-height: 16px;
+    }
+
+    &--facebook {
+      min-width: 14px;
+      min-height: 28px;
+    }
+
+    &--instagram {
+      min-width: 24px;
+      min-height: 24px;
+    }
+  }
+}
+

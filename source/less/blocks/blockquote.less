@@ -1,7 +1,14 @@
+.blockquote {
+  width: 100%;
+  background-color: @bgcolor--main-page;
+}
+
 .blockquote__content {
+  margin: 0;
+  padding: 30px 25px;
   display: flex;
   flex-direction: column;
-  background-color: @bgcolor--main-page;
+  min-height: 285px;
 }
 
 .blockquote__quote {
@@ -24,4 +31,37 @@
   line-height: 1.38;
   text-align: left;
   color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .blockquote {
+    min-height: 180px;
+    background-color: transparent;
+    padding-top: 80px;
+    padding-bottom: 275px;
+  }
+
+  .blockquote__quote {
+    width: 280px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.18;
+    margin-bottom: 52px;
+  }
+
+  .blockquote__author {
+    width: 280px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.19;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .blockquote {
+    display: flex;
+    justify-content: flex-end;
+    width: 450px;
+    padding-top: 40px;
+  }
 }

@@ -1,21 +1,46 @@
 .rates {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: @default-font;
+  background-color: @bgcolor--rates;
+  border-radius: 30px;
+  margin-top: -50px;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+}
+
+.rates__wrapper {
+  .container;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: @default-font;
-  background-color: @bgcolor--rates;
-  padding: 25px;
-  border-radius: 30px;
-  margin-top: -50px;
-  z-index: -1;
 }
 
 .rates__header {
-  width: 250px;
+  position: relative;
+  align-self: flex-start;
+  width: 150px;
   font-size: 24px;
   font-weight: bold;
   text-align: left;
   color: @txtcolor--header;
+  margin-top: 80px;
+  margin-bottom: 50px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -100px;
+    display: block;
+    width: 99px;
+    height: 99px;
+    background-size: contain;
+    background-image: url("../img/rates@1x.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .rates__list {
@@ -28,17 +53,27 @@
   line-height: 1.38;
   text-align: left;
   color: @txtcolor--invert-description;
+  margin-bottom: 15px;
+}
+
+.rates__item:first-child {
   border-top: 1px solid @color-line;
 }
 
 .rates__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border-bottom: 1px solid @color-line;
   counter-increment: myCounter;
+  position: relative;
+  min-height: 65px;
+  width: 200px;
 
   &::before {
-    position: relative;
-    top: 10px;
-    right: -210px;
+    position: absolute;
+    top: 5px;
+    right: -50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,13 +101,123 @@
 }
 
 .rates__button {
-  margin: 0;
-  padding: 0;
+  width: 250px;
   font-family: @default-font;
   font-size: 16px;
   font-weight: bold;
   text-align: left;
+  justify-content: flex-start;
   color: @txtcolor--show-rates;
   text-transform: none;
   background-color: @bgcolor--show-rates;
+}
+
+@media (min-width: @tablet-width) {
+  .rates {
+    padding: 90px 20px 60px;
+    border-radius: 50px;
+  }
+
+  .rates__header {
+    align-self: center;
+    width: 500px;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-bottom: 74px;
+
+    &::after {
+      top: 340px;
+      right: -20px;
+    }
+  }
+
+  .rates__list {
+    width: 562px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.18;
+    margin-bottom: 34px;
+  }
+
+  .rates__item {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 562px;
+
+    &::before {
+      top: 0;
+      right: auto;
+      left: -85px;
+      font-size: 28px;
+      line-height: 1;
+      width: 67px;
+      height: 67px;
+    }
+  }
+
+  .rates__button {
+    align-self: start;
+    position: relative;
+    width: 400px;
+    font-size: 20px;
+    margin-left: 60px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -80px;
+      border-radius: 50%;
+      width: 67px;
+      height: 67px;
+      background-color: @bgcolor--rates-icon;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: -55px;
+      width: 17px;
+      height: 21px;
+      margin-right: 23px;
+      background-image: url("../img/business.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rates {
+    padding-top: 120px;
+    padding-bottom: 190px;
+  }
+
+  .rates__header {
+    margin-bottom: 130px;
+
+    &::after {
+      width: 198px;
+      height: 198px;
+      top: 173px;
+      right: -420px;
+    }
+  }
+
+  .rates__list {
+    width: 813px;
+  }
+
+  .rates__item {
+    width: 813px;
+
+    &::before {
+      right: 840px;
+    }
+  }
+
+  .rates__button {
+    margin-left: 250px;
+  }
 }

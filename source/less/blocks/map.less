@@ -1,13 +1,56 @@
+.map {
+  width: 100%;
+}
+
 .map__back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
   background-color: @bgcolor--map;
   border-radius: 0 0 25px 25px;
+  margin-top: -50px;
+  z-index: 2;
+  padding-bottom: 35px;
+  padding-top: 80px;
+}
+
+.map__wrapper {
+  .container;
 }
 
 .map__header {
+  margin: 0;
+  padding: 0;
   display: flex;
+  position: relative;
+  margin-bottom: 30px;
+
+  &::after {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    content: "";
+    display: block;
+    width: 14px;
+    height: 22px;
+    background-image: url("../img/contacts-location.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: @bgcolor--invert-icon;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
 }
 
 .map__address {
+  display: flex;
+  justify-content: center;
   font-family: @default-font;
   font-size: 16px;
   font-weight: bold;
@@ -17,22 +60,7 @@
   color: @txtcolor--address;
   text-transform: uppercase;
   width: 150px;
-}
-
-.map__icon {
-  background-color: @bgcolor--invert-icon;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 14px;
-    height: 22px;
-    background-image: url("../img/contacts-location.svg");
-    background-repeat: no-repeat;
-  }
+  margin-left: 15px;
 }
 
 .map__button {
@@ -43,5 +71,64 @@
 }
 
 .map__iframe {
+  width: 100%;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .map__back {
+    border-radius: 0 0 50px 50px;
+    padding-top: 110px;
+  }
+
+  .map__button {
+    width: 618px;
+    min-height: 81px;
+    border-radius: 20px;
+    font-size: 24px;
+    justify-content: flex-start;
+    padding-left: 35px;
+    margin-bottom: 45px;
+  }
+
+
+
+  .map__address {
+    justify-content: flex-start;
+    width: 600px;
+    font-size: 28px;
+    line-height: 1;
+    margin-left: 25px;
+  }
+
+  .map__iframe {
+    height: 460px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .map__button {
+    width: 324px;
+  }
+
+  .map__header {
+    align-items: center;
+
+    &::after {
+      width: 28px;
+      height: 43px;
+      top: 25px;
+      left: 30px;
+    }
+
+    &::before {
+      width: 90px;
+      height: 90px;
+    }
+  }
 }

@@ -1,9 +1,19 @@
 .contact-us {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: @bgcolor--contact-us;
-  border-radius: 25px;
+  border-radius: 0 0 25px 25px;
+  margin-top: -30px;
+  z-index: 3;
+}
+
+.contact-us__wrapper {
+  .container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-us__header {
@@ -12,9 +22,12 @@
   font-weight: bold;
   text-align: center;
   color: @txtcolor--header;
+  margin-top: 100px;
 }
 
 .contact-us__description {
+  margin: 0;
+  padding: 0;
   width: 200px;
   font-family: @default-font;
   font-size: 16px;
@@ -22,14 +35,23 @@
   line-height: 1.38;
   text-align: center;
   color: @txtcolor--description;
+  margin-bottom: 20px;
+}
+
+.contact-us__email-form {
+  display: flex;
+  margin-bottom: 30px;
+  width: 270px;
+  background-color: @bgcolor--input;
+  border-radius: 10px;
 }
 
 .contact-us__email {
   border: none;
-  width: 270px;
-  height: 62px;
+  outline: none;
+  height: 100%;
+  width: 100%;
   border-radius: 10px;
-  background-color: @bgcolor--input;
 }
 
 .contact-us__button {
@@ -43,6 +65,11 @@
 .contacts-us__authorization-link {
   color: @txtcolor--special;
   text-decoration: underline;
+}
+
+.contact-us__list {
+  .list-reset;
+  margin-bottom: 30px;
 }
 
 .contact-us__item {
@@ -89,5 +116,110 @@
     left: 13.5px;
     background-image: url("../img/contacts-mail.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contact-us {
+    border-radius: 0 0 50px 50px;
+  }
+
+  .contact-us__header {
+    font-size: 45px;
+    margin-bottom: 60px;
+  }
+
+  .contact-us__description {
+    width: 610px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.18;
+    margin-bottom: 60px;
+  }
+
+  .contact-us__email-form {
+    width: 618px;
+    min-height: 81px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+  }
+
+  .contact-us__email {
+    border-radius: 20px;
+    min-height: 81px;
+  }
+
+  .contact-us__button {
+    width: 82px;
+    height: 81px;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .contact-us__link {
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .contact-us__list {
+    align-self: start;
+    margin-left: 35px;
+    margin-bottom: 60px;
+  }
+
+  .contact-us__icon {
+    width: 67px;
+    height: 67px;
+
+    &--tel::before {
+      width: 27px;
+      height: 27px;
+      top: 20px;
+      left: 20px;
+    }
+
+    &--email::before {
+      width: 27px;
+      height: 19px;
+      top: 25px;
+      left: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-us__email-form {
+    width: 1150px;
+  }
+
+  .contact-us__button {
+    width: 400px;
+  }
+
+  .contact-us__list {
+    display: flex;
+    align-self: center;
+  }
+
+  .contact-us__item {
+    margin-right: 110px;
+  }
+
+  .contact-us__icon {
+    width: 90px;
+    height: 90px;
+
+    &--tel::before {
+      width: 36px;
+      height: 36px;
+      top: 27px;
+      left: 27px;
+    }
+
+    &--email::before {
+      width: 36px;
+      height: 26px;
+      top: 32px;
+      left: 27px;
+    }
   }
 }

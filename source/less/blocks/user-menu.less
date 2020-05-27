@@ -1,18 +1,17 @@
 .user-menu {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
-  background-image: url("../img/traveller-illustration-mobile@1x.png");
-  background-repeat: no-repeat;
-  min-height: 255px;
-  margin-bottom: 50px;
-  background-color: @bgcolor--main-page;
+  background-image: linear-gradient(transparent 50%, @bgcolor--page-header 50%);
+
+  &--pages {
+    display: none;
+  }
 }
 
 .user-menu__list {
   .list-reset;
   display: flex;
-  margin-bottom: -25px;
+  z-index: 1;
 }
 
 .user-menu__item {
@@ -66,4 +65,51 @@
 .user-menu__button {
   width: 189px;
   min-height: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .user-menu {
+    position: absolute;
+    top: -50px;
+    right: 30px;
+    z-index: 1;
+    justify-content: flex-end;
+    background-image: none;
+
+    &--pages {
+      display: flex;
+    }
+  }
+
+  .user-menu__icon {
+    display: none;
+  }
+
+  .user-menu__button {
+    font-size: 20px;
+    width: 188px;
+    min-height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-menu {
+    right: 60px;
+  }
+
+  .user-menu__icon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+
+    &--tel::before {
+      top: 16px;
+      left: 16px;
+    }
+
+    &--email::before {
+      top: 18px;
+      left: 16px;
+    }
+  }
 }

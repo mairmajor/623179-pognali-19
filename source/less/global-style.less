@@ -1,13 +1,18 @@
 body {
-  min-width: 320px;
   padding: 0;
   margin: 0;
   font-family: "BloggerSans", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 1.38;
+  line-height: 1;
   color: @txtcolor--base;
   font-style: normal;
   background-color: @bgcolor--body;
+}
+
+@media (min-width: @tablet-width), (min-width: @desktop-width) {
+  body {
+    font-size: 20px;
+  }
 }
 
 img {

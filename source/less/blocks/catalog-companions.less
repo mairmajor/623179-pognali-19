@@ -1,22 +1,13 @@
+.catalog-companions {
+  .container;
+}
+
 .catalog-companions__list {
-.list-reset;
+  .list-reset;
 }
 
 .catalog-companions__item {
-  width: 270px;
-  height: 415px;
   margin-bottom: 10px;
-
-  .user-card__image {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-  }
-
-  .user-card__button {
-    width: 230px;
-    min-height: 40px;
-  }
 }
 
 .catalog-companions__more {
@@ -26,8 +17,17 @@
 .catalog-companions__pagination {
   display: flex;
   width: 270px;
-  height: 50px;
   margin-bottom: 45px;
+}
+
+.catalog-companions__page-list {
+  display: none;
+}
+
+.catalog-companions__arrow-list {
+  .list-reset;
+  display: flex;
+  width: 270px;
 }
 
 .catalog-companions__button {
@@ -35,11 +35,95 @@
   background-color: @bgcolor--special-button;
 
   &--prev {
+    width: 135px;
     border-radius: 20px 0 0 20px;
     margin-right: 1px;
   }
 
   &--next {
+    width: 135px;
     border-radius: 0 20px 20px 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-companions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-companions__item {
+    margin-bottom: 40px;
+  }
+
+  .catalog-companions__more {
+    font-size: 20px;
+    align-self: center;
+    margin-bottom: 50px;
+  }
+
+  .catalog-companions__pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 60px;
+    width: 688px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: @bgcolor--special-button;
+  }
+
+  .catalog-companions__button {
+    width: 10px;
+    min-height: 20px;
+    background-color: inherit;
+    margin-right: 30px;
+    background-repeat: no-repeat;
+
+    &--prev {
+      background-image: url("../img/triangle-arrow-left.svg");
+    }
+
+    &--next {
+      background-image: url("../img/triangle-arrow-right.svg");
+    }
+  }
+
+  .catalog-companions__page-number {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: inherit;
+    font-family: @default-font;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+
+    &--active {
+      background-color: @bgcolor--button;
+    }
+  }
+
+  .catalog-companions__page-list {
+    .list-reset;
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-companions__item {
+    margin-bottom: 30px;
+  }
+
+  .catalog-companions__more {
+    font-size: 20px;
+    align-self: flex-start;
+    margin-bottom: 50px;
+    margin-left: 200px;
+  }
+
+  .catalog-companions__pagination {
+    width: 950px;
   }
 }

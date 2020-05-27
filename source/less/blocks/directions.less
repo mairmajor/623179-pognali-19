@@ -1,14 +1,23 @@
 .directions {
+  width: 100%;
+  font-family: @default-font;
+  background-color: @bgcolor--directions;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  border-radius: 30px;
+  z-index: 6;
+}
+
+.directions__wrapper {     
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: @default-font;
-  background-color: @bgcolor--directions;
-  padding: 25px;
-  border-radius: 30px;
 }
 
+
 .directions__header {
+  margin: 0;
+  padding: 0;
   width: 220px;
   font-size: 24px;
   font-weight: bold;
@@ -23,20 +32,98 @@
   line-height: 1.38;
   text-align: left;
   color: @txtcolor--invert-description;
+  margin-bottom: 60px;
 }
 
 .directions__list {
   .list-reset;
+  margin-bottom: 25px;
 }
 
 .directions__item {
-  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .directions__button {
+  min-height: 62px;
   border-radius: 10px;
   font-size: 18px;
   text-align: left;
   color: @txtcolor--show-button;
   text-transform: none;
+  box-shadow: 0 -60px 50px 20px @bgcolor--directions;
+}
+
+@media (min-width: @tablet-width) {
+  .directions {
+    padding: 70px 75px 80px;
+    border-radius: 50px;
+  }
+
+  .directions__list {
+    margin-bottom: 47px;
+  }
+
+  .directions__header {
+    align-self: start;
+    width: 340px;
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+
+  .directions__description {
+    align-self: start;
+    width: 340px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.18;
+    margin-bottom: 100px;
+  }
+
+  .directions__button {
+    width: 618px;
+    min-height: 81px;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: @desktop-width) {    
+  .directions__wrapper {
+    height: 600px;
+    padding-top: 100px;
+    flex-wrap: wrap;
+  }
+
+  .directions__list {
+    order: -1;
+    margin-right: 100px;
+    margin-bottom: auto;
+  }
+
+  .directions__item:last-child {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 190px;
+      width: 681px;
+      height: 10px;
+      display: block;
+      box-shadow: 0 0 30px 80px @bgcolor--directions;
+    }
+  }
+
+  .directions__header {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .directions__button {
+    width: 274px;
+    align-self: flex-start;
+  }
 }
