@@ -72,14 +72,14 @@
                 </div>
                 <img class="profile__image" src="img/photo-account-mobile@1x.jpg" width="99" height="100" alt="Фото профиля">
             </div>
-            <a class="button profile__image-button" href="#">Сменить фото</a>
+            <a class="button profile__image-button" href="#"><span class="profile__image-show">Сменить</span>&nbsp;фото</a>
             <form class="profile__form" action="http://echo.htmlacademy.ru" method="post">
                 <fieldset class="profile__fieldset">
                     <legend class="profile__fieldset-header">Тэги</legend>
                     <textarea class="profile__tags-area" type="text" name="tags-area" id="tags-area" placeholder="">#бургер #бар #футбол #концерт #крафт</textarea>
                 </fieldset>
                 <fieldset class="profile__fieldset profile__fieldset--transport">
-                    <legend class="profile__fieldset-header">Транспорт</legend>
+                    <legend class="profile__fieldset-header profile__fieldset-header--transport">Транспорт</legend>
                     <ul class="profile__transport-list">
                         <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="airplane" id="airplane" checked><label class="profile__transport-label profile__transport-label--air profile__transport-label--active" for="airplane">Самолет</label></li>
                         <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="bus" id="bus" checked><label class="profile__transport-label profile__transport-label--bus profile__transport-label--active" for="bus">Автобус</label></li>
@@ -113,15 +113,15 @@
             <div class="add-plan__wrapper">
                 <h2 class="add-plan__header">Добавить план:</h2>
                 <div class="add-plan__step-markers">
-                    <div class="add-plan__marker-label add-plan__marker-label--active"></div>
-                    <div class="add-plan__marker-label"></div>
-                    <div class="add-plan__marker-label"></div>
+                    <div class="add-plan__marker-label add-plan__marker-label--active">Даты</div>
+                    <div class="add-plan__marker-label">Маршрут</div>
+                    <div class="add-plan__marker-label">Развлечения</div>
                 </div>
                 <form class="add-plan__form" action="http://echo.htmlacademy.ru" method="post">
                     <ol class="add-plan__list">
                         <li id="step-1" class="add-plan__item">
                             <h3 class="add-plan__item-header">Даты пребывания</h3>
-                            <p class="add-plan__item-description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                            <p class="add-plan__item-description">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                             <div class="add-plan__block">
                                 <label class="add-plan__counter-label" for="companions-counter">
                               <h4 class="add-plan__counter-header">Ищу попутчиков:</h4>
