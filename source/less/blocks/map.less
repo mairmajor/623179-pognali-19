@@ -91,14 +91,28 @@
     margin-bottom: 45px;
   }
 
-
-
   .map__address {
     justify-content: flex-start;
     width: 600px;
     font-size: 28px;
     line-height: 1;
     margin-left: 25px;
+  }
+
+  .map__header {
+    align-items: center;
+
+    &::after {
+      width: 21px;
+      height: 31px;
+      top: 20px;
+      left: 23px;
+    }
+
+    &::before {
+      width: 67px;
+      height: 67px;
+    }
   }
 
   .map__iframe {

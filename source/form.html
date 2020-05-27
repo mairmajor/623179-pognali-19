@@ -75,10 +75,10 @@
             <a class="button profile__image-button" href="#">Сменить фото</a>
             <form class="profile__form" action="http://echo.htmlacademy.ru" method="post">
                 <fieldset class="profile__fieldset">
-                    <legend class="profile__fieldset-header">Теги</legend>
+                    <legend class="profile__fieldset-header">Тэги</legend>
                     <textarea class="profile__tags-area" type="text" name="tags-area" id="tags-area" placeholder="">#бургер #бар #футбол #концерт #крафт</textarea>
                 </fieldset>
-                <fieldset class="profile__fieldset">
+                <fieldset class="profile__fieldset profile__fieldset--transport">
                     <legend class="profile__fieldset-header">Транспорт</legend>
                     <ul class="profile__transport-list">
                         <li class="profile__transport-item"><input class="profile__transport-checkbox" type="checkbox" name="airplane" id="airplane" checked><label class="profile__transport-label profile__transport-label--air profile__transport-label--active" for="airplane">Самолет</label></li>
@@ -122,88 +122,90 @@
                         <li id="step-1" class="add-plan__item">
                             <h3 class="add-plan__item-header">Даты пребывания</h3>
                             <p class="add-plan__item-description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-                            <label class="add-plan__counter-label" for="companions-counter">
-                          <div class="add-plan__counter-block">
+                            <div class="add-plan__block">
+                                <label class="add-plan__counter-label" for="companions-counter">
                               <h4 class="add-plan__counter-header">Ищу попутчиков:</h4>
-                          <p class="add-plan__counter-unit">Чел.</p>
-                        </div>
-                        </label>
-                            <input class="add-plan__counter-input" type="number" min="1" max="100" value="2" name="companions" id="companions-counter">
-                            <button class="add-plan__counter-minus" type="button">минус</button>
-                            <button class="add-plan__counter-plus" type="button">плюс</button>
-                            <label class="add-plan__counter-label" for="duration-counter">
-                              <div class="add-plan__counter-block">
-                              <h4 class="add-plan__counter-header">Длительность:</h4>
-                          <p class="add-plan__counter-unit">Дн.</p>
-                          </div>
-                        </label>
-                            <input class="add-plan__counter-input" type="number" min="1" max="90" value="2" name="duration" id="duration-counter">
-                            <button class="add-plan__counter-minus" type="button">минус</button>
-                            <button class="add-plan__counter-plus" type="button">плюс</button>
-                            <input class="add-plan__counter-checkbox" type="checkbox" name="kids" id="kids" checked><label class="add-plan__checkbox-label" for="kids">Можно с детьми</label>
-                            <div class="add-plan__choose-month">
-                                <button class="add-plan__arrow-prev" type="button">Предыдущий месяц</button>
-                                <time class="add-plan__month">Март 2019</time>
-                                <button class="add-plan__arrow-next" type="button">Следующий месяц</button>
+                              <p class="add-plan__counter-unit">Чел.</p>
+                            </label>
+                                <input class="add-plan__counter-input" type="number" min="1" max="100" value="2" name="companions" id="companions-counter">
+                                <button class="add-plan__counter-minus" type="button">минус</button>
+                                <button class="add-plan__counter-plus" type="button">плюс</button>
                             </div>
-                            <ul class="add-plan__week">
-                                <li class="add-plan__weekday">П</li>
-                                <li class="add-plan__weekday">В</li>
-                                <li class="add-plan__weekday">С</li>
-                                <li class="add-plan__weekday">Ч</li>
-                                <li class="add-plan__weekday">П</li>
-                                <li class="add-plan__weekday add-plan__weekday--weekend">С</li>
-                                <li class="add-plan__weekday add-plan__weekday--weekend">В</li>
-                            </ul>
-                            <ul class="add-plan__date-list">
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-02-23">23</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-02-24">24</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-02-25">25</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-02-26">26</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-02-27">27</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-02-28">28</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-01">1</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-02">2</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-03">3</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-04">4</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-05">5</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-06">6</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-07">7</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-08">8</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-09">9</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-10">10</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-11">11</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-12">12</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-13">13</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-14">14</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-15">15</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-16">16</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-17">17</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-18">18</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-19">19</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-20">20</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-21">21</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-22">22</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-23">23</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-24">24</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-25">25</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--checked add-plan__date-label--active"><input class="add-plan__date" type="checkbox" checked><time class="add-plan__datetime" datetime="2019-03-26">26</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--checked"><input class="add-plan__date" type="checkbox" checked><time class="add-plan__datetime" datetime="2019-03-27">27</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--checked"><input class="add-plan__date" type="checkbox" checked><time class="add-plan__datetime" datetime="2019-03-28">28</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-29">29</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-30">30</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-31">31</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-04-01">1</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-04-02">2</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-04-03">3</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-04-04">4</time></label></li>
-                                <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-04-05">5</time></label></li>
-                            </ul>
+                            <div class="add-plan__block add-plan__block--duration">
+                                <label class="add-plan__counter-label" for="duration-counter">
+                              <h4 class="add-plan__counter-header">Длительность:</h4>
+                              <p class="add-plan__counter-unit">Дн.</p>
+                            </label>
+                                <input class="add-plan__counter-input" type="number" min="1" max="90" value="2" name="duration" id="duration-counter">
+                                <button class="add-plan__counter-minus" type="button">минус</button>
+                                <button class="add-plan__counter-plus" type="button">плюс</button>
+                            </div>
+                            <input class="add-plan__counter-checkbox" type="checkbox" name="kids" id="kids" checked><label class="add-plan__checkbox-label" for="kids">Можно с детьми</label>
+                            <div class="add-plan__choose-date">
+                                <div class="add-plan__choose-month">
+                                    <button class="add-plan__arrow-prev" type="button">Предыдущий месяц</button>
+                                    <time class="add-plan__month">Март 2019</time>
+                                    <button class="add-plan__arrow-next" type="button">Следующий месяц</button>
+                                </div>
+                                <ul class="add-plan__week">
+                                    <li class="add-plan__weekday">П<span class="add-plan__weekday-letter">н</span></li>
+                                    <li class="add-plan__weekday">В<span class="add-plan__weekday-letter">т</span></li>
+                                    <li class="add-plan__weekday">С<span class="add-plan__weekday-letter">р</span></li>
+                                    <li class="add-plan__weekday">Ч<span class="add-plan__weekday-letter">т</span></li>
+                                    <li class="add-plan__weekday">П<span class="add-plan__weekday-letter">т</span></li>
+                                    <li class="add-plan__weekday add-plan__weekday--weekend">С<span class="add-plan__weekday-letter">б</span></li>
+                                    <li class="add-plan__weekday add-plan__weekday--weekend">В<span class="add-plan__weekday-letter">с</span></li>
+                                </ul>
+                                <ul class="add-plan__date-list">
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-02-23">23</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-02-24">24</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-02-25">25</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-02-26">26</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-02-27">27</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-02-28">28</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-01">1</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-02">2</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-03">3</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-04">4</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-05">5</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-06">6</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-07">7</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-08">8</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-09">9</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-10">10</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-11">11</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-12">12</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-13">13</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-14">14</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-15">15</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-16">16</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-17">17</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-18">18</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-19">19</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-20">20</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-21">21</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-22">22</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-23">23</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-24">24</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--disable"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-25">25</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--checked add-plan__date-label--active"><input class="add-plan__date" type="checkbox" checked><time class="add-plan__datetime" datetime="2019-03-26">26</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--checked"><input class="add-plan__date" type="checkbox" checked><time class="add-plan__datetime" datetime="2019-03-27">27</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label add-plan__date-label--checked"><input class="add-plan__date" type="checkbox" checked><time class="add-plan__datetime" datetime="2019-03-28">28</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-29">29</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-30">30</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-03-31">31</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-04-01">1</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-04-02">2</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-04-03">3</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-04-04">4</time></label></li>
+                                    <li class="add-plan__date-item"><label class="add-plan__date-label"><input class="add-plan__date" type="checkbox"><time class="add-plan__datetime" datetime="2019-04-05">5</time></label></li>
+                                </ul>
+                            </div>
                             <a class="button add-plan__button" href="#step-2">Следующий шаг</a>
                         </li>
                         <li id="step-2" class="add-plan__item">
                             <h3 class="add-plan__item-header">Маршрут</h3>
-                            <p class="add-plan__item-description">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+                            <p class="add-plan__item-description add-plan__item-description--itinerary">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
                             <ul class="add-plan__itinerary-list">
                                 <li class="add-plan__itinerary-item">
                                     <select class="add-plan__select-country" name="itinerary">
@@ -307,7 +309,7 @@
                                             <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/azerbajan">Азербайджан</a></li>
                                             <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/albania">Албания</a></li>
                                             <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/aljir">Алжир</a></li>
-                                            <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/angola">Ангола</a></li>
+                                            <li class="add-plan__count ry-item"><a class="add-plan__country-link" href="/europe/angola">Ангола</a></li>
                                             <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/andorra">Андорра</a></li>
                                             <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/antigua">Антигуа и Барбуда</a></li>
                                             <li class="add-plan__country-item"><a class="add-plan__country-link" href="/europe/argentine">Аргентина</a></li>
@@ -320,8 +322,10 @@
                                     <button class="add-plan__add-itinerary" type="button">Добавить страну</button>
                                 </li>
                             </ul>
-                            <a class="button add-plan__button" href="#step-3">Следующий шаг</a>
-                            <a class="button add-plan__button--prev" href="#step-1">На шаг назад</a>
+                            <div class="add-plan__buttons-block">
+                                <a class="button add-plan__button" href="#step-3">Следующий шаг</a>
+                                <a class="button add-plan__button--prev" href="#step-1">На шаг назад</a>
+                            </div>
                         </li>
                         <li id="step-3" class="add-plan__item">
                             <h3 class="add-plan__item-header">Развлечения</h3>
@@ -331,8 +335,10 @@
                       <textarea class="add-plan__funs-text" placeholder="План действий"></textarea></label>
                             <label class="add-plan__funs-country">Чехия
                       <textarea class="add-plan__funs-text" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea></label>
-                            <input class="button  add-plan__button add-plan__button--submit" type="submit" value="Отправить">
-                            <a class="button add-plan__button add-plan__button--prev" href="#step-2">На шаг назад</a>
+                            <div class="add-plan__buttons-block">
+                                <input class="button  add-plan__button add-plan__button--submit" type="submit" value="Отправить">
+                                <a class="button add-plan__button add-plan__button--prev" href="#step-2">На шаг назад</a>
+                            </div>
                         </li>
                     </ol>
                 </form>

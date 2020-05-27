@@ -1,11 +1,16 @@
 .profile {
+  position: relative;
   .container;
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile__user-block {
   display: flex;
   justify-content: space-between;
+  align-self: stretch;
   padding: 20px;
 }
 
@@ -78,6 +83,7 @@
   text-align: center;
   color: @txtcolor--name;
   border: 15px solid transparent;
+  border-bottom: none;
 }
 
 .profile__tags-area {
@@ -148,4 +154,98 @@
     width: 15px;
     background-image: url("../img/run.svg");
   }
+}
+
+@media (min-width: @tablet-width) {
+  .profile {
+    padding-bottom: 40px;
+  }
+
+  .profile__user-block {
+    padding: 50px 40px;
+  }
+
+  .profile__image {
+    border-radius: 10px;
+  }
+
+  .profile__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile__fieldset {
+    width: 618px;
+    transform: rotate(180deg);
+
+    &--transport {
+      width: 308px;
+      position: absolute;
+      top: 60px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .profile__fieldset-header {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    border: 15px solid transparent;
+    transform: rotate(180deg);
+  }
+
+  .profile__tags-area {
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 15px 30px;
+    padding-bottom: 0;
+    transform: rotate(180deg);
+  }
+
+  .profile__image-button {
+    width: 618px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+  }
+
+  .profile__transport-list {
+    transform: rotate(180deg);
+  }
+
+  .profile__transport-item {
+    width: 43px;
+    height: 43px;
+  }
+
+  .profile__transport-label {
+    height: 21px;
+
+    &--air {
+      width: 19px;
+    }
+
+    &--bus {
+      width: 17px;
+    }
+
+    &--bike {
+      width: 24px;
+    }
+
+    &--run {
+      width: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }
